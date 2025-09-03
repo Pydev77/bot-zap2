@@ -42,7 +42,7 @@
     "request": "^2.88.2",
     "yt-search": "^2.10.2"
   },
-  "name": "Takira Bot",
+  "name": "Pecinha - Bot",
   "description": "Sempre buscando melhorar, qualquer dúvida entra em contato comigo por meio do WhatsApp: 553171917951",
   "version": "1",
   "main": "index.js",

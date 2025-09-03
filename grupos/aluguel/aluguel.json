@@ -1,0 +1,8 @@
+{
+    "grupos_alugados": [],
+    "precos": {
+        "diario": 1.0,
+        "semanal": 5.0,
+        "mensal": 15.0
+    }
+}

@@ -1,0 +1,7 @@
+{
+    "flood_control": [],
+    "configuracoes": {
+        "limite": 5,
+        "tempo": 60000
+    }
+}

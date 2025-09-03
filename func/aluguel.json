@@ -1,0 +1,7 @@
+{
+    "grupos_alugados": [],
+    "configuracoes": {
+        "preco_por_dia": 1.0,
+        "moeda": "R$"
+    }
+}

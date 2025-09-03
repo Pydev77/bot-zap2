@@ -1,26 +1,3 @@
 {
-  "553171917951@s.whatsapp.net": {
-    "nome": "gbdiabao",
-    "cidade": "São Luiz",
-    "idade": "100",
-    "hobby": "Criar coisas",
-    "genero": "macho",
-    "foto": "./tinderFotos/553171917951.jpg"
-  },
-  "558892153207@s.whatsapp.net": {
-    "foto": "./tinderFotos/558892153207.jpg",
-    "nome": "Yattin",
-    "cidade": "não é rj",
-    "idade": "5",
-    "hobby": "vender conteúdo",
-    "genero": "aranha"
-  },
-  "559488150026@s.whatsapp.net": {
-    "nome": "Bot do gb",
-    "cidade": "Sei lá",
-    "idade": "0",
-    "hobby": "descobrir coisas",
-    "genero": "homem",
-    "foto": "./tinderFotos/559488150026.jpg"
-  }
+  
 }

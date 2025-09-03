@@ -1,4 +1,4 @@
-//não revenda sem minha permissão!
+//=====[ MÓDULOS ]=====\\
 const { downloadContentFromMessage, prepareWAMessageMedia, relayWAMessage, mentionedJid, processTime, MediaType, Browser, MessageType, Presence, Mimetype, Browsers, delay, getLastMessageInChat, WA_DEFAULT_EPHEMERAL, generateWAMessageFromContent, proto, logger, makeInMemoryStore } = require('@whiskeysockets/baileys');
 
 // ========[ Abrir e fechar grupo ]======= \\
@@ -6,27 +6,27 @@ const { downloadContentFromMessage, prepareWAMessageMedia, relayWAMessage, menti
 
 // ========[ MÓDULOS E FUNÇÕES ]======= \\
 
-const { fs, Boom, axios, yts, crypto, util, P, linkfy, request, cheerio, ms, ffmpeg, webp_mp4, qrterminal, exec, spawn, execSync, moment, color, time, hora, date, getBuffer, convertSticker, recognize, fetchJson, fetchText, fetch, getBase64, createExif, writeExifImg, addLimit, upload, nit, addBanned, unBanned, BannedExpired, cekBannedUser, validmove, setGame, addComandosId, deleteComandos, getComandoBlock, getComandos, addComandos, palavrasANA, quizanimais, garticArchives, whatMusicAr, enigmaArchive, getpc, supre, wait, getExtension, generateMessageID, getGroupAdmins, getMembros, sendPoll, getRandom, banner2, banner3, temporizador, chyt, kyun, TimeCount, simih, botoff, colors, RSM_FUNC, infoSystem, os, arcloud, EmojiAPI, emoji, infoClima, insert, response, addFilter, isFiltered, mines, getMinesPositions, MinesHelp, ytdl, psycatgames, MultiDownload, AssemblyAI, level2, chaves, grupos, aluguel, obeso, countDays, timeDate, Limit_CMD, capitalizeFirstLetter } = require('./exports.js');
+const { fs, Boom, axios, yts, crypto, util, P, linkfy, request, cheerio, ms, ffmpeg, webp_mp4, qrterminal, exec, spawn, execSync, moment, color, time, hora, date, getBuffer, convertSticker, recognize, fetchJson, fetchText, fetch, getBase64, createExif, writeExifImg, addLimit, upload, nit, addBanned, unBanned, BannedExpired, cekBannedUser, validmove, setGame, addComandosId, deleteComandos, getComandoBlock, getComandos, addComandos, palavrasANA, quizanimais, garticArchives, whatMusicAr, enigmaArchive, getpc, supre, wait, getExtension, generateMessageID, getGroupAdmins, getMembros, sendPoll, getRandom, banner2, banner3, temporizador, chyt, kyun, TimeCount, simih, botoff, colors, RSM_FUNC, infoSystem, os, arcloud, EmojiAPI, emoji, infoClima, insert, response, addFilter, isFiltered, mines, getMinesPositions, MinesHelp, ytdl, psycatgames, MultiDownload, AssemblyAI, level2, chaves, grupos, aluguel, obeso, countDays, timeDate, Limit_CMD, capitalizeFirstLetter } = require('./bot-zap2/exports.js');
 
 // ======[ JS-MENUS/INFORMAÇÕES ]====== \\
 
-const { linguagem, mess, getInfo, destrava, destrava2, tabela, conselhob, fatos, randomCantadas, palavrasc, ban, joguinhodavelhajs, joguinhodavelhajs2, nescessario, setting, logoslink, ftmenu, premium, rgtake, muted, countMessage, sendVideoAsSticker, sendImageAsSticker, sendVideoAsSticker2, sendImageAsSticker2, sotoy, daily, comandos, limitefll, votacao, antispam, anotar, black_, enviarfiguUrl, getFileBuffer, DLT_FL, sleep, ANT_LTR_MD_EMJ, sabrpg, autorpg, bcbet, minerar, cavalosrpg, elitepasse, coderpg, galosrpg, roubosrpg } = require('./exports.js');
+const { linguagem, mess, getInfo, destrava, destrava2, tabela, conselhob, fatos, randomCantadas, palavrasc, ban, joguinhodavelhajs, joguinhodavelhajs2, nescessario, setting, logoslink, ftmenu, premium, rgtake, muted, countMessage, sendVideoAsSticker, sendImageAsSticker, sendVideoAsSticker2, sendImageAsSticker2, sotoy, daily, comandos, limitefll, votacao, antispam, anotar, black_, enviarfiguUrl, getFileBuffer, DLT_FL, sleep, ANT_LTR_MD_EMJ, sabrpg, autorpg, bcbet, minerar, cavalosrpg, elitepasse, coderpg, galosrpg, roubosrpg } = require('./bot-zap2/exports.js');
 
 //...............................
 
-var { antipv, antipv2, antipv3, visualizarmsg, numero_dono1, numero_dono2, numero_dono3, numero_dono4, numero_dono5, numero_dono6, msgantipv1, msgantipv2, API_KEY_INVERTEXTO } = require("./settings/nescessario.json");
+var { antipv, antipv2, antipv3, visualizarmsg, numero_dono1, numero_dono2, numero_dono3, numero_dono4, numero_dono5, numero_dono6, msgantipv1, msgantipv2, API_KEY_INVERTEXTO } = require("./bot-zap2/settings/nescessario.json");
 
 const music = JSON.parse(fs.readFileSync("./database/data/music.json"))
 
-const { fundo1, fundo2, imgnazista, imggay, imgcorno, imggostosa, imggostoso, imgfeio, imgvesgo, imgbebado, imggado, matarcmd, deathcmd, chutecmd, tapacmd, rnkgay, rnkgado, rnkcorno, rnkgostoso, rnkgostosa, rnknazista, rnkotaku, rnkpau, suruba, minado_bomb, thumbnail } = require("./settings/links_img.json");
+const { fundo1, fundo2, imgnazista, imggay, imgcorno, imggostosa, imggostoso, imgfeio, imgvesgo, imgbebado, imggado, matarcmd, deathcmd, chutecmd, tapacmd, rnkgay, rnkgado, rnkcorno, rnkgostoso, rnkgostosa, rnknazista, rnkotaku, rnkpau, suruba, minado_bomb, thumbnail } = require("./bot-zap2/settings/links_img.json");
 
-const { NomeDoBot, NickDono, prefix, API_KEY_BRONXYS, BASE_TOSHIRUZBOT, TOSHIRUZBOTS_KEY, channel } = require("./settings/settings.json");
+const { NomeDoBot, NickDono, prefix, API_KEY_BRONXYS, BASE_TOSHIRUZBOT, TOSHIRUZBOTS_KEY, channel } = require("./bot-zap2/settings/settings.json");
 
 const NODZ_KEY = "suakey";
 
 const NODZ_URL = "https://nodz-apis.com.br";
 
-const KEY_ZERO = "gbmorelost_KEY";
+const KEY_ZERO = "PyBoyzao_KEY";
 
 const TED_APIKEY = "suakey";
 
@@ -79,13 +79,13 @@ var tempo = 'Boa noite'
 
 
 
-const { audio_menu, bom_dia, boa_tarde, boa_noite, corno, qviado } = require('./settings/media/audios.json')
+const { audio_menu, bom_dia, boa_tarde, boa_noite, corno, qviado } = require('./bot-zap2/settings/media/audios.json')
 
-const { mensagens, enviar, sortear } = require("./settings/message.js") //Respostas que o bot manda
+const { mensagens, enviar, sortear } = require("./bot-zap2/settings/message.js") //Respostas que o bot manda
 
 global.stopGames = global.stopGames || {};
 //...............................................
- 
+
 var numerodono_ofc = setting.numerodono.replace(new RegExp("[()+-/ +/]", "gi"), "");
 
 async function reiniciarSAB() {
@@ -98,17 +98,17 @@ var AsMsg = [];
 
 //CONEXÃO
 
-async function iniciargbmorelost() {
+async function iniciarPyBoyzao() {
 
-module.exports = gbmorelost = async(gbmorelost, folderUserAuth) => {
-module.exports = upsert = async(upsert, gbmorelost) => {
+module.exports = PyBoyzao = async(_PyBoyzao, folderUserAuth) => {
+module.exports = upsert = async(upsert, PyBoyzao) => {
 async function msgupsrt() {
 const nmrdn_dono2 = setting.numerodono.replace(new RegExp("[()+-/ +/]", "gi"), "") + "@s.whatsapp.net";
 // Auto TikTok (sem comando, só link)
 
 var hora120 = moment.tz('America/Sao_Paulo').format('HH:mm:ss');
 
-RSM_FUNC(gbmorelost, nmrdn_dono2, hora120, upsert);
+RSM_FUNC(PyBoyzao, nmrdn_dono2, hora120, upsert);
 
 for (const info of upsert?.messages || []) {
 
@@ -128,14 +128,14 @@ if(VRF_JSON_GRUPO && jsonGp[0].x9 && info.messageStubType){
 switch(info.messageStubType){
 case 29:
 await delay(1000);
-gbmorelost.sendMessage(info.key.remoteJid, {text: `*@${info.messageStubParameters[0].split("@")[0]}* foi promovido(a) a adminstrador do grupo por: *@${info.participant.split("@")[0]}*.`, contextInfo: {forwardingScore: 50000, isForwarded: true, mentionedJid: [info.messageStubParameters[0], info.participant], remoteJid: info.key.remoteJid}});
+PyBoyzao.sendMessage(info.key.remoteJid, {text: `*@${info.messageStubParameters[0].split("@")[0]}* foi promovido(a) a adminstrador do grupo por: *@${info.participant.split("@")[0]}*.`, contextInfo: {forwardingScore: 50000, isForwarded: true, mentionedJid: [info.messageStubParameters[0], info.participant], remoteJid: info.key.remoteJid}});
 break;
 case 30:
 await delay(1000);
-gbmorelost.sendMessage(info.key.remoteJid, {text: `O(a) adminstrador(a) *@${info.messageStubParameters[0].split("@")[0]}* foi rebaixado(a) à membro comum por: *@${info.participant.split("@")[0]}*.`, contextInfo: {forwardingScore: 50000, isForwarded: true, mentionedJid: [info.messageStubParameters[0], info.participant], remoteJid: info.key.remoteJid}});
+PyBoyzao.sendMessage(info.key.remoteJid, {text: `O(a) adminstrador(a) *@${info.messageStubParameters[0].split("@")[0]}* foi rebaixado(a) à membro comum por: *@${info.participant.split("@")[0]}*.`, contextInfo: {forwardingScore: 50000, isForwarded: true, mentionedJid: [info.messageStubParameters[0], info.participant], remoteJid: info.key.remoteJid}});
 break;
 }}
-  
+
 if(!info.message) return;
 if(upsert.type == "append") return;  
 const baileys = require('@whiskeysockets/baileys');
@@ -143,7 +143,7 @@ const type = baileys.getContentType(info.message);
 const content = JSON.stringify(info.message);
 const pushname = info.pushName ? info.pushName : '';
 if(visualizarmsg) {
-await gbmorelost.readMessages([info.key]);
+await PyBoyzao.readMessages([info.key]);
 } else {
 if(from == "status@broadcast") return;
 }
@@ -211,7 +211,7 @@ const q_ofc = PR_String.trim().split(/ +/).slice(1).join(" ");
 
 //======================================\\
 
-try {var groupMetadata = isGroup ?  await gbmorelost.groupMetadata(from): ""} catch {return}
+try {var groupMetadata = isGroup ?  await PyBoyzao.groupMetadata(from): ""} catch {return}
 
 const groupName = isGroup ? groupMetadata.subject : '';
 
@@ -221,7 +221,7 @@ const messagesC = PR_String.slice(0).trim().split(/ +/).shift().toLowerCase();
 
 const arg = body.substring(body.indexOf(' ') + 1);
 
-const botNumber = await gbmorelost.user.id.split(':')[0]+'@s.whatsapp.net';
+const botNumber = await PyBoyzao.user.id.split(':')[0]+'@s.whatsapp.net';
 const argss = body.split(/ +/g);
 const testat = body;
 const ants = body;
@@ -407,7 +407,7 @@ return false
 //if(info.key.fromMe) return
 
 const reply = (texto) => {
-    gbmorelost.sendMessage(from, { text: texto });
+    PyBoyzao.sendMessage(from, { text: texto });
 };
 const identifyAtSign = (number) => {
 return number.includes('@') ? txt.split('@')[1].replace(new RegExp("[()+-/ +/]", "gi"), "") + "@s.whatsapp.net" : number.replace(new RegExp("[()+-/ +/]", "gi"), "") + "@s.whatsapp.net"
@@ -420,7 +420,7 @@ return query.replace("#p#", prefix).replace("#p#", prefix).replace("#pc#", prefi
 const replyPeR = (texto) => {
   return new Promise((resolve) => {
 setTimeout(() => {
-gbmorelost.sendMessage(from, { text: texto }, { quoted: info }).then(() => resolve()).catch((error) => {
+PyBoyzao.sendMessage(from, { text: texto }, { quoted: info }).then(() => resolve()).catch((error) => {
 console.log(JSON.stringify(error, null, 2));
 resolve();
 });
@@ -432,7 +432,7 @@ const msgSemQuoted = (content, type, options = {}) => {
    const isFullUrl = (url) => new RegExp(/^https?:\/\/(www\.)?[-a-zA-Z0-9@:%._+~#=]{1,256}\.[a-zA-Z0-9()]{1,6}\b([-a-zA-Z0-9()@:%_+.~#?&/=]*)$/, 'gi').test(url);
 const mediaKeys = ['image', 'video', 'sticker', 'audio', 'document', 'history', 'md-app-state'];
 options[type || 'text'] = isFullUrl(content) && mediaKeys.includes(type) ? {url: content}: content;
-return gbmorelost.sendMessage(from, options).catch(e => {
+return PyBoyzao.sendMessage(from, options).catch(_e => {
 reply("Erro ao enviar a mensagem..");
 })
 }
@@ -453,39 +453,39 @@ var tempo = 'Uma Boa tarde'
 var tempo = 'Banoite man'
 }
 
-const sendSticker = (from, filename, info) => {
-gbmorelost.sendMessage(from, {sticker: {url: fileName}}, {quoted: sasah})
+const sendSticker = (from, _filename, _info) => {
+PyBoyzao.sendMessage(from, {sticker: {url: fileName}}, {quoted: sasah})
 }
 
 const sendImage = (ytb) => {
-gbmorelost.sendMessage(from, {image: {url: ytb}}, {quoted:info})
+PyBoyzao.sendMessage(from, {image: {url: ytb}}, {quoted:info})
 }
 
 
 const sendMess = (idGroup, textINFO) => {
-gbmorelost.sendMessage(idGroup, {text: textINFO})
+PyBoyzao.sendMessage(idGroup, {text: textINFO})
 }
 
 const mentions = (teks, memberr, id) => {
-(id == null || id == undefined || id == false) ? gbmorelost.sendMessage(from, {text: teks.trim(), mentions: memberr}) : gbmorelost.sendMessage(from, {text: teks.trim(), mentions: memberr}, {quoted: info})
+(id == null || id == undefined || id == false) ? PyBoyzao.sendMessage(from, {text: teks.trim(), mentions: memberr}) : PyBoyzao.sendMessage(from, {text: teks.trim(), mentions: memberr}, {quoted: info})
 }
-	
+
 const mention = (teks= '', ms = info) => {
 memberr = []
 vy = teks.includes('\n') ? teks.split('\n') : [teks]
 for(vz of vy){ for(zn of vz.split(' ')){
 if(zn.includes('@'))memberr.push(parseInt(zn.split('@')[1])+'@s.whatsapp.net')
 }}
-gbmorelost.sendMessage(from, {text: teks.trim(), mentions: memberr}, {quoted: ms}) 
+PyBoyzao.sendMessage(from, {text: teks.trim(), mentions: memberr}, {quoted: ms}) 
 }
 
-const mentionSemQuoted = (teks= '', ms = info) => {
+const mentionSemQuoted = (teks= '', _ms = info) => {
 memberr = []
 vy = teks.includes('\n') ? teks.split('\n') : [teks]
 for(vz of vy){ for(zn of vz.split(' ')){
 if(zn.includes('@'))memberr.push(parseInt(zn.split('@')[1])+'@s.whatsapp.net')
 }}
-gbmorelost.sendMessage(from, {text: teks.trim(), mentions: memberr}) 
+PyBoyzao.sendMessage(from, {text: teks.trim(), mentions: memberr}) 
 }
 
 const mencionarIMG = (teks= '', Url, ms) => {
@@ -494,7 +494,7 @@ vy = teks.includes('\n') ? teks.split('\n') : [teks]
 for(vz of vy){ for(zn of vz.split(' ')){
 if(zn.includes('@'))memberr.push(parseInt(zn.split('@')[1])+'@s.whatsapp.net')
 }}
-gbmorelost.sendMessage(from, {image: {url: Url}, caption: teks.trim(), mentions: memberr}, {quoted: ms}) 
+PyBoyzao.sendMessage(from, {image: {url: Url}, caption: teks.trim(), mentions: memberr}, {quoted: ms}) 
 }
 
 const reagir = async (idgp, emj) => {
@@ -504,11 +504,11 @@ text: emj,
 key: info.key
 }
 } 
-gbmorelost.sendMessage(idgp, reactionMessage)
+PyBoyzao.sendMessage(idgp, reactionMessage)
 }
 
 const verificarN = async(sla) => {
-const [result] = await gbmorelost.onWhatsApp(sla)
+const [result] = await PyBoyzao.onWhatsApp(sla)
 if(result == undefined) {
 reply("Este usuário não é existente no WhatsApp")
 } else {
@@ -518,18 +518,18 @@ reply(`${sla} Número inserido é existente no WhatsApp com o id: ${result.jid}`
 
 if(isGroup && isBotGroupAdmins && !isGroupAdmins && !SoDono && !info.key.fromMe) {
 if(menc_jid2?.length >= groupMembers.length - 1) { 
-gbmorelost.sendMessage(from, {text: markingAllMember()})
+PyBoyzao.sendMessage(from, {text: markingAllMember()})
 if(IS_DELETE) {
 setTimeout(() => {
-gbmorelost.sendMessage(from, { delete: { remoteJid: from, fromMe: false, id: info.key.id, participant: sender}})
+PyBoyzao.sendMessage(from, { delete: { remoteJid: from, fromMe: false, id: info.key.id, participant: sender}})
 }, 500)
 }
-gbmorelost.groupParticipantsUpdate(from, [sender], "remove")
+PyBoyzao.groupParticipantsUpdate(from, [sender], "remove")
 }
 }
 
 const enviarfigu = async (figu, tag) => {
-gbmorelost.sendMessage(from, {sticker: {url: figu}}, {quoted: tag})
+PyBoyzao.sendMessage(from, {sticker: {url: figu}}, {quoted: tag})
 }
 
 if(isAutofigu && isGroup) {
@@ -542,7 +542,7 @@ if(type == 'imageMessage') {
 var pack = `↧ [🤖] Criada por:↳ ${NomeDoBot}\n—\n↧ [🕵🏻‍♂️] Proprietário:↳ ${NickDono}`
 var author2 = `↧ [👤] Feito por↳ ${pushname}\n [☁️] Grupo:${groupName}`
 owgi = await getFileBuffer(info.message.imageMessage, 'image')
-let encmediaa = await sendImageAsSticker2(gbmorelost, from, owgi, info, { packname:pack, author:author2})
+let encmediaa = await sendImageAsSticker2(PyBoyzao, from, owgi, info, { packname:pack, author:author2})
 DLT_FL(encmediaa)
 }
 if(type == 'videoMessage') {
@@ -550,7 +550,7 @@ if((isMedia && info.message.videoMessage.seconds < 10)) {
 var pack = `↧ [🤖] Criada por:\n• ↳ ${NomeDoBot}\n—\n↧ [🕵🏻‍♂️] Proprietário:\n• ↳ ${NickDono}`
 var author2 = `↧ [👤] Feito por:\n• ↳ ${pushname}\n—\n↧ [☁️] Grupo:\n• ↳ ${groupName}`
 owgi = await getFileBuffer(info.message.videoMessage, 'video')
-let encmedia = await sendVideoAsSticker2(gbmorelost, from, owgi, info, { packname:pack, author:author2})
+let encmedia = await sendVideoAsSticker2(PyBoyzao, from, owgi, info, { packname:pack, author:author2})
 DLT_FL(encmedia)
 }
 } 
@@ -566,7 +566,7 @@ var nmrdnofc1 = setting.numerodono.replace(new RegExp("[()+-/ +/]", "gi"), "")
 if(isGroup && fs.existsSync(`./database/func/afk/afk-@${nmrdnofc1}.json`)) {
 if(budy.indexOf(`@${nmrdnofc1}`) >= 0) {
 const tabelin = JSON.parse(fs.readFileSync(`./database/func/afk/afk-@${nmrdnofc1}.json`));  
-gbmorelost.sendMessage(from, {text: mess.absenceRecordOwner(NickDono, tabelin)}, {quoted: sasah})
+PyBoyzao.sendMessage(from, {text: mess.absenceRecordOwner(NickDono, tabelin)}, {quoted: sasah})
 }
 }
 
@@ -593,7 +593,7 @@ mention(mess.absenceRecordAdmin(blak))
 
 if(isBotGroupAdmins && isGroupAdmins && body === "apaga") {
 if(!menc_prt) return
-gbmorelost.sendMessage(from, { delete: { remoteJid: from, fromMe: false, id: info.message.extendedTextMessage.contextInfo.stanzaId, participant: menc_prt}})
+PyBoyzao.sendMessage(from, { delete: { remoteJid: from, fromMe: false, id: info.message.extendedTextMessage.contextInfo.stanzaId, participant: menc_prt}})
 }
 
 if(SoDono && budy.includes("reiniciar-sab") || info.key.fromMe && budy.includes("reiniciar-sab")) {
@@ -625,7 +625,7 @@ const sendStickerFromUrl = async(to, url) => {
 try {
 var names = Date.now() / 10000;
 var download = function (uri, filename, callback) {
-request.head(uri, function (err, res, body) {
+request.head(uri, function (_err, _res, _body) {
 request(uri).pipe(fs.createWriteStream(filename)).on('close', callback);
 });
 };
@@ -633,9 +633,9 @@ download(url, './sticker' + names + '.png', async function () {
 console.log('Enviando sticker..');
 let filess = './sticker' + names + '.png'
 let asw = './sticker' + names + '.webp'
-exec(`ffmpeg -i ${filess} -vcodec libwebp -filter:v fps=fps=15 -lossless 1 -loop 0 -preset default -an -vsync 0 -s 800:800 ${asw}`, (err) => {
+exec(`ffmpeg -i ${filess} -vcodec libwebp -filter:v fps=fps=15 -lossless 1 -loop 0 -preset default -an -vsync 0 -s 800:800 ${asw}`, (_err) => {
 let media = fs.readFileSync(asw)
-gbmorelost.sendMessage(to, {sticker: media}, {sendEphemeral: true, contextInfo: { forwardingScore: 50, isForwarded: true}, quoted: sasah}).catch(e => {
+PyBoyzao.sendMessage(to, {sticker: media}, {sendEphemeral: true, contextInfo: { forwardingScore: 50, isForwarded: true}, quoted: sasah}).catch(_e => {
 return reply(mess.error())
 })
 DLT_FL(filess)
@@ -691,7 +691,7 @@ const isQuotedContact = type === 'extendedTextMessage' && content.includes('cont
 const isQuotedLocation = type === 'extendedTextMessage' && content.includes('locationMessage')
 
 const isQuotedProduct = type === 'extendedTextMessage' && content.includes('productMessage')
-            
+
 //////BLOCK CMD///////
 if(isGroup){
 const checar = getComandos(from)
@@ -805,10 +805,10 @@ fs.writeFileSync(`./arquivos/tictactoe/db/${from}.json`,
 JSON.stringify(boardnow, null, 2)
 );
 const chatAccept = `*🎮Ꮐ̸Ꭺ̸Ꮇ̸Ꭼ̸ Ꭰ̸Ꭺ̸ Ꮩ̸Ꭼ̸Ꮮ̸Ꮋ̸Ꭺ̸🕹️*
-                    
+
 ❌ : @${boardnow.X}
 ⭕ : @${boardnow.O}
-               
+
 Sua vez... : @${boardnow.turn == "X" ? boardnow.X : boardnow.O}
 
 ${matrix[0][0]}  ${matrix[0][1]}  ${matrix[0][2]}
@@ -840,7 +840,7 @@ const boardnow = setGame(`${from}`);
 if(!boardnow.status) return reply(`Parece que seu oponente não aceitou o desafio ainda...`)
 if(
 (boardnow.turn == "X" ? boardnow.X : boardnow.O) !=
-     
+
 sender.replace("@s.whatsapp.net", "")
 )
 return;
@@ -849,7 +849,7 @@ const matrix = moving._matrix;
 if(moving.isWin) {
 if(moving.winner == "SERI") {
 const chatEqual = `*🎮Ꮐ̸Ꭺ̸Ꮇ̸Ꭼ̸ Ꭰ̸Ꭺ̸ Ꮩ̸Ꭼ̸Ꮮ̸Ꮋ̸Ꭺ̸🕹️*
-          
+
 Jogo da velha termina empatado 😐
 `;
 reply(chatEqual);
@@ -869,7 +869,7 @@ const chatWon = `*🎮Ꮐ̸Ꭺ̸Ꮇ̸Ꭼ̸ Ꭰ̸Ꭺ̸ Ꮩ̸Ꭼ̸Ꮮ̸Ꮋ̸Ꭺ̸�
 
 O jogo da velha foi vencido pelo usuário: @${winnerJID}..`;
 
-gbmorelost.sendMessage(from, {text: chatWon}, {quoted: sasah,
+PyBoyzao.sendMessage(from, {text: chatWon}, {quoted: sasah,
 mentions: [
 moving.winner == "O" ?
 moving.O + "@s.whatsapp.net" :
@@ -972,7 +972,7 @@ if(JSON.stringify(akinator).includes(from) && akinator[akinator.map(i => i.id).i
       jogo.now = true
       akinator[AB].finish += 1
       fs.writeFileSync("./database/grupos/games/akinator.json", JSON.stringify(akinator, null, 2))
-      gbmorelost.sendMessage(from, {image: {url: aki.answers[0].absolute_picture_path }, caption: `〔 ${aki.answers[0].name}: ${aki.answers[0].description} 〕\n–\n🧙🏻‍♂️ Hmm, acho que o seu personagem é esse aqui... Acertei?\n• ${II}Observação:{II} _Responda com "sim" ou "não", sem as aspas._`}, {quoted: info})
+      PyBoyzao.sendMessage(from, {image: {url: aki.answers[0].absolute_picture_path }, caption: `〔 ${aki.answers[0].name}: ${aki.answers[0].description} 〕\n–\n🧙🏻‍♂️ Hmm, acho que o seu personagem é esse aqui... Acertei?\n• ${II}Observação:{II} _Responda com "sim" ou "não", sem as aspas._`}, {quoted: info})
     } else {
       if(budy2.toLowerCase() === "sim" || budy2.toLowerCase() === "s") {
         await aki.step("0")
@@ -1001,11 +1001,11 @@ if(JSON.stringify(akinator).includes(from) && akinator[akinator.map(i => i.id).i
 if(isGroup && fs.existsSync(`./database/grupos/games/anagrama/${from}.json`)){
 let dataAnagrama = JSON.parse(fs.readFileSync(`./database/grupos/games/anagrama/${from}.json`))
 if(budy.slice(0,4).toUpperCase() == dataAnagrama.original.slice(0,4).toUpperCase() && budy.toUpperCase() != dataAnagrama.original) return reply('está perto')
-if(budy.toUpperCase() == dataAnagrama.original) { gbmorelost.sendMessage(from, {text: `🎉 Parabéns *${pushname}*, você acertou o anagrama apresentado.\nA palavra original era: *${dataAnagrama.original}*. Estou iniciando o próximo jogo em 5s!`}, {"mentionedJid": [sender]}), fs.unlinkSync(`./database/grupos/games/anagrama/${from}.json`)		
-		setTimeout(async() => {
+if(budy.toUpperCase() == dataAnagrama.original) { PyBoyzao.sendMessage(from, {text: `🎉 Parabéns *${pushname}*, você acertou o anagrama apresentado.\nA palavra original era: *${dataAnagrama.original}*. Estou iniciando o próximo jogo em 5s!`}, {"mentionedJid": [sender]}), fs.unlinkSync(`./database/grupos/games/anagrama/${from}.json`)         
+                setTimeout(async() => {
 fs.writeFileSync(`./database/grupos/games/anagrama/${from}.json`, `${JSON.stringify(palavrasANA[Math.floor(Math.random() * palavrasANA.length)])}`)
 let dataAnagrama2 = JSON.parse(fs.readFileSync(`./database/grupos/games/anagrama/${from}.json`))
-gbmorelost.sendMessage(from, {text:`Decifre a palavra embaralhada abaixo:\n• ${II}Anagrama:${II} ${dataAnagrama2.embaralhada}\n• ${II}Dica:${II} ${dataAnagrama2.dica}`}) 
+PyBoyzao.sendMessage(from, {text:`Decifre a palavra embaralhada abaixo:\n• ${II}Anagrama:${II} ${dataAnagrama2.embaralhada}\n• ${II}Dica:${II} ${dataAnagrama2.dica}`}) 
 }, 5000)
 }}
 
@@ -1013,13 +1013,13 @@ if(isGroup && fs.existsSync(`./database/grupos/games/quiz-animais/${from}.json`)
 let dataAnagramaa = JSON.parse(fs.readFileSync(`./database/grupos/games/quiz-animais/${from}.json`))
 if(budy.slice(0,4).toUpperCase() == dataAnagramaa.original.slice(0,4).toUpperCase() && budy.toUpperCase() != dataAnagramaa.original) return reply('está perto')
 if(budy.toUpperCase() == dataAnagramaa.original) { 
-gbmorelost.sendMessage(from,{text: `🎉 Parabéns *${pushname}*, você acertou! O animal era: *${dataAnagrama.original}*.\n• Estou iniciando o próximo jogo em 5s!`}, {"mentionedJid": [sender]}), fs.unlinkSync(`./database/grupos/games/quiz-animais/${from}.json`)		
+PyBoyzao.sendMessage(from,{text: `🎉 Parabéns *${pushname}*, você acertou! O animal era: *${dataAnagrama.original}*.\n• Estou iniciando o próximo jogo em 5s!`}, {"mentionedJid": [sender]}), fs.unlinkSync(`./database/grupos/games/quiz-animais/${from}.json`)               
 setTimeout(async() => {
 fs.writeFileSync(`./database/grupos/games/quiz-animais/${from}.json`, `${JSON.stringify(quizanimais[Math.floor(Math.random() * quizanimais.length)])}`)
 let dataAnagrama2 = JSON.parse(fs.readFileSync(`./database/grupos/games/quiz-animais/${from}.json`))
 imagemtexto = `🤔 Qual é o animal apresentado na imagem?\n • Envie sua resposta abaixo, mencionando esta mensagem.`
 wew = await getBuffer(`${dataAnagrama2.foto}`)   
-await gbmorelost.sendMessage(from, {image: wew, caption: imagemtexto, thumbnail: wew}, {quoted: info})
+await PyBoyzao.sendMessage(from, {image: wew, caption: imagemtexto, thumbnail: wew}, {quoted: info})
 }, 5000)
 }
 }
@@ -1028,7 +1028,7 @@ if(isGroup && fs.existsSync(`./database/grupos/games/gartic/${from}.json`)){
 let perg_gartic = JSON.parse(fs.readFileSync(`./database/grupos/games/gartic/${from}.json`))
 if(budy.slice(0,4).toUpperCase() == perg_gartic.resposta.slice(0,4).toUpperCase() && budy.toUpperCase() != perg_gartic.resposta) return reply('Está perto!')
 if(budy.toUpperCase() == perg_gartic.resposta) { 
-gbmorelost.sendMessage(from,{text: `*DESCOBERTO!* Parabéns ${pushname}, iniciando o próximo jogo em 5 segundos.`}, {"mentionedJid": [sender]}), fs.unlinkSync(`./database/grupos/games/gartic/${from}.json`)		
+PyBoyzao.sendMessage(from,{text: `*DESCOBERTO!* Parabéns ${pushname}, iniciando o próximo jogo em 5 segundos.`}, {"mentionedJid": [sender]}), fs.unlinkSync(`./database/grupos/games/gartic/${from}.json`)            
 setTimeout(async() => {
 fs.writeFileSync(`./database/grupos/games/gartic/${from}.json`, `${JSON.stringify(garticArchives[Math.floor(Math.random() * garticArchives.length)])}`)
 let dataGartic2 = JSON.parse(fs.readFileSync(`./database/grupos/games/gartic/${from}.json`))
@@ -1038,7 +1038,7 @@ garticText = `👩🏼‍🏫 - A resposta é representada por um(a): ${dataGart
 –
 ❓️ - *Não sabe a resposta?* _Peça ao adm do grupo para usar o comando *${prefix}revelargartic* para revelar a resposta correta da afirmação._`
 wew = await getBuffer(`${dataGartic2.imagem}`)
-await gbmorelost.sendMessage(from, {image: wew, caption: garticText, thumbnail: wew}, {quoted: sasah})
+await PyBoyzao.sendMessage(from, {image: wew, caption: garticText, thumbnail: wew}, {quoted: sasah})
 }, 5000)
 }
 }
@@ -1047,7 +1047,7 @@ if(isGroup && fs.existsSync(`./database/grupos/games/enigma/${from}.json`)){
 let enigmaData = JSON.parse(fs.readFileSync(`./database/grupos/games/enigma/${from}.json`))
 if(budy.slice(0,4).toUpperCase() == enigmaData.respostaEne.slice(0,4).toUpperCase() && budy.toUpperCase() != enigmaData.respostaEne) return reply('Está perto!')
 if(budy.toUpperCase() == enigmaData.respostaEne) { 
-gbmorelost.sendMessage(from,{text: `*ENIGMA RESOLVIDO!* Parabéns ${pushname}, iniciando o próximo jogo em 5 segundos.`}, {"mentionedJid": [sender]}), fs.unlinkSync(`./database/grupos/games/enigma/${from}.json`)		
+PyBoyzao.sendMessage(from,{text: `*ENIGMA RESOLVIDO!* Parabéns ${pushname}, iniciando o próximo jogo em 5 segundos.`}, {"mentionedJid": [sender]}), fs.unlinkSync(`./database/grupos/games/enigma/${from}.json`)              
 setTimeout(async() => {
 fs.writeFileSync(`./database/grupos/games/enigma/${from}.json`, `${JSON.stringify(enigmaArchive[Math.floor(Math.random() * enigmaArchive.length)])}`)
 let dataEnigmadataEnigma333 = JSON.parse(fs.readFileSync(`./database/grupos/games/enigma/${from}.json`))
@@ -1057,7 +1057,7 @@ ${dataEnigmadataEnigma333.charada}
 –
 ❓️ - *Não sabe a resposta?* _Peça ao adm do grupo para usar o comando *${prefix}revelarenigma* para revelar a resposta correta da enigma._`
 wew = await getBuffer(`https://telegra.ph/file/15be608763684b3e3af38.jpg`)
-await gbmorelost.sendMessage(from, {image: wew, caption: enigmaTezt, thumbnail: wew}, {quoted: sasah})
+await PyBoyzao.sendMessage(from, {image: wew, caption: enigmaTezt, thumbnail: wew}, {quoted: sasah})
 }, 5000)
 }
 }
@@ -1066,7 +1066,7 @@ if(isGroup && fs.existsSync(`./database/grupos/games/wmusic/${from}.json`)){
 whatMusic = JSON.parse(fs.readFileSync(`./database/grupos/games/wmusic/${from}.json`))
 if(budy.slice(0,4).toUpperCase() == whatMusic.resposta.slice(0,4).toUpperCase() && budy.toUpperCase() != whatMusic.resposta) return reply('Tá perto hein! Tente novamente...')
 if(budy.toUpperCase() == whatMusic.resposta) { 
-gbmorelost.sendMessage(from,{text: `• Resposta Correta: *${whatMusic.resposta}*\nParabéns ${pushname}, iniciando o próximo jogo em 5 segundos.`}, {"mentionedJid": [sender]}), fs.unlinkSync(`./database/grupos/games/wmusic/${from}.json`)		
+PyBoyzao.sendMessage(from,{text: `• Resposta Correta: *${whatMusic.resposta}*\nParabéns ${pushname}, iniciando o próximo jogo em 5 segundos.`}, {"mentionedJid": [sender]}), fs.unlinkSync(`./database/grupos/games/wmusic/${from}.json`)             
 setTimeout(async() => {
 fs.writeFileSync(`./database/grupos/games/wmusic/${from}.json`, `${JSON.stringify(whatMusicAr[Math.floor(Math.random() * whatMusicAr.length)])}`)
 wmusic = JSON.parse(fs.readFileSync(`./database/grupos/games/wmusic/${from}.json`))
@@ -1076,7 +1076,7 @@ ${wmusic.trechoMusic}
 –
 🤔😱 Qual música pertence o trecho apresentado acima?
 • ${II}Dica:${II} ${wmusic.dica}`
-await gbmorelost.sendMessage(from, {text: textM}, {quoted: sasah})
+await PyBoyzao.sendMessage(from, {text: textM}, {quoted: sasah})
 }, 5000)
 }
 }
@@ -1100,15 +1100,15 @@ var minecor = ['a1', 'a2', 'a3', 'a4', 'a5', 'b1', 'b2', 'b3', 'b4', 'b5', 'c1',
 if(isAntilinkgp && isGroup && isBotGroupAdmins && !isGroupAdmins) {
 if(Procurar_String.includes("chat.whatsapp.com/")){
 if(isBot) return 
-link_dgp = await gbmorelost.groupInviteCode(from)
+link_dgp = await PyBoyzao.groupInviteCode(from)
 if(Procurar_String.match(link_dgp)) return reply('Link do nosso grupo, não irei remover.. ')  
 if(IS_DELETE) {
 setTimeout(() => {
-gbmorelost.sendMessage(from, { delete: { remoteJid: from, fromMe: false, id: info.key.id, participant: sender}})
+PyBoyzao.sendMessage(from, { delete: { remoteJid: from, fromMe: false, id: info.key.id, participant: sender}})
 }, 500)
 }
 if(!JSON.stringify(groupMembers).includes(sender)) return
-gbmorelost.groupParticipantsUpdate(from, [sender], 'remove')
+PyBoyzao.groupParticipantsUpdate(from, [sender], 'remove')
 }
 }
 
@@ -1126,8 +1126,8 @@ const isMuted = (isGroup && GroupsMutedActived.indexOf(from) >= 0) ? true : fals
 const NumbersMuted = isMuted ? muted[GroupsMutedActived.indexOf(from)].numbers : []
 if(isMuted && NumbersMuted.indexOf(sender) >= 0){
 setTimeout(async () => {
-    //gbmorelost.groupParticipantsUpdate(from, [sender], 'remove')
-    gbmorelost.sendMessage(from, { delete: { remoteJid: from, fromMe: false, id: info.key.id, participant: sender}})
+    //PyBoyzao.groupParticipantsUpdate(from, [sender], 'remove')
+    PyBoyzao.sendMessage(from, { delete: { remoteJid: from, fromMe: false, id: info.key.id, participant: sender}})
 }, 1000)
 return
 }
@@ -1185,7 +1185,7 @@ try {
 if(info.key.fromMe) return 
 if(!SoDono && !isnit && !issupre && !ischyt && !issupre && !ischyt) return
 console.log('[', colors.cyan('EVAL'),']', colors.yellow(moment(info.messageTimestamp * 1000).format('DD/MM HH:mm:ss')), colors.green(budy))
-return gbmorelost.sendMessage(from, {text: JSON.stringify(eval(budy.slice(2)),null,'\t')}).catch(e => {
+return PyBoyzao.sendMessage(from, {text: JSON.stringify(eval(budy.slice(2)),null,'\t')}).catch(e => {
 return reply(String(e))
 })
 } catch (e){
@@ -1204,10 +1204,10 @@ bang = util.format(sat)
 if(sat == undefined){
 bang = util.format(sul)
 }
-return gbmorelost.sendMessage(from, {text: bang}, {quoted: sasah})
+return PyBoyzao.sendMessage(from, {text: bang}, {quoted: sasah})
 }
 
-gbmorelost.sendMessage(from, {text: util.format(eval(`;(async () => { ${konsol} })()`))}).catch(e => { 
+PyBoyzao.sendMessage(from, {text: util.format(eval(`;(async () => { ${konsol} })()`))}).catch(e => { 
 return reply(String(e))
 })
 console.log('\x1b[1;37m>', '[', '\x1b[1;32mEXEC\x1b[1;37m', ']', time, colors.green(">"), 'from', colors.green(sender.split('@')[0]), 'args :', colors.green(args.length))
@@ -1235,67 +1235,67 @@ reply(stdout)
 //======(ANTI-IMAGEM)========\\
 if(isAntiImg && isBotGroupAdmins && type == 'imageMessage') {
 if(info.key.fromMe) return
-if(isGroupAdmins) return gbmorelost.sendMessage(from, {text: mess.messageProhibitedDetAdmin()}, {quoted: info})
+if(isGroupAdmins) return PyBoyzao.sendMessage(from, {text: mess.messageProhibitedDetAdmin()}, {quoted: info})
 if(dataGp[0].legenda_imagem != "0") {
-gbmorelost.sendMessage(from, {text: dataGp[0].legenda_imagem}, {quoted: info})  
+PyBoyzao.sendMessage(from, {text: dataGp[0].legenda_imagem}, {quoted: info})  
 }
 if(IS_DELETE) {
 setTimeout(() => {
-gbmorelost.sendMessage(from, { delete: { remoteJid: from, fromMe: false, id: info.key.id, participant: sender}})
+PyBoyzao.sendMessage(from, { delete: { remoteJid: from, fromMe: false, id: info.key.id, participant: sender}})
 }, 500)
 }
 if(!JSON.stringify(groupMembers).includes(sender)) return  
-gbmorelost.groupParticipantsUpdate(from, [sender], 'remove')
+PyBoyzao.groupParticipantsUpdate(from, [sender], 'remove')
 }
 
 //======(ANTI-STICKER)========\\
 if(isAntiSticker && isBotGroupAdmins && type == 'stickerMessage') {
 if(info.key.fromMe) return
-if(isGroupAdmins) return gbmorelost.sendMessage(from, {text: mess.messageProhibitedDetAdmin()}, {quoted: info})
-gbmorelost.sendMessage(from, {text: mess.messageProhibitedDetUser()}, {quoted: info})
+if(isGroupAdmins) return PyBoyzao.sendMessage(from, {text: mess.messageProhibitedDetAdmin()}, {quoted: info})
+PyBoyzao.sendMessage(from, {text: mess.messageProhibitedDetUser()}, {quoted: info})
 if(IS_DELETE) {
 setTimeout(() => {
-gbmorelost.sendMessage(from, { delete: { remoteJid: from, fromMe: false, id: info.key.id, participant: sender}})
+PyBoyzao.sendMessage(from, { delete: { remoteJid: from, fromMe: false, id: info.key.id, participant: sender}})
 }, 500)
 }
 if(!JSON.stringify(groupMembers).includes(sender)) return  
-gbmorelost.groupParticipantsUpdate(from, [sender], 'remove')
+PyBoyzao.groupParticipantsUpdate(from, [sender], 'remove')
 }
 
 if(Antidoc && isBotGroupAdmins && type == 'documentMessage') {
 if(info.key.fromMe) return
-if(isGroupAdmins) return gbmorelost.sendMessage(from, {text: mess.messageProhibitedDetAdmin()}, {quoted: info})
+if(isGroupAdmins) return PyBoyzao.sendMessage(from, {text: mess.messageProhibitedDetAdmin()}, {quoted: info})
 if(dataGp[0].legenda_documento != "0") {
-gbmorelost.sendMessage(from, {text: dataGp[0].legenda_documento}, {quoted: info}) 
+PyBoyzao.sendMessage(from, {text: dataGp[0].legenda_documento}, {quoted: info}) 
 }
 if(IS_DELETE) {
 setTimeout(() => {
-gbmorelost.sendMessage(from, { delete: { remoteJid: from, fromMe: false, id: info.key.id, participant: sender}})
+PyBoyzao.sendMessage(from, { delete: { remoteJid: from, fromMe: false, id: info.key.id, participant: sender}})
 }, 500)
 }
 if(!JSON.stringify(groupMembers).includes(sender)) return  
-gbmorelost.groupParticipantsUpdate(from, [sender], 'remove')
+PyBoyzao.groupParticipantsUpdate(from, [sender], 'remove')
 }
 
 let isTrueFalse = Array('tiktok', 'facebook','instagram','twitter','ytmp3','ytmp4','play', 'playmix', 'play2', 'play3', 'playvid', 'playvid2').some(item => item === command)
 
 if(isUrl(PR_String) && isAntiLinkHard && !isGroupAdmins && isBotGroupAdmins && !info.key.fromMe) {
 if(Procurar_String.includes("chat.whatsapp.com")) {
-link_dgp = await gbmorelost.groupInviteCode(from)
+link_dgp = await PyBoyzao.groupInviteCode(from)
 if(Procurar_String.match(link_dgp)) return reply('Link do nosso grupo, não irei remover.. ') 
 }
 if(isCmd && isTrueFalse) return
 if(IS_DELETE) {
 setTimeout(() => {
-gbmorelost.sendMessage(from, { delete: { remoteJid: from, fromMe: false, id: info.key.id, participant: sender}})
+PyBoyzao.sendMessage(from, { delete: { remoteJid: from, fromMe: false, id: info.key.id, participant: sender}})
 }, 500)
 }
-gbmorelost.groupSettingUpdate(from, 'announcement')
+PyBoyzao.groupSettingUpdate(from, 'announcement')
 setTimeout(() => {
-gbmorelost.groupSettingUpdate(from, 'not_announcement')
+PyBoyzao.groupSettingUpdate(from, 'not_announcement')
 }, 1200)
 if(!JSON.stringify(groupMembers).includes(sender)) return
-gbmorelost.groupParticipantsUpdate(from, [sender], 'remove')
+PyBoyzao.groupParticipantsUpdate(from, [sender], 'remove')
 }
 
 // ANTI NOTAS FAKES ==================>
@@ -1305,11 +1305,11 @@ let verificar = budy2.toString().match(/(💳|💎|💸|💵|💷|💶|🪙|💰
 if(verificar && budy.length < 100) return  
 if(IS_DELETE) {
 setTimeout(() => {
-gbmorelost.sendMessage(from, { delete: { remoteJid: from, fromMe: false, id: info.key.id, participant: sender}})
+PyBoyzao.sendMessage(from, { delete: { remoteJid: from, fromMe: false, id: info.key.id, participant: sender}})
 }, 500)
 }
 if(!JSON.stringify(groupMembers).includes(sender)) return  
-gbmorelost.groupParticipantsUpdate(from, [sender], 'remove')
+PyBoyzao.groupParticipantsUpdate(from, [sender], 'remove')
 }
 
 //FINALZIN ===========================>
@@ -1318,45 +1318,45 @@ gbmorelost.groupParticipantsUpdate(from, [sender], 'remove')
 //======(ANTI-VIDEO)========\\
 
 if(isAntiVid && isBotGroupAdmins && type == 'videoMessage') {
-if(isGroupAdmins) return gbmorelost.sendMessage(from,{text: mess.messageProhibitedDetAdmin()}, {quoted: info})
+if(isGroupAdmins) return PyBoyzao.sendMessage(from,{text: mess.messageProhibitedDetAdmin()}, {quoted: info})
 if(dataGp[0].legenda_video == "0") {
-gbmorelost.sendMessage(from, {text: mess.messageProhibitedDetUser()}, {quoted: info})
+PyBoyzao.sendMessage(from, {text: mess.messageProhibitedDetUser()}, {quoted: info})
 } else {
-gbmorelost.sendMessage(from, {text: dataGp[0].legenda_video}, {quoted: info})  
+PyBoyzao.sendMessage(from, {text: dataGp[0].legenda_video}, {quoted: info})  
 }
 if(IS_DELETE) {
 setTimeout(() => {
-gbmorelost.sendMessage(from, { delete: { remoteJid: from, fromMe: false, id: info.key.id, participant: sender}})
+PyBoyzao.sendMessage(from, { delete: { remoteJid: from, fromMe: false, id: info.key.id, participant: sender}})
 }, 500)
 }
 if(!JSON.stringify(groupMembers).includes(sender)) return
-gbmorelost.groupParticipantsUpdate(from, [sender], 'remove')
+PyBoyzao.groupParticipantsUpdate(from, [sender], 'remove')
 }
 
 //======(ANTI-AUDIO)=======\\
 if(isAntiAudio && isBotGroupAdmins && type == 'audioMessage') {
-if(isGroupAdmins) return gbmorelost.sendMessage(from, {text: mess.messageProhibitedDetAdmin()}, {quoted: info})
-gbmorelost.sendMessage(from, {text: mess.messageProhibitedDetUser()}, {quoted: info})
+if(isGroupAdmins) return PyBoyzao.sendMessage(from, {text: mess.messageProhibitedDetAdmin()}, {quoted: info})
+PyBoyzao.sendMessage(from, {text: mess.messageProhibitedDetUser()}, {quoted: info})
 if(IS_DELETE) {
 setTimeout(() => {
-gbmorelost.sendMessage(from, { delete: { remoteJid: from, fromMe: false, id: info.key.id, participant: sender}})
+PyBoyzao.sendMessage(from, { delete: { remoteJid: from, fromMe: false, id: info.key.id, participant: sender}})
 }, 500)
 }
 if(!JSON.stringify(groupMembers).includes(sender)) return
-gbmorelost.groupParticipantsUpdate(from, [sender], 'remove')
+PyBoyzao.groupParticipantsUpdate(from, [sender], 'remove')
 }
 
 //========(ANTI_LIGAR)========\\
 
 if(!isGroup && isAnticall) {
-gbmorelost.ws.on('CB:call', async (B) => {
+PyBoyzao.ws.on('CB:call', async (B) => {
 var msgcallblock = `./database/func/call-msg_block-${sender}.json`  
 if(!fs.existsSync(msgcallblock)) {
 fs.writeFileSync(msgcallblock, JSON.stringify(mess.antiCalls(), null, 2))
 var msgcallbl = JSON.parse(fs.readFileSync(msgcallblock))
 if(B.content[0].tag == 'offer') {
-gbmorelost.sendMessage(B.content[0].attrs['call-creator'], { text: msgcallbl }).then(() => { 
-gbmorelost.updateBlockStatus(B.content[0].attrs['call-creator'], "block")
+PyBoyzao.sendMessage(B.content[0].attrs['call-creator'], { text: msgcallbl }).then(() => { 
+PyBoyzao.updateBlockStatus(B.content[0].attrs['call-creator'], "block")
 DLT_FL(msgcallblock)
 })
 }
@@ -1377,7 +1377,7 @@ if(i.hora == hora_) var ik = i}
 for ( i of ik?.PUXAR) {
 if(i.avisou == true) return
 if(i.length == 0) return
-gbmorelost.sendMessage(i.idgp, {text: i.msg})
+PyBoyzao.sendMessage(i.idgp, {text: i.msg})
 i.avisou = true 
 fs.writeFileSync("./database/grupos/avisos.json", JSON.stringify(black_, null, 2))
 }}; for ( i of black_) {
@@ -1397,7 +1397,7 @@ if(!isGroup && !SoDono && !isnit && !isPremium){
 await sleep(2500)
 reply(msgantipv1.replace('#nome#', pushname))
 setTimeout(async () => {
-gbmorelost.updateBlockStatus(sender, 'block')
+PyBoyzao.updateBlockStatus(sender, 'block')
 }, 2000)
 }
 USUARIOS_BLOQ.push(sender);
@@ -1439,13 +1439,13 @@ var px = info.message?.viewOnceMessageV2?.message?.videoMessage || info.message?
 px.viewOnce = false
 px.video = {url: px.url}
 px.caption += "\n\nRevelando o vídeo na visualização única enviada.."
-gbmorelost.sendMessage(from,px)
+PyBoyzao.sendMessage(from,px)
 } else {
 var px = info.message?.viewOnceMessageV2?.message?.imageMessage || info.message?.viewOnceMessage?.message?.imageMessage
 px.viewOnce = false
 px.image = {url: px.url}
 px.caption += "\n\nRevelando a imagem na visualização única enviada..."
-gbmorelost.sendMessage(from,px)
+PyBoyzao.sendMessage(from,px)
 }}}
 
 /////\\\\\\//////\\\\\\////\\\\////\\\///\\\///\\\\
@@ -1471,7 +1471,7 @@ grupos.splice(AB, 1)
 fs.writeFileSync("./database/grupos/grupos.json", JSON.stringify(grupos, null, 2))
 reply(`Esperei demais , tô dando o fora já que não querem me pagar pra me usar...`)
 await sleep(3000)
-return gbmorelost.groupLeave(from)
+return PyBoyzao.groupLeave(from)
 } else {
 grupos[AB].limite -= 1
 fs.writeFileSync("./database/grupos/aluguel/grupos.json", JSON.stringify(grupos, null, 2))
@@ -1482,7 +1482,7 @@ if (isx9 && type === "pinInChatMessage") {
 duration = info.message?.messageContextInfo?.messageAddOnDurationInSecs;
 fixedTime = (duration) => (duration === 0) ? "0" : (duration >= 30 * 24 * 60 * 60) ? "30d" : (duration >= 7 * 24 * 60 * 60) ? "7d" : (duration >= 24 * 60 * 60) ? "24h" : duration;
 action = fixedTime(duration) === "0" ? 'desfixar uma mensagem' : `fixar uma mensagem por *${fixedTime(duration)}*`;
-await gbmorelost.sendMessage(from, {text: `O admin *@${sender.split("@")[0]}* acabou de ${action}.`, mentions: [sender]})
+await PyBoyzao.sendMessage(from, {text: `O admin *@${sender.split("@")[0]}* acabou de ${action}.`, mentions: [sender]})
 }
 
 /////\\\\\\//////\\\\\\////\\\\////\\\///\\\///\\\\
@@ -1519,13 +1519,13 @@ setGp(dataGp)
 }
 
 function reactMessage(emoji) {
-gbmorelost.sendMessage(from, {react: {text: emoji, key: info.key}})
+PyBoyzao.sendMessage(from, {react: {text: emoji, key: info.key}})
 }
 
 if (isGroup && isCmd && !isGroupAdmins && !SoDono && !isPremium && dataGp[0]?.Limitar_CMD) {
-  
+
 var TEMPO_A = Math.floor(Date.now() / 1000) 
- 
+
 var ID_G = Limit_CMD.findIndex(i => i.idgp === from)
 var ID_U = Limit_CMD[ID_G]?.ids.findIndex(i => i.id === sender)
 
@@ -1553,7 +1553,7 @@ fs.writeFileSync("./database/func/limitarcmd.json", JSON.stringify(Limit_CMD, nu
 }
 }
 
-gbmorelost.sendImageAsSticker = async (jid, path, options = {}) => {
+PyBoyzao.sendImageAsSticker = async (jid, path, options = {}) => {
     let buff = Buffer.isBuffer(path) ? path : /^data:.*?\/.*?;base64,/i.test(path) ? Buffer.from(path.split`,`[1], 'base64') : /^https?:\/\//.test(path) ? await (await getBuffer(path)) : fs.existsSync(path) ? fs.readFileSync(path) : Buffer.alloc(0)
     let buffer
         if (options && (options.packname || options.author)) {
@@ -1561,12 +1561,12 @@ gbmorelost.sendImageAsSticker = async (jid, path, options = {}) => {
             } else {
          buffer = await imageToWebp(buff)
         }
-    await gbmorelost.sendMessage(jid, { sticker: { url: buffer }, ...options})
+    await PyBoyzao.sendMessage(jid, { sticker: { url: buffer }, ...options})
     return buffer
 }
 
-gbmorelost.sendImageMentions = (photo, text, mem, ids) => {
-(ids == null || ids == undefined || ids == false) ? gbmorelost.sendMessage(from, {image: photo, caption: text.trim(), contextInfo: { "mentionedJid": mem}}) : gbmorelost.sendMessage(from, {image: photo, caption: text.trim(), contextInfo: {"mentionedJid": mem}})
+PyBoyzao.sendImageMentions = (photo, text, mem, ids) => {
+(ids == null || ids == undefined || ids == false) ? PyBoyzao.sendMessage(from, {image: photo, caption: text.trim(), contextInfo: { "mentionedJid": mem}}) : PyBoyzao.sendMessage(from, {image: photo, caption: text.trim(), contextInfo: {"mentionedJid": mem}})
 }
 
 if(chaves.length > 0) {caixa = []
@@ -1601,7 +1601,7 @@ chaves.splice(AD, 1)
 fs.writeFileSync("./database/grupos/aluguel/chaves.json", JSON.stringify(chaves, null, 2))
 reply(`Grupo adicionado no plano de aluguel`)
 await sleep(2000)
-gbmorelost.sendMessage(nmrdn, {text: `Codigo validado. Registrado por *@${pessoa.split('@')[0]}*\n• Grupo: *${groupName}*`, mentions: [pessoa]})
+PyBoyzao.sendMessage(nmrdn, {text: `Codigo validado. Registrado por *@${pessoa.split('@')[0]}*\n• Grupo: *${groupName}*`, mentions: [pessoa]})
 } else {
 AB = aluguel.map(i => i.id).indexOf(from)
 aluguel[AB].cortesia = false
@@ -1613,10 +1613,10 @@ chaves.splice(AD, 1)
 fs.writeFileSync("./database/grupos/aluguel/chaves.json", JSON.stringify(chaves, null, 2))
 reply(`+${timeday} dia${Number(timeday) > 1 ? 's' : ''} adicionado${Number(timeday) > 1 ? 's' : ''} para o grupo em meu banco de dados.`)
 await sleep(2000)
-gbmorelost.sendMessage(nmrdn, {text: ` Código validado. Registrado por *@${pessoa.split('@')[0]}*\n• Grupo: *${groupName}*`, mentions: [pessoa]})
+PyBoyzao.sendMessage(nmrdn, {text: ` Código validado. Registrado por *@${pessoa.split('@')[0]}*\n• Grupo: *${groupName}*`, mentions: [pessoa]})
 }
 }
-        
+
 if(chaves[AD].tipo == 2 && isGroup) {
 CD = grupos.map(i => i.id).indexOf("gbcapetao")
 if(!VerificarJSON(grupos[CD].gps, from)) {
@@ -1627,7 +1627,7 @@ aluguel.push({id: from, nome: groupName, tempo: 24, totalRent: 24, cliente: send
 fs.writeFileSync("./database/grupos/aluguel/aluguel.json", JSON.stringify(aluguel, null, 2))
 reply(`.`)
 await sleep(2000)              
-gbmorelost.sendMessage(nmrdn, {text: `.${groupName}*`, mentions: [pessoa]})
+PyBoyzao.sendMessage(nmrdn, {text: `.${groupName}*`, mentions: [pessoa]})
 } else reply("[!] Este grupo já está registrado em meu banco de dados.")
 } else reply("[!] Já foi validado neste mês uma cortesia neste grupo.")
 }
@@ -1651,19 +1651,19 @@ switch(command){
 
 case 'configurar-bot':
 await reagir(from, "⌛");
-gbmorelost.sendMessage(from, {text: getInfo.configbot(prefix)}, {quoted: selinContact})
+PyBoyzao.sendMessage(from, {text: getInfo.configbot(prefix)}, {quoted: selinContact})
 break
 
 case 'infotinder':
 await reagir(from, "⌛");
-gbmorelost.sendMessage(from, {text: getInfo.infoTinderSabs(prefix)}, {quoted: sasah})
+PyBoyzao.sendMessage(from, {text: getInfo.infoTinderSabs(prefix)}, {quoted: sasah})
 break
 
 case 'infobv':
 case 'infowelcome':
 case 'infobemvindo':
 await reagir(from, "⌛");
-gbmorelost.sendMessage(from, {text: getInfo.bemvindo(prefix)}, {quoted: sasah})
+PyBoyzao.sendMessage(from, {text: getInfo.bemvindo(prefix)}, {quoted: sasah})
 break
 
 
@@ -1685,7 +1685,7 @@ case 'ping': {
     const firstV = speed();
     const secondV = speed() - firstV;
     const speedConverted = (Date.now() / 1000) - info.messageTimestamp;
-    const allGroups = await gbmorelost.groupFetchAllParticipating();
+    const allGroups = await PyBoyzao.groupFetchAllParticipating();
     const groupList = Object.values(allGroups);
     const sortedGroups = [...groupList];
     sortedGroups.sort((a, b) => a.length - b.length);
@@ -1696,7 +1696,7 @@ case 'ping': {
     const hora1 = moment.tz('America/Sao_Paulo').format('HH:mm:ss');
     const data1 = moment.tz("America/Sao_Paulo").format("DD/MM/YY");
 
-    await gbmorelost.sendMessage(from, {
+    await PyBoyzao.sendMessage(from, {
         text: `┏━━━━━━━━━━━━━━━━━━━━━━━┓
 ┃ ᴠᴇʟᴏᴄɪᴅᴀᴅᴇ: ${String(speedConverted.toFixed(3))} s
 ┃ ʟᴀᴛᴇɴᴄɪᴀ: ${latensi.toFixed(3)} ms
@@ -1711,7 +1711,7 @@ case 'ping': {
 ┃ ɢʀᴜᴘᴏs ᴀᴛɪᴠᴏs: ${sortedGroups.length}
 ┃ ɴᴏᴅᴇᴊꜱ: ${process.version}
 ┃ ᴛᴇᴍᴘᴏ ᴏɴʟɪɴᴇ: ${TimeCount(process.uptime())}
-┃ > by: gbmorelost
+┃ > by: PyBoyzao
 ┗━━━━━━━━━━━━━━━━━━━━━━━┛`,
         footer: `${NomeDoBot}`,
         buttons: [
@@ -1739,14 +1739,14 @@ case 'odono':
 case 'dono': 
 case 'infodono':  
 numerodn = numerodono_ofc
-gbmorelost.sendMessage(from, {image: {url: ftmenu.logo}, caption: getInfo.infoOwner(prefix, NickDono, numerodn, NomeDoBot, sender), mentions: [sender]}, {quoted: sasah})
+PyBoyzao.sendMessage(from, {image: {url: ftmenu.logo}, caption: getInfo.infoOwner(prefix, NickDono, numerodn, NomeDoBot, sender), mentions: [sender]}, {quoted: sasah})
 break 
 
 
 
 case 'criador':
 case 'suporte-dono': {
-    await gbmorelost.sendMessage(from, {
+    await PyBoyzao.sendMessage(from, {
         image: { url: 'https://files.catbox.moe/z23eak.jpg' },
         caption: 'wa.me//5531996922685'
     })
@@ -1762,37 +1762,37 @@ case 'regras':
 if(!isGroup) return reply(enviar.msg.grupo)
 if(!isGroupAdmins)return reply(enviar.msg.adm)
 try {
-var ppUrl = await gbmorelost.profilePictureUrl(from, 'image')
+var ppUrl = await PyBoyzao.profilePictureUrl(from, 'image')
 } catch {
 var ppUrl = `https://telegra.ph/file/6ca032835ed7a16748b6f.jpg`
 }
-var puxarInfo = await gbmorelost.groupMetadata(from)
+var puxarInfo = await PyBoyzao.groupMetadata(from)
 var ANC_INFO = puxarInfo.announce
 var returnAnnounce = ANC_INFO === false ? "Não." : ANC_INFO === true ? "Sim." : undefined
 var RST_INFO = puxarInfo.restrict 
 var returnRestrict = RST_INFO === false ? "Sim." : RST_INFO === true ? "Não." : undefined
 var infoCreator = puxarInfo.subjectOwner || "Não Encontrado"
 infoGroup = `• Nome do Grupo: *${puxarInfo.subject}*\n• ID: *${puxarInfo.id}*\n-\n• Este grupo foi criado por: *@${infoCreator.replace("@s.whatsapp.net", "")}*\n• Data/hora de criação do grupo: *${moment(`${puxarInfo.creation}` * 1000).tz('America/Sao_Paulo').format('DD/MM/YYYY HH:mm:ss')}*\n• Horário e data da última alteração no grupo: *${moment(`${puxarInfo.subjectTime}` * 1000).format('DD/MM/YYYY HH:mm:ss')}*\n-\n• Quantidade de adminstradores: *${groupAdmins.length}*\n• Quantidade de membros: *${somembros.length}*\n• Soma total de membros e admins do grupo: *${puxarInfo.participants.length} participantes*\n-\n• Este grupo está fechado no momento? *${returnAnnounce}*\n• As informações do grupo podem ser alteradas por membros? *${returnRestrict}*\n-\n• Para ver as atividades dos participantes, use: *${prefix}atividade*\n• Para ver os membros inativos no grupo, use: *${prefix}inativos [quantidade de mensagens]*, ex: ${prefix}inativos 10`
-gbmorelost.sendMessage(from, {image: {url: ppUrl}, caption: infoGroup, mentions: [infoCreator]}, {quoted: sasah})
+PyBoyzao.sendMessage(from, {image: {url: ppUrl}, caption: infoGroup, mentions: [infoCreator]}, {quoted: sasah})
 break 
 
 case 'avaliar':
 const avalie = body.slice(8)
 if(args.length <= 1) return reply(`Exemplo: ${prefix}avalie "Bot muito bom, parabéns. "`)
-if(args.length >= 400) return gbmorelost.sendMessage(from, {text: 'Máximo 400 caracteres'}, {quoted: sasah})
+if(args.length >= 400) return PyBoyzao.sendMessage(from, {text: 'Máximo 400 caracteres'}, {quoted: sasah})
 var nomor = info.participant
 tdptls = `[ Avaliação ]\nDe: wa.me/${sender.split("@s.whatsapp.net")[0]}\n: ${avalie}`
-gbmorelost.sendMessage(nmrdn, {text: tdptls}, {quoted: sasah})
+PyBoyzao.sendMessage(nmrdn, {text: tdptls}, {quoted: sasah})
 reply("Mensagem enviada ao meu dono, obrigado pela avaliação, iremos melhorar a cada dia.")
 break
 
 case 'bug':
 const bug = body.slice(5)
 if(args.length <= 1) return reply(`Exemplo: ${prefix}bug "ocorreu um erro no comando sticker"`)
-if(args.length >= 800) return gbmorelost.sendMessage(from, {text: 'Máximo 800 caracteres'}, {quoted: sasah})
+if(args.length >= 800) return PyBoyzao.sendMessage(from, {text: 'Máximo 800 caracteres'}, {quoted: sasah})
 var nomor = info.participant
 teks1 = `[ Problema ]\nDe: wa.me/${sender.split("@s.whatsapp.net")[0]}\nErro ou bug: ${bug}`
-gbmorelost.sendMessage(nmrdn, {text: teks1}, {quoted: sasah})
+PyBoyzao.sendMessage(nmrdn, {text: teks1}, {quoted: sasah})
 reply("Mensagem enviada ao meu dono, se enviar muitas mensagens repetida por zoueiras, você sera banido de utilizar os comandos do bot.")
 break
 
@@ -1800,9 +1800,9 @@ case 'sugestão':
 case 'sugestao':
 const sugestao = body.slice(10)
 if(args.length <= 1) return reply(`Exemplo: ${prefix}sugestao "Opa, crie um comando tal, que ele funcione de tal maneira, isso será muito bom, não só pra mim, mas pra vários fazer isso.."`)
-if(args.length >= 800) return gbmorelost.sendMessage(from, {text: 'Máximo 800 caracteres'}, {quoted: sasah})
+if(args.length >= 800) return PyBoyzao.sendMessage(from, {text: 'Máximo 800 caracteres'}, {quoted: sasah})
 sug = `[ Sugestões de Novos Comandos ]\n@${sender.split("@s.whatsapp.net")[0]}\n${sugestao}`
-gbmorelost.sendMessage(nmrdn, {text: sug, mentions: sender}, {quoted: sasah})
+PyBoyzao.sendMessage(nmrdn, {text: sug, mentions: sender}, {quoted: sasah})
 reply("Mensagem enviada ao meu dono, obrigado pela sugestão, tentar ouvir o máximo possível de sugestões.")
 break
 
@@ -1819,7 +1819,7 @@ Número: *5531996922685*
 📞 Fale com o criador: *5531996922685*`;
 
   // Envia a mensagem com o texto da loja
-  await gbmorelost.sendMessage(from, { text: textoLoja }, { quoted: info });
+  await PyBoyzao.sendMessage(from, { text: textoLoja }, { quoted: info });
 
   // Botão para copiar a chave Pix
   const botoesPix = [
@@ -1833,7 +1833,7 @@ Número: *5531996922685*
     }
   ];
 
-  await gbmorelost.relayMessage(from, {
+  await PyBoyzao.relayMessage(from, {
     interactiveMessage: {
       body: { text: "" },
       footer: { text: "" },
@@ -1854,12 +1854,12 @@ Número: *5531996922685*
 
 
 case "menu":
-await gbmorelost.relayMessage(from, {
+await PyBoyzao.relayMessage(from, {
   interactiveMessage: {
     header: proto.Message.InteractiveMessage.Header.create({
       ...(await prepareWAMessageMedia(
         { image: { url: ftmenu.logo } },
-        { upload: gbmorelost.waUploadToServer }
+        { upload: PyBoyzao.waUploadToServer }
       )),
       hasMediaAttachment: false,
       title: `╭═════════════
@@ -2051,7 +2051,7 @@ await gbmorelost.relayMessage(from, {
                   },
                   {
                     title: "❄️Atualizações❄️",
-                    description: "nao clica que não tem nada criador do bot aqui (gbmorelost) é preguiçoso",
+                    description: "nao clica que não tem nada criador do bot aqui (PyBoyzao) é preguiçoso",
                     id: `${prefix}atualizacoes`,
                     disabled: false
                   }
@@ -2072,7 +2072,7 @@ case 'menudono': {
     await reagir(from, "⌛");
     const imgPath = './arquivos/imgs/menudono.jpg'; // Caminho da imagem local
 
-    await gbmorelost.sendMessage(from, {
+    await PyBoyzao.sendMessage(from, {
         image: fs.readFileSync(imgPath),
         caption: `*╭━━ ⪩ 𝑴𝑬𝑵𝑼 𝑫𝑶𝑵𝑶 ⪨ ━━╮
 ❄️ ${prefix}add_prefixo  
@@ -2186,7 +2186,7 @@ case 'brincadeiras': {
     await reagir(from, "⌛");
     const imgPath = './arquivos/imgs/menupremium.jpg'; // Caminho da imagem local
 
-    await gbmorelost.sendMessage(from, {
+    await PyBoyzao.sendMessage(from, {
         image: fs.readFileSync(imgPath),
         caption: `*╭━━ ⪩ RANKS-BRINKS ⪨ ━━╮
 ┃ ❄️${prefix}jogodavelh
@@ -2270,11 +2270,11 @@ await reagir(from, "⌛");
 ┃❄️${prefix}pseudonimo 
 ┃❄️${prefix}tirarprint 
 ┃❄️${prefix}formarcasal2
-┃   ❄️ Takira Bot Oficial❄️
+┃   ❄️ Pecinha - Bot Oficial❄️
 ╰━━━━━━━━━━━━━━━━━━╯
 `;
 
-  await gbmorelost.sendMessage(from, {
+  await PyBoyzao.sendMessage(from, {
     image: fs.readFileSync('./arquivos/imgs/brincadeiras.jpg'),
     caption: menuDono.trim(),
     footer: NomeDoBot,
@@ -2292,7 +2292,7 @@ case 'menuadm': {
     await reagir(from, "⌛");
     const imgPath = './arquivos/imgs/menupremium.jpg'; // Caminho da imagem local
 
-    await gbmorelost.sendMessage(from, {
+    await PyBoyzao.sendMessage(from, {
         image: fs.readFileSync(imgPath),
         caption: `*╭━━ ⪩ 𝑴𝑬𝑵𝑼 𝑨𝑫𝑴 ⪨ ━━╮
 ┃ 🛠️ *Comandos de ADM:*
@@ -2416,7 +2416,7 @@ await reagir(from, "⌛");
 ╰━━━━━━━━━━━━━━━━━━╯
 `;
 
-  await gbmorelost.sendMessage(from, {
+  await PyBoyzao.sendMessage(from, {
     image: fs.readFileSync('./arquivos/imgs/menumix.jpg'),
     caption: menuDono.trim(),
     footer: NomeDoBot,
@@ -2448,7 +2448,7 @@ await reagir(from, "⌛");
 ╰━━━━━━━━━━━━━━━━╯`
 ;
 
-  await gbmorelost.sendMessage(from, {
+  await PyBoyzao.sendMessage(from, {
     image: fs.readFileSync('./arquivos/imgs/menumix.jpg'),
     caption: menuDono.trim(),
     footer: NomeDoBot,
@@ -2487,7 +2487,7 @@ await reagir(from, "⌛");
 ╰━━━━━━━━━━━━━━━━╯`
 ;
 
-  await gbmorelost.sendMessage(from, {
+  await PyBoyzao.sendMessage(from, {
     image: fs.readFileSync('./arquivos/imgs/menumix.jpg'),
     caption: menuDono.trim(),
     footer: NomeDoBot,
@@ -2520,7 +2520,7 @@ await reagir(from, "⌛");
 ╰━━━━━━━━━━━━━━━━╯`
 ;
 
-  await gbmorelost.sendMessage(from, {
+  await PyBoyzao.sendMessage(from, {
     image: fs.readFileSync('./arquivos/imgs/menumix.jpg'),
     caption: menuDono.trim(),
     footer: NomeDoBot,
@@ -2551,7 +2551,7 @@ await reagir(from, "⌛");
 ╰━━━━━━━━━━━━━━━━━━╯
 `;
 
-  await gbmorelost.sendMessage(from, {
+  await PyBoyzao.sendMessage(from, {
     image: fs.readFileSync('./arquivos/imgs/menumidia.jpg'),
     caption: menuDono.trim(),
     footer: NomeDoBot,
@@ -2585,7 +2585,7 @@ await reagir(from, "⌛");
 ╰━━━━━━━━━━━━━━━━━━╯
 `;
 
-  await gbmorelost.sendMessage(from, {
+  await PyBoyzao.sendMessage(from, {
     image: fs.readFileSync('./arquivos/imgs/menumidia.jpg'),
     caption: menuDono.trim(),
     footer: NomeDoBot,
@@ -2603,7 +2603,7 @@ case 'help':
 case 'menup':
 case 'comandos':
 await sleep(1000)
-await gbmorelost.relayMessage(from, {
+await PyBoyzao.relayMessage(from, {
   interactiveMessage: {
     header: {
       hasMediaAttachment: false,
@@ -2731,7 +2731,7 @@ case 'status':
 if (!isGroup) return reply(Res_SoGrupo)
 if (!isGroupAdmins && !SoDono && !info.key.fromMe) return reply(Res_SoAdm)
 
-await gbmorelost.relayMessage(from, {
+await PyBoyzao.relayMessage(from, {
   interactiveMessage: {
     header: {
       hasMediaAttachment: false,
@@ -2873,11 +2873,11 @@ const nodz_tiktok = await axios.get(`https://nodz-apis.com.br/api/downloads/tikt
 })
 
 const nodz_tik_resultado = await nodz_tiktok.data.resultado;
-    
+
 if (command == 'tik' || command == 'tiktokvideo') {
 
 const videoUrl = nodz_tik_resultado.play
-await gbmorelost.sendMessage(from, { 
+await PyBoyzao.sendMessage(from, { 
  video: { 
   url: videoUrl }, 
    mimetype: 'video/mp4' }, { 
@@ -2885,9 +2885,9 @@ await gbmorelost.sendMessage(from, {
 })
 
 } else if (command == 'tikaudio') {
-      
+
 const audioUrl = nodz_tik_resultado.music;
-return gbmorelost.sendMessage(from, { 
+return PyBoyzao.sendMessage(from, { 
  audio: { 
   url: audioUrl }, 
    mimetype: 'audio/mpeg' }, { 
@@ -2897,7 +2897,7 @@ return gbmorelost.sendMessage(from, {
 } else if (command == 'tik') {
 
 const videoUrl = nodz_tik_resultado.wmplay
-return gbmorelost.sendMessage(from, { 
+return PyBoyzao.sendMessage(from, { 
  video: { 
   url: videoUrl }, 
    mimetype: 'video/mp4' }, {
@@ -2905,9 +2905,9 @@ return gbmorelost.sendMessage(from, {
 }) 
 
 await delay(3000)
-   
+
 const audioUrl = nodz_tik_resultado.music;
-return gbmorelost.sendMessage(from, { 
+return PyBoyzao.sendMessage(from, { 
  audio: { 
   url: audioUrl }, 
    mimetype: 'audio/mpeg' }, { 
@@ -2927,7 +2927,7 @@ break
 
 case 'automidia':
   if (!args[0]) return reply(`🎬 Automídia está atualmente: ${automidia ? '✅ *ATIVADA*' : '❌ *DESATIVADA*'}\n\nUse: ${prefix}automidia on / off`);
-  
+
   if (args[0].toLowerCase() === 'on') {
     automidia = true;
     reply('✅ Automídia foi *ativada*. Agora links de TikTok e YouTube serão baixados automaticamente.');
@@ -2945,7 +2945,7 @@ if (!q) return reply(`🔹 Uso correto: ${prefix}nome`);
 reagir(from, "✅️")
 const result = await yts(q);
 const video = result.videos[0];
-gbmorelost.sendMessage(from, {image: {url: `https://zero-two-apis.com.br/api/musicard?nome=${video.title}&canal=${video.author.name}&foto=${video.thumbnail}&duracao=${video.timestamp}&apikey=${KEY_ZERO}`}, caption: `→ *TAKIRA DOWN* →\n❤️ ${video.title}\n⌚ Duraçao » ${video.timestamp}\n`, footer: `${NomeDoBot}`,
+PyBoyzao.sendMessage(from, {image: {url: `https://zero-two-apis.com.br/api/musicard?nome=${video.title}&canal=${video.author.name}&foto=${video.thumbnail}&duracao=${video.timestamp}&apikey=${KEY_ZERO}`}, caption: `→ *TAKIRA DOWN* →\n❤️ ${video.title}\n⌚ Duraçao » ${video.timestamp}\n`, footer: `${NomeDoBot}`,
 buttons: [
 {
 buttonId: `${prefix}ym3 ${video.url}`,
@@ -2974,19 +2974,19 @@ break
 case 'ym3':
 if(!q) return reply(`🔹 Uso correto: ${prefix}ymp3 link`)
 reagir(from, "✅️")
-gbmorelost.sendMessage(from, {audio: {url: `https://nodz-apis.com.br/api/downloads/youtube/audio?url=${q}&apiKey=${NODZ_KEY}`}, mimetype: "audio/mpeg", ptt: true}, {quoted: info});
+PyBoyzao.sendMessage(from, {audio: {url: `https://nodz-apis.com.br/api/downloads/youtube/audio?url=${q}&apiKey=${NODZ_KEY}`}, mimetype: "audio/mpeg", ptt: true}, {quoted: info});
 break
 
 case 'ym4':
 if(!q) return reply(`🔹 Uso correto: ${prefix}ym4 link`)
 reagir(from, "✅️")
-gbmorelost.sendMessage(from, {video: {url: `https://nodz-apis.com.br/api/downloads/youtube/video?url=${q}&apiKey=${NODZ_KEY}`}, mimetype: "video/mp4"}, {quoted: info});
+PyBoyzao.sendMessage(from, {video: {url: `https://nodz-apis.com.br/api/downloads/youtube/video?url=${q}&apiKey=${NODZ_KEY}`}, mimetype: "video/mp4"}, {quoted: info});
 break
 
 case 'ymoc':
 if(!q) return reply(`🔹 Uso correto: ${prefix}ymoc link`)
 reagir(from, "✅️")
-gbmorelost.sendMessage(from, {document: {url: `https://nodz-apis.com.br/api/downloads/youtube/audio?url=${q}&apiKey=${NODZ_KEY}`}, mimetype: "audio/mpeg", fileName: 'audio.mp3'}, {quoted: info});
+PyBoyzao.sendMessage(from, {document: {url: `https://nodz-apis.com.br/api/downloads/youtube/audio?url=${q}&apiKey=${NODZ_KEY}`}, mimetype: "audio/mpeg", fileName: 'audio.mp3'}, {quoted: info});
 break
 
 case 'play_video':
@@ -2994,7 +2994,7 @@ case 'playvid':
 if(!q) return reply(`🔹 Uso correto: ${prefix} nome`)
 reagir(from, "🕜")
 neon = await fetchJson(`https://nodz-apis.com.br/api/pesquisas/youtube?query=${q}&apiKey=${NODZ_KEY}`)
-gbmorelost.sendMessage(from, {image: {url: `${neon.resultado.imagem}`}, caption: `▶️ *YOUTUBE - VIDEO*
+PyBoyzao.sendMessage(from, {image: {url: `${neon.resultado.imagem}`}, caption: `▶️ *YOUTUBE - VIDEO*
 
 📽 *Título:* ${neon.resultado.titulo}
 ⏳ *Duração:* ${neon.resultado.duracao}
@@ -3009,7 +3009,7 @@ serverMessageId: ''
 }
 }
 }, {quoted: info});
-gbmorelost.sendMessage(from, {video: {url: `https://nodz-apis.com.br/api/downloads/youtube/video?url=${neon.resultado.url}&apiKey=${NODZ_KEY}`}, mimetype: "video/mp4"}, {quoted: info});
+PyBoyzao.sendMessage(from, {video: {url: `https://nodz-apis.com.br/api/downloads/youtube/video?url=${neon.resultado.url}&apiKey=${NODZ_KEY}`}, mimetype: "video/mp4"}, {quoted: info});
 break
 
 
@@ -3020,7 +3020,7 @@ try {
 await sleep(1000)
 if(!q.includes("tiktok")) return reply(`${prefix}link do Tiktok`);
 let api = await fetchJson(`https://nodz-apis.com.br/api/downloads/tiktok/dl?url=${q}&apiKey=${NODZ_KEY}`)
-gbmorelost.sendMessage(from, {audio: {url: `${api.resultado.music}`}, quoted: info})
+PyBoyzao.sendMessage(from, {audio: {url: `${api.resultado.music}`}, quoted: info})
 } catch (e) {
 reagir(from, "❌️")
 }
@@ -3037,7 +3037,7 @@ break;
 case 'audio':
 if(!q) return reply(`🔹 Uso correto: ${prefix}ytmp3 link`)
 reagir(from, "✅️")
-gbmorelost.sendMessage(from, {audio: {url: `https://nodz-apis.com.br/api/downloads/youtube/audio?url=${q}&apiKey=${NODZ_KEY}`}, mimetype: "audio/mpeg", ptt: true}, {quoted: info});
+PyBoyzao.sendMessage(from, {audio: {url: `https://nodz-apis.com.br/api/downloads/youtube/audio?url=${q}&apiKey=${NODZ_KEY}`}, mimetype: "audio/mpeg", ptt: true}, {quoted: info});
 break
 
 
@@ -3057,7 +3057,7 @@ break
 case 'video':
 if(!q) return reply(`🔹 Uso correto: ${prefix}ytmp4 link`)
 reagir(from, "✅️")
-gbmorelost.sendMessage(from, {video: {url: `https://nodz-apis.com.br/api/downloads/youtube/video?url=${q}&apiKey=${NODZ_KEY}`}, mimetype: "video/mp4"}, {quoted: info});
+PyBoyzao.sendMessage(from, {video: {url: `https://nodz-apis.com.br/api/downloads/youtube/video?url=${q}&apiKey=${NODZ_KEY}`}, mimetype: "video/mp4"}, {quoted: info});
 break
 
 
@@ -3073,7 +3073,7 @@ break
 case 'filme': {
     const filePath = './arquivos/json/filmes.json';
     if (!fs.existsSync(filePath)) return replyPeR('❗ O arquivo de filmes não foi encontrado!');
-    
+
     const filmes = JSON.parse(fs.readFileSync(filePath));
     if (filmes.length === 0) return replyPeR('❗ Nenhum filme disponível no momento.');
 
@@ -3089,7 +3089,7 @@ case 'filme': {
 📺 Onde assistir: *${filme.onde_assistir}*
 `.trim();
 
-    await gbmorelost.sendMessage(from, {
+    await PyBoyzao.sendMessage(from, {
         text: mensagem,
         footer: NomeDoBot,
         buttons: [
@@ -3118,7 +3118,7 @@ await reply("Realizando o download do vídeo...", {reagir: "✅"});
 let response = await axios.get(`https://nodz-apis.com.br/api/downloads/instagram/dl?url=${encodeURIComponent(q)}&apiKey=SUAKEY`);
 let api = await response.data.resultado[0];
 
-await gbmorelost.sendMessage(from, {video: 
+await PyBoyzao.sendMessage(from, {video: 
 {url: api.url }, mimetype: "video/mp4"}, {quoted: info });
 } catch (error) {
 console.error(error);
@@ -3158,7 +3158,7 @@ const nulo = 'Sem Informações';
 
 let desc = ` *Pesquisa:* ${q || nulo}\n`;
 
-await gbmorelost.sendMessage(from, {video: {url: i.videos}, caption: desc, mimetype: 'video/mp4'}, {quoted: info})
+await PyBoyzao.sendMessage(from, {video: {url: i.videos}, caption: desc, mimetype: 'video/mp4'}, {quoted: info})
 
 await reagir(from, '✅')
 } catch (e) {
@@ -3199,7 +3199,7 @@ reply('Não encontrei nenhum resultado.')
 return
 };
 
-await gbmorelost.sendMessage(from, {text: nodz.data.resultado}, {quoted: info })
+await PyBoyzao.sendMessage(from, {text: nodz.data.resultado}, {quoted: info })
 
 } catch (e) {
 await reagir(from, '❌')
@@ -3230,7 +3230,7 @@ reply('Não encontrei nenhum resultado.')
 return
 };
 
-await gbmorelost.sendMessage(from, {text: nodz.data.resultado}, {quoted: info })
+await PyBoyzao.sendMessage(from, {text: nodz.data.resultado}, {quoted: info })
 
 } catch (e) {
 await reagir(from, '❌')
@@ -3279,7 +3279,7 @@ break
 case 'calendario':
 case 'dados':
 setTimeout(() => {reagir(from, "🎭")}, 300)
-var getGroups = await gbmorelost.groupFetchAllParticipating()
+var getGroups = await PyBoyzao.groupFetchAllParticipating()
 var groups = Object.entries(getGroups).slice(0).map(entry => entry[1])
 var ingfoo = groups.map(v => v)
 ingfoo.sort((a, b) => (a[0] < b.length))
@@ -3317,7 +3317,7 @@ cp2 = `${Math.floor(Math.random() * 300) + 600}`
 cp3 = `${Math.floor(Math.random() * 300) + 600}`
 cp4 = `${Math.floor(Math.random() * 30) + 60}`
 cpf = `${cp1}.${cp2}.${cp3}-${cp4}`
-gbmorelost.sendMessage(from, {text: `CPF gerado com sucesso : ${cpf}`}, {quoted: sasah})
+PyBoyzao.sendMessage(from, {text: `CPF gerado com sucesso : ${cpf}`}, {quoted: sasah})
 break
 
 case 'ddd':
@@ -3326,7 +3326,7 @@ ddd = body.slice(5)
 ddds = await axios.get(`https://brasilapi.com.br/api/ddd/v1/${ddd}`)
 dddlist = `Lista de Cidades de ${ddds.data.state} com este DDD ${q}>\n\n`
 for (let i = 0; i < ddds.data.cities.length; i++) { dddlist += `${i + 1} ⪧ *${ddds.data.cities[i]}*\n` }
-gbmorelost.sendMessage(from, {text: dddlist}, {quoted: sasah})	
+PyBoyzao.sendMessage(from, {text: dddlist}, {quoted: sasah})  
 break
 
 case 'gerarvoz': 
@@ -3336,7 +3336,7 @@ const vozes = args.join(' ')
 if (!vozes.includes("|")) {
 const modelosApi = await axios.get('https://nodz-apis.com.br/api/outras/modelosvozes', {params: {apiKey: 'SUAKEY'}});
 const modelos = modelosApi.data.resultado.map(m => m.model_id).join(', ');
-        
+
 await reply(`Exemplo: ${prefix + command} Ola tudo bem|mickey_mouse\n\nModelos disponíveis: ${modelos}`)
 return
 };
@@ -3346,15 +3346,15 @@ const [texto, modelo] = vozes.split('|').map(item => item.trim());
 await reagir(from, '⏳')
 const modelosApi = await axios.get('https://nodz-apis.com.br/api/outras/modelosvozes', {params: {apiKey: 'SUAKEY'}})
 const modelosDisponiveis = modelosApi.data.resultado.map(m => m.model_id)
-    
+
 if (!modelosDisponiveis.includes(modelo)) {
 await reply(`Modelo de voz inválido. Use ${prefix}modelosvozes para ver a lista.`)
 return
 };
 
 const api = await axios.get('https://nodz-apis.com.br/api/outras/gerarvoz', { params: { query: texto, voz: modelo, apiKey: 'SUAKEY'}})
-        
-await gbmorelost.sendMessage(from, {audio: {url: api.data.resultado.voz}, ptt: true, mimetype: 'audio/mpeg'}, {quoted: info})
+
+await PyBoyzao.sendMessage(from, {audio: {url: api.data.resultado.voz}, ptt: true, mimetype: 'audio/mpeg'}, {quoted: info})
 
 await reagir(from, '✅')
 } catch (e) {
@@ -3408,7 +3408,7 @@ case 'igstalk':
       responseType: 'arraybuffer'
     });
 
-    await gbmorelost.sendMessage(from, { image: avatar.data, caption: desc }, { quoted: info });
+    await PyBoyzao.sendMessage(from, { image: avatar.data, caption: desc }, { quoted: info });
     await reagir(from, '✅');
 
   } catch (e) {
@@ -3423,12 +3423,12 @@ case 'igstalk':
 
 case 'perfil':
 try {
-ppimg = await gbmorelost.profilePictureUrl(`${sender.split('@')[0]}@c.us`, 'image')
+ppimg = await PyBoyzao.profilePictureUrl(`${sender.split('@')[0]}@c.us`, 'image')
 } catch {
 ppimg = 'https://telegra.ph/file/24fa902ead26340f3df2c.png'
 }
 try {
-var status = (await gbmorelost.fetchStatus(sender)).status
+var status = (await PyBoyzao.fetchStatus(sender)).status
 } catch {
 var status = "Privado ou inexistente."
 }
@@ -3448,7 +3448,7 @@ const gostosurar = gostosura[Math.floor(Math.random() * (gostosura.length))]
 const gostosurar2 = gostosura2[Math.floor(Math.random() * (gostosura2.length))] 
 gadop = `${Math.floor(Math.random() * 100)}`
 const programa = Math.ceil(Math.random() * 10000)
-gbmorelost.sendMessage(from, {image: {url: ppimg}, caption: mess.profileInformation(pushname, sender, info, putar, putar2, gostosurar, gostosurar2, nivelgador, nivelgado2r, programa, conselho, status), mentions: [sender]}, {quoted: sasah})
+PyBoyzao.sendMessage(from, {image: {url: ppimg}, caption: mess.profileInformation(pushname, sender, info, putar, putar2, gostosurar, gostosurar2, nivelgador, nivelgado2r, programa, conselho, status), mentions: [sender]}, {quoted: sasah})
 } catch (e) {
 console.log(e)
 }
@@ -3458,7 +3458,7 @@ break
 case 'horoscopo':
 try {
 if (!q) return reply("Coloque o seu signo");
-let { key } = await gbmorelost.sendMessage(from, {text: `Buscando a previsão para o seu signo hoje...`}, {quoted: info});
+let { key } = await PyBoyzao.sendMessage(from, {text: `Buscando a previsão para o seu signo hoje...`}, {quoted: info});
 
 let response = await axios.get(`https://nodz-apis.com.br/api/outras/horoscopo?query=${encodeURIComponent(q)}&apiKey=SUAKEY`);
 let sign = response.data.resultado; 
@@ -3467,7 +3467,7 @@ let desc = `
 🗓 ᴅɪᴀ: ${sign.dia || "não encontrado"}
 🧿 ᴘʀᴇᴠɪsᴀ̃ᴏ: ${sign.previsao || "não encontrado"}`;
 
-await gbmorelost.sendMessage(from, {text: desc, edit: key});
+await PyBoyzao.sendMessage(from, {text: desc, edit: key});
 } catch (error) {
 console.error(error);
 reply("Deu um pequeno erro ao buscar o signo!");
@@ -3482,9 +3482,9 @@ break
 
 
 case 'encurtalink': case 'tinyurl':
-if(args.length < 1) return reply(`❌️ *Forma incorreta, use está como exemplo:* ${prefix + command} https://instagram.com/gbmorelost_bot.wpp`)
+if(args.length < 1) return reply(`❌️ *Forma incorreta, use está como exemplo:* ${prefix + command} https://instagram.com/PyBoyzao_bot.wpp`)
 anu = await axios.get(`https://tinyurl.com/api-create.php?url=${q}`)
-reply(`*Link encurtado com sucesso, aqui está:* ${anu.data}`).catch(e => {
+reply(`*Link encurtado com sucesso, aqui está:* ${anu.data}`).catch(_e => {
 reply(mess.error())
 })
 break
@@ -3523,7 +3523,7 @@ case 'meustats':
     : 'Sumido'
   }`
 
-await gbmorelost.sendMessage(from, { text: texto, mentions: [sender] }, { quoted: info})
+await PyBoyzao.sendMessage(from, { text: texto, mentions: [sender] }, { quoted: info})
 }
 break
 
@@ -3539,8 +3539,8 @@ break
 case 'pin':
 if (!q) return reply(`exemplo: ${prefix + command} cat`);
 imgUrl = `https://blacksystemofc.com.br/api/pinterest2?text=${encodeURIComponent(q)}&apikey=Jpzinhkkk`;
-  
-await gbmorelost.sendMessage(from, {
+
+await PyBoyzao.sendMessage(from, {
 image: { url: imgUrl },
 caption: `aqui`
 }, { quoted: info })
@@ -3576,7 +3576,7 @@ case 'take': {
 
             const output = getRandom('.webp')
 
-            exec(`webpmux -set exif ${nomemeta} ${fileName} -o ${output}`, (error, stdout, stderr) => {
+            exec(`webpmux -set exif ${nomemeta} ${fileName} -o ${output}`, (error, _stdout, _stderr) => {
                 if (error) {
                     console.error('Erro no webpmux:', error)
                     reply('❌ Erro ao processar o sticker.')
@@ -3593,7 +3593,7 @@ case 'take': {
                     return
                 }
 
-                gbmorelost.sendMessage(from, { sticker: fs.readFileSync(output) }, { quoted: info })
+                PyBoyzao.sendMessage(from, { sticker: fs.readFileSync(output) }, { quoted: info })
 
                 // Apaga arquivos temporários
                 fs.unlinkSync(nomemeta)
@@ -3614,7 +3614,7 @@ if(!isGroup) return reply(enviar.msg.grupo);
 var [repplace, tarrget, bott] = q.split("|")
 var m_ = info.message.extendedTextMessage && info.message.extendedTextMessage.contextInfo && info.message.extendedTextMessage.contextInfo.mentionedJid ? info.message.extendedTextMessage.contextInfo.mentionedJid[0] : null
 if (m_ && tarrget && bott) {
-gbmorelost.sendMessage(from, {text: bott}, {quoted: {key: {fromMe: false, participant: m_}, message: {conversation: tarrget}}});
+PyBoyzao.sendMessage(from, {text: bott}, {quoted: {key: {fromMe: false, participant: m_}, message: {conversation: tarrget}}});
 } else {
 reply(`Crie mensagens fakes com qualquer uma pessoa! Explicando abaixo:\n—\n• Você precisaria mencionar a pessoa e adicionar a mensagem que ele supostamente iria enviar e que você responderia a seguinte mensagem, todos usando a *|* para separar o que foi pedido dito nesse textinho...\n• *Ex:* ${prefix+command} @vitima|msg1|msg2`);
 }
@@ -3662,7 +3662,7 @@ try {
 const takeBook = await axios.get(`https://www.googleapis.com/books/v1/volumes?q=${encodeURIComponent(q)}&langRestrict=pt`);
 const getBook = await axios.get(`${takeBook.data.items[0].selfLink}`);
 var bookImage = await getBuffer(getBook.data.volumeInfo.imageLinks.thumbnail)
-gbmorelost.sendMessage(from, {image: bookImage, caption: mess.searchBooks(getBook)}).catch(e => {
+PyBoyzao.sendMessage(from, {image: bookImage, caption: mess.searchBooks(getBook)}).catch(_e => {
 reply(mess.error())
 })
 } catch (e) {
@@ -3685,7 +3685,7 @@ if (args.length == 0) return reply(`*Exemplo:* ${prefix}Clima Maceió`)
 try {
 const wttrin = (await axios.get(`https://pt.wttr.in/${encodeURIComponent(q)}?format=j1`)).data;
 var wttrImage = await getBuffer(`https://wttr.in/${encodeURIComponent(q)}.png`)
-gbmorelost.sendMessage(from, {image: wttrImage, caption: mess.clima(wttrin)}).catch(e => {
+PyBoyzao.sendMessage(from, {image: wttrImage, caption: mess.clima(wttrin)}).catch(_e => {
 console.log("A api caiu ou não foi possivel executar esta ação., espere retornar")})
 } catch (e) {
 if(String(e).includes("invalid json response body at")) {
@@ -3719,7 +3719,7 @@ let [, user, repo] = args[0].match(regex1) || []
 repo = repo.replace(/.git$/, '')
 let url = `https://api.github.com/repos/${user}/${repo}/zipball`
 let filename = (await fetch(url, {method: 'HEAD'})).headers.get('content-disposition').match(/attachment; filename=(.*)/)[1]
-gbmorelost.sendMessage(from, { document: { url: url }, fileName: filename+'.zip', mimetype: 'application/zip' }, { quoted: sasah }).catch(e => {
+PyBoyzao.sendMessage(from, { document: { url: url }, fileName: filename+'.zip', mimetype: 'application/zip' }, { quoted: sasah }).catch(_e => {
 return reply(mess.error())  
 })
 break
@@ -3777,7 +3777,7 @@ var MRC_TD = groupMembers.map(i => i.id);
   } else if (audioMessage) {
     var options = {audio: await getFileBuffer(audioMessage, 'audio'), ptt: true, contextInfo: {forwardingScore: 50000, isForwarded: true, mentionedJid: MRC_TD, remoteJid: info.key.remoteJid}};
   }
-await gbmorelost.sendMessage(from, options).catch(() => reply('Erro! Não foi possível mencionar os participantes, talvez a mensagem que foi atribuída ao comando pode ter ocorrido um erro na leitura. Tente com outra mídia, caso o erro persista entre em contato com o proprietário do BOT e solucione!'));
+await PyBoyzao.sendMessage(from, options).catch(() => reply('Erro! Não foi possível mencionar os participantes, talvez a mensagem que foi atribuída ao comando pode ter ocorrido um erro na leitura. Tente com outra mídia, caso o erro persista entre em contato com o proprietário do BOT e solucione!'));
 break
 
 case 'marcar':
@@ -3844,7 +3844,7 @@ for (let mem of groupMembers) {
 teks += `╠➥ https://wa.me/${mem.id.split('@')[0]}\n`
 members_id.push(mem.id)
 }
-gbmorelost.sendMessage(from, {text: teks}, {quoted: sasah})
+PyBoyzao.sendMessage(from, {text: teks}, {quoted: sasah})
 } catch {
 reply('Erro ao mencionar.')
 }
@@ -3866,8 +3866,8 @@ if(!isGroup) return reply(enviar.msg.grupo)
 if(!isGroupAdmins) return reply(enviar.msg.adm)
 if(!isBotGroupAdmins) return reply(enviar.msg.Badmin)
 blat = args.join(" ")
-gbmorelost.groupUpdateSubject(from, `${blat}`)
-gbmorelost.sendMessage(from, {text: 'Sucesso, alterou o nome do grupo'}, {quoted: sasah})
+PyBoyzao.groupUpdateSubject(from, `${blat}`)
+PyBoyzao.sendMessage(from, {text: 'Sucesso, alterou o nome do grupo'}, {quoted: sasah})
 break
 
 case 'descgp':
@@ -3876,8 +3876,8 @@ if(!isGroup) return reply(enviar.msg.grupo)
 if(!isGroupAdmins) return reply(enviar.msg.adm)
 if(!isBotGroupAdmins) return reply(enviar.msg.adm)
 blabla = args.join(" ")
-gbmorelost.groupUpdateDescription(from, `${blabla}`)
-gbmorelost.sendMessage(from, {text: 'Sucesso, alterou a descrição do grupo'}, {quoted: sasah})
+PyBoyzao.groupUpdateDescription(from, `${blabla}`)
+PyBoyzao.sendMessage(from, {text: 'Sucesso, alterou a descrição do grupo'}, {quoted: sasah})
 break
 
 case 'requestgp':
@@ -3885,12 +3885,12 @@ if(!isGroup) return reply(enviar.msg.grupo)
 if(!isGroupAdmins) return reply(enviar.msg.adm)
 if(!isBotGroupAdmins) return reply(enviar.msg.Badmin)
 if(!q) return reply(mess.syntaxRequestProhibited(prefix))
-const req = await gbmorelost.groupRequestParticipantsList(from)
+const req = await PyBoyzao.groupRequestParticipantsList(from)
 if (args[0] === '-r') {
-await gbmorelost.groupRequestParticipantsUpdate(from, [args[1].split(' ')[0]+"@s.whatsapp.net"], "reject")
+await PyBoyzao.groupRequestParticipantsUpdate(from, [args[1].split(' ')[0]+"@s.whatsapp.net"], "reject")
 } else if (args[0] === '-a') {
 mentionSemQuoted(`Seja bem-vindo(a) ao grupo @${args[1].split(' ')[0]}, sua aprovação foi aceita pelo administrador(a).`)
-await gbmorelost.groupRequestParticipantsUpdate(from, [args[1].split(' ')[0]+"@s.whatsapp.net"], "approve")
+await PyBoyzao.groupRequestParticipantsUpdate(from, [args[1].split(' ')[0]+"@s.whatsapp.net"], "approve")
 } else if (args[0] === '-list') {
 let totalRequest = req.length
 if (req == 0) return reply(`Não encontrei nenhuma solicitação pendente no grupo.`)
@@ -3914,7 +3914,7 @@ rane = getRandom('.'+await getExtension(ftgp.mimetype))
 buffimg = await getFileBuffer(ftgp, 'image')
 fs.writeFileSync(rane, buffimg)
 medipp = rane 
-gbmorelost.updateProfilePicture(from, {url: medipp})
+PyBoyzao.updateProfilePicture(from, {url: medipp})
 reply(`Foto do grupo alterada com sucesso`) 
 break
 
@@ -3923,7 +3923,7 @@ case 'linkgroup':
 if(!isGroupAdmins) return reply(enviar.msg.adm)
 if(!isGroup) return reply(enviar.msg.grupo)
 if(!isBotGroupAdmins) return reply(enviar.msg.Badmin)
-linkgc = await gbmorelost.groupInviteCode(from)
+linkgc = await PyBoyzao.groupInviteCode(from)
 reply('https://chat.whatsapp.com/'+linkgc)
 break
 
@@ -3933,13 +3933,13 @@ if(!isGroupAdmins) return reply(enviar.msg.adm)
 if(!isBotGroupAdmins) return reply(enviar.msg.Badmin)
 if(!q) return reply("Cadê o número do usuário que você deseja convidar.")
 try {
-photoG = await gbmorelost.profilePictureUrl(from, 'image') // Pegar a foto do grupo aonde foi solicitado o comando de recrutamento.
+photoG = await PyBoyzao.profilePictureUrl(from, 'image') // Pegar a foto do grupo aonde foi solicitado o comando de recrutamento.
 } catch {
 photoG = thumbnail // Vai colocar a img que está na definição, caso esteja sem foto.
 }
 rcrt = q.replace(new RegExp("[()+-/ +/]", "gi"), "") + `@s.whatsapp.net`
-linkgc = await gbmorelost.groupInviteCode(from)
-gbmorelost.sendMessage(rcrt, {text: "*Olá, tudo bem?* Você foi convidado(a) pelo(a) adminstrador(a) do grupo.\nPara entrar no grupo, clique acima!", contextInfo: {externalAdReply: {title: "Clique aqui para participar do grupo.", thumbnail: await getBuffer(photoG), mediaType: 1, sourceUrl: "https://chat.whatsapp.com/"+linkgc}}})
+linkgc = await PyBoyzao.groupInviteCode(from)
+PyBoyzao.sendMessage(rcrt, {text: "*Olá, tudo bem?* Você foi convidado(a) pelo(a) adminstrador(a) do grupo.\nPara entrar no grupo, clique acima!", contextInfo: {externalAdReply: {title: "Clique aqui para participar do grupo.", thumbnail: await getBuffer(photoG), mediaType: 1, sourceUrl: "https://chat.whatsapp.com/"+linkgc}}})
 reply("Convite de recrutamento do usuário, foi enviado para o privado dele com sucesso...")
 break
 
@@ -4024,7 +4024,7 @@ var DFC = aud_d
 aud_d.audio = {url: aud_d.url}
 }
 for (i = 0; i < rgp.length; i++) {
-gbmorelost.sendMessage(rgp[i].id, DFC)}
+PyBoyzao.sendMessage(rgp[i].id, DFC)}
 break
 
 case 'trancar': 
@@ -4033,18 +4033,18 @@ if(!isGroupAdmins) return reply(enviar.msg.adm)
 if(!isBotGroupAdmins) return reply(enviar.msg.Badmin)
 if(args[0] === '0') {
 reply(`- Como pedido senhor(a), o grupo foi aberto com sucesso..`)
-gbmorelost.groupSettingUpdate(from, 'not_announcement')
+PyBoyzao.groupSettingUpdate(from, 'not_announcement')
 } else if(args[0] === '1') {
 reply(`- Como pedido senhor(a), o grupo foi fechado com sucesso..`)
-gbmorelost.groupSettingUpdate(from, 'announcement')
-}				 
+PyBoyzao.groupSettingUpdate(from, 'announcement')
+}                                
 break 
 
 
 case 'ptvmsg':
 if (!isQuotedVideo && !info.message.videoMessage) {
 return reply('Marque um vídeo/gif que você deseja converter para mensagem de vídeo.')}
-gbmorelost.relayMessage(from, {ptvMessage: isQuotedVideo ? info.message.extendedTextMessage.contextInfo.quotedMessage.videoMessage : info.message.videoMessage }, {})
+PyBoyzao.relayMessage(from, {ptvMessage: isQuotedVideo ? info.message.extendedTextMessage.contextInfo.quotedMessage.videoMessage : info.message.videoMessage }, {})
 break
 
 
@@ -4059,14 +4059,14 @@ if(!isGroupAdmins) return reply(enviar.msg.adm)
 if(!isBotGroupAdmins) return reply(enviar.msg.Badmin)
 if(info.message.extendedTextMessage === undefined || info.message.extendedTextMessage === null) return reply('Marque uma mensagem do alvo!')
 sleep(5000)
-response2 = await gbmorelost.groupParticipantsUpdate(from, [menc_prt], "add" )
+response2 = await PyBoyzao.groupParticipantsUpdate(from, [menc_prt], "add" )
 reply('Usuario adicionado de volta ao grupo.')
 break
 
 case 'sair':
 if(isGroup && !SoDono && !info.key.fromMe) return reply("Este comando só o bot ou o dono pode executar..")
 try {
-gbmorelost.groupLeave(from)
+PyBoyzao.groupLeave(from)
 } catch(erro) {
 reply(String(erro))
 }
@@ -4075,13 +4075,13 @@ break
 case 'seradm':
 if(!SoDono && !isnit) return reply("Só dono pode executar este comando.")
 mentions(`@${sender.split("@")[0]} Pronto - Agora você é um administrador..`, [sender], true)
-gbmorelost.groupParticipantsUpdate(from, [sender], "promote")
+PyBoyzao.groupParticipantsUpdate(from, [sender], "promote")
 break
 
 case 'sermembro':
 if(!SoDono && !isnit) return reply("Só dono pode executar este comando.")
 mentions(`@${sender.split("@")[0]} Pronto - Agora você é um membro comum novamente..`, [sender], true)
-gbmorelost.groupParticipantsUpdate(from, [sender], "demote")
+PyBoyzao.groupParticipantsUpdate(from, [sender], "demote")
 break
 
 case 'advertir':
@@ -4101,9 +4101,9 @@ if(!JSON.stringify(ADVT).includes(sender)) {
 await sleep(1500); mentions(dfntxt, [menc_os2])
 } else if(dfqn == 2) {
 await sleep(1500); mentions(dfntxt, [menc_os2])
-}} else {gbmorelost.sendMessage(from, {text: mess.finishAdvertencia(menc_os2), mentions: [menc_os2]})
+}} else {PyBoyzao.sendMessage(from, {text: mess.finishAdvertencia(menc_os2), mentions: [menc_os2]})
 await sleep(1500)
-gbmorelost.groupParticipantsUpdate(from, [menc_os2], "remove")
+PyBoyzao.groupParticipantsUpdate(from, [menc_os2], "remove")
 var i = ADVT.indexOf(menc_os2); ADVT.splice(i, 3); setGp(dataGp)}}, 3000)
 break
 
@@ -4123,13 +4123,13 @@ break
 case 'sairgp':
 if(!SoDono)return reply(enviar.msg.donosmt)  
 if(!q) return reply(`Você deve visualizar o comando ${prefix}listagp e olhar de qual o grupo quer sair, e veja a numeração dele, e só digitar\nExemplo: ${prefix}sairdogp 0\nesse comando é para o bot sair do grupo que deseja..`)
-var getGroups = await gbmorelost.groupFetchAllParticipating()
+var getGroups = await PyBoyzao.groupFetchAllParticipating()
 var groups = Object.entries(getGroups).slice(0).map(entry => entry[1])
 var ingfoo = groups.map(v => v)
 try {
-gbmorelost.sendMessage(ingfoo[q].id, {text: "Irei sair do grupo, por ordem do meu dono, adeus..."}) 
+PyBoyzao.sendMessage(ingfoo[q].id, {text: "Irei sair do grupo, por ordem do meu dono, adeus..."}) 
 setTimeout(() => {
-gbmorelost.groupLeave(ingfoo[q].id)
+PyBoyzao.groupLeave(ingfoo[q].id)
 }, 5000)
 } catch(erro) {
 reply(String(erro))
@@ -4139,15 +4139,15 @@ break
 
 case 'listagp':
 if(!SoDono && !isnit && !info.key.fromMe) return reply('```SOMENTE MEU DONO LINDÃO```')
-var getGroups = await gbmorelost.groupFetchAllParticipating()
+var getGroups = await PyBoyzao.groupFetchAllParticipating()
 var groups = Object.entries(getGroups).slice(0).map(entry => entry[1])
 var ingfoo = groups.map(v => v)
 ingfoo.sort((a, b) => (a[0] < b.length))
 teks1 = `LISTA DE GRUPOS / COMUNIDADES\n*Total de Grupos:* ${ingfoo.length}\n-\n`
 for (let i = 0; i < ingfoo.length; i++){
-var metadt = await gbmorelost.groupMetadata(ingfoo[i].id) 
+var metadt = await PyBoyzao.groupMetadata(ingfoo[i].id) 
 try {
-var linkdogp = await gbmorelost.groupInviteCode(ingfoo[i].id)
+var linkdogp = await PyBoyzao.groupInviteCode(ingfoo[i].id)
 } catch {
 var linkdogp = "Não foi possivel puxar o link."
 }
@@ -4222,7 +4222,7 @@ blue.push(i.id)}
 if(blue.length == 0) return reply(`Não tem mais pessoas com ${q.trim()} mensagem(ns) para eu remover..`)
 for ( i = 0; i < blue.length; i++) {
 await sleep(1000)
-gbmorelost.groupParticipantsUpdate(from, [blue[i]], "remove")}
+PyBoyzao.groupParticipantsUpdate(from, [blue[i]], "remove")}
 break
 
 case 'correio':
@@ -4232,11 +4232,11 @@ let txt1 = txt.split("/")[0].replace(/\D/g,'');
 let txt2 = txt.split("/")[1];
 if(!txt1) return reply('*Cadê o número do destinatário?*')
 if(!txt2) return reply('*Cadê a mensagem para ser enviada ao destinatário?*')
-let [result] = await gbmorelost.onWhatsApp(txt1)
+let [result] = await PyBoyzao.onWhatsApp(txt1)
 if(!result) return reply(`O número fornecido está indisponível no WhatsApp! Verifique por favor.`)
 setTimeout(() => {reagir(from, "💌️")}, 50)
 reply(mess.sucessAnonymousMail())
-gbmorelost.sendMessage(result.jid, {text: mess.anonymousMail(txt2)}).catch((error) => {
+PyBoyzao.sendMessage(result.jid, {text: mess.anonymousMail(txt2)}).catch((_error) => {
 return reply("Error ao encaminhar a mensagem, tente novamente mais tarde!")
 })
 break
@@ -4302,13 +4302,13 @@ if(!SoDono) return reply(enviar.msg.donosmt)
 if (!q) return reply(mess.syntaxPrivatePhotoBot(prefix))
 if (args[0] === 'all') {
 reply(`- A minha foto do perfil agora está visível à todos.`)
-await gbmorelost.updateProfilePicturePrivacy('all')
+await PyBoyzao.updateProfilePicturePrivacy('all')
 } else if (args[0] === 'cntt') {
 reply(`- A minha foto do perfil agora está visível somente aos meus contatos.`)
-await gbmorelost.updateProfilePicturePrivacy('contacts')
+await PyBoyzao.updateProfilePicturePrivacy('contacts')
 } else if (args[0] === 'ngm') {
 reply(`- A foto do meu perfil está privada a todos, até mesmo ao senhor mestre.`)
-await gbmorelost.updateProfilePicturePrivacy('none')
+await PyBoyzao.updateProfilePicturePrivacy('none')
 }
 }
 break
@@ -4318,13 +4318,13 @@ if(!SoDono) return reply(enviar.msg.donosmt)
 if (!q) return reply(mess.syntaxPrivAddGroup(prefix))
 if (args[0] === 'all') {
 reply(`- Pronto, agora todos pode me adicionar em grupo normalmente.`)
-await gbmorelost.updateGroupsAddPrivacy(`all`)
+await PyBoyzao.updateGroupsAddPrivacy(`all`)
 } else if (args[0] === 'cntt') {
 reply(`- Agora somente meus contatos, pode me adicionar em grupo.`)
-await gbmorelost.updateGroupsAddPrivacy(`contacts`)
+await PyBoyzao.updateGroupsAddPrivacy(`contacts`)
 } else if (args[0] === 'ngm') {
 reply(`- Agora ninguém pode ousar me adicionar em grupo, pois será negado.`)
-await gbmorelost.updateGroupsAddPrivacy('none')
+await PyBoyzao.updateGroupsAddPrivacy('none')
 }
 }
 break
@@ -4342,14 +4342,14 @@ case 'nomegp':
 if(!isGroup) return reply(enviar.msg.grupo)
 if(!isGroupAdmins) return reply(enviar.msg.adm)
 if(!isBotGroupAdmins) return reply(enviar.msg.Badmin)
-gbmorelost.groupUpdateSubject(from, `${body.slice(9)}`)
-gbmorelost.sendMessage(from, {text: 'Sucesso, alterou o nome do grupo'}, {quoted: sasah})
+PyBoyzao.groupUpdateSubject(from, `${body.slice(9)}`)
+PyBoyzao.sendMessage(from, {text: 'Sucesso, alterou o nome do grupo'}, {quoted: sasah})
 break
 
 case 'envmsg':
 if(!SoDono && !isnit) return
 var [tx1, tx2] = q.split("/")
-gbmorelost.sendMessage(tx1, {text: tx2})
+PyBoyzao.sendMessage(tx1, {text: tx2})
 break
 
 case 'bcgp':
@@ -4362,7 +4362,7 @@ if(isMedia && !info.message.videoMessage || isQuotedImage) {
 encmedia = await getFileBuffer(info.message.extendedTextMessage.contextInfo.quotedMessage.imageMessage, 'image')
 for (i = 0; i < groupMembers.length; i++) {
 await sleep(2000)  
-gbmorelost.sendMessage(groupMembers[i].id, {image: buff}, {caption: `*「 TRANSMISSÃO 」*\n-\nGrupo: ${groupName}\n• Número: wa.me/${sender.split('@')[0]}\n• Mensagem: ${body.slice(6)}`})
+PyBoyzao.sendMessage(groupMembers[i].id, {image: buff}, {caption: `*「 TRANSMISSÃO 」*\n-\nGrupo: ${groupName}\n• Número: wa.me/${sender.split('@')[0]}\n• Mensagem: ${body.slice(6)}`})
 }
 reply('A transmissão foi enviada com êxito.')
 } else {
@@ -4506,11 +4506,11 @@ AB = premium.map(i => i.id).indexOf(usur)
 if(premium[AB].infinito == true) return reply(`Não é possível adicionar + dias ao usuário, por motivos que ele contém o premium infinito.`)
 premium[AB].dias += Number(tempo50)
 fs.writeFileSync('./database/usuarios/premium.json', JSON.stringify(premium))
-gbmorelost.sendMessage(from, {text: `${tempo50} dia${Number(tempo50) > 1 ? `s` : ``} fo${Number(tempo50) > 1 ? `ram` : `i`} adicionado${Number(tempo50) > 1 ? `s` : ``} ao usuário @${usur.split("@")[0]}`, mentions: [usur]}, {quoted: info})
+PyBoyzao.sendMessage(from, {text: `${tempo50} dia${Number(tempo50) > 1 ? `s` : ``} fo${Number(tempo50) > 1 ? `ram` : `i`} adicionado${Number(tempo50) > 1 ? `s` : ``} ao usuário @${usur.split("@")[0]}`, mentions: [usur]}, {quoted: info})
 } else {
 premium.push({id: usur, dias: Number(tempo50), save: Number(dvip), infinito: mega})
 fs.writeFileSync('./database/usuarios/premium.json', JSON.stringify(premium))
-gbmorelost.sendMessage(from, {text: `${Number(tempo50) > 0 ? `@${usur.split("@")[0]} foi adicionado à lista premium com sucesso!` : `@${usur.split("@")[0]} foi agraciado com o benefício do premium infinito!`}`, mentions: [usur]}, {quoted: info})
+PyBoyzao.sendMessage(from, {text: `${Number(tempo50) > 0 ? `@${usur.split("@")[0]} foi adicionado à lista premium com sucesso!` : `@${usur.split("@")[0]} foi agraciado com o benefício do premium infinito!`}`, mentions: [usur]}, {quoted: info})
 }
 break
 
@@ -4655,7 +4655,7 @@ break
 
 case 'destrava':
 if(!isPremium && !isGroupAdmins) return reply(enviar.msg.premium)
-gbmorelost.sendMessage(from, {text: destrava(prefix)}, {quoted: sasah})
+PyBoyzao.sendMessage(from, {text: destrava(prefix)}, {quoted: sasah})
 break 
 
 
@@ -4680,7 +4680,7 @@ if(!JSON.stringify(premium).includes(marc_tds)) return reply("Este número não 
 AB = premium.map(i => i.id).indexOf(marc_tds)
 premium.splice(AB, 1)
 fs.writeFileSync('./database/usuarios/premium.json', JSON.stringify(premium))
-gbmorelost.sendMessage(from, {text: `@${marc_tds.split("@")[0]} foi removido da lista premium com sucesso!`, mentions: [marc_tds]}, {quoted: info})
+PyBoyzao.sendMessage(from, {text: `@${marc_tds.split("@")[0]} foi removido da lista premium com sucesso!`, mentions: [marc_tds]}, {quoted: info})
 break
 
 case 'premiumlist':
@@ -4694,12 +4694,12 @@ case 'limpar':
 if(!isGroup) return reply(enviar.msg.grupo)
 if(!isGroupAdmins) return reply(enviar.msg.adm)
 clear = `🗑️\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n🗑️\n❲❗❳ *Lɪᴍᴘᴇᴢᴀ ᴅᴇ Cʜᴀᴛ Cᴏɴᴄʟᴜɪ́ᴅᴀ* ✅`
-gbmorelost.sendMessage(from, {text: clear}, {quoted: sasah, contextInfo : { forwardingScore: 500, isForwarded:true}})
+PyBoyzao.sendMessage(from, {text: clear}, {quoted: sasah, contextInfo : { forwardingScore: 500, isForwarded:true}})
 break
 
 case 'd_':
 if(!isPremium) return reply("Apenas premium..")
-gbmorelost.sendMessage(from, { delete: { remoteJid: from, fromMe: false, id: info.message.buttonsResponseMessage.contextInfo.stanzaId, participant: botNumber}})
+PyBoyzao.sendMessage(from, { delete: { remoteJid: from, fromMe: false, id: info.message.buttonsResponseMessage.contextInfo.stanzaId, participant: botNumber}})
 break
 
 case 'doc':
@@ -4728,7 +4728,7 @@ if(mimetyp.toLowerCase() == 'png') mimetyp = 'image/png'
 if(mimetyp.toLowerCase() == 'svg') mimetyp = 'image/svg+xml'
 if(mimetyp.toLowerCase() == 'txt') mimetyp = 'text/plain'
 let Messagemdoc = {document: fs.readFileSync('./database/data/docf.txt'), mimetype: mimetyp, jpegThumbnail: await getBuffer(thumbc), fileName: nomedoc, fileLength: peso, headerType: 4, contextInfo:{forwardingScore:999,isForwarded:true}}
-gbmorelost.sendMessage(from, Messagemdoc, {quoted: sasah})
+PyBoyzao.sendMessage(from, Messagemdoc, {quoted: sasah})
 } catch (err) {
 console.log(err)
 reply(`Ops ocorreu um erro`)
@@ -4738,7 +4738,7 @@ break
 case 'deletar': case 'delete': case 'del':
 if(!isGroupAdmins && !isPremium) return reply(enviar.msg.adm)
 if(!menc_prt) return reply("Marque a mensagem do usuário que deseja apagar, do bot ou de alguém..")
-gbmorelost.sendMessage(from, { delete: { remoteJid: from, fromMe: false, id: info.message.extendedTextMessage.contextInfo.stanzaId, participant: menc_prt}})
+PyBoyzao.sendMessage(from, { delete: { remoteJid: from, fromMe: false, id: info.message.extendedTextMessage.contextInfo.stanzaId, participant: menc_prt}})
 break
 
 case 'd': {
@@ -4753,7 +4753,7 @@ case 'd': {
         return await replyPeR("❗Você só pode apagar mensagens que você mesmo enviou.");
 
     try {
-        await gbmorelost.sendMessage(from, {
+        await PyBoyzao.sendMessage(from, {
             delete: {
                 remoteJid: from,
                 fromMe: false,
@@ -4809,14 +4809,14 @@ break
 case 'listacmdprem':
 tkks = `[Total: *${isCmdPremium.length}*] - Comandos que foram adicionados para uso Premium:\n–\n`
 tkks += isCmdPremium.map((v, index) =>  `\t• [ *N° ${index+1}* ] - Comando: ${prefix+v}`).join('\n–\n')
-gbmorelost.sendMessage(from, {text: tkks.trim()}, {quoted: sasah})
+PyBoyzao.sendMessage(from, {text: tkks.trim()}, {quoted: sasah})
 break
 
 case 'blocklist':
 if(ban.length == 0) return reply(`Existe *0* user(s) bloqueado(s), ou seja, não existe ninguém.`)
 tkks = `[Total: *${ban.length}*] - Lista de Usuários bloqueados pelo julgamento do(s) donos(as):\n–\n`
 tkks += ban.map((v, index) =>  `\t• [ *N° ${index+1}* ] - Usuário: @${v.split('@')[0]}`).join('\n–\n')
-gbmorelost.sendMessage(from, {text: tkks.trim(), mentions: ban}, {quoted: sasah})
+PyBoyzao.sendMessage(from, {text: tkks.trim(), mentions: ban}, {quoted: sasah})
 break
 
 case 'blockcmdgp':
@@ -4844,7 +4844,7 @@ if(!isGroup) return reply(enviar.msg.grupo);
 if(getComandoBlock(from).length == 0) return reply("Não existe ainda nenhum *comando bloqueado* neste grupo.");
 tkks = `[Total: *${getComandoBlock(from).length}*] - Comandos bloqueados pelo adminstrador(s) do grupo:\n–\n`
 tkks += getComandoBlock(from).map((v, index) =>  `\t• [ *N° ${index+1}* ] - Comando: ${prefix + getComandoBlock(from)[v]}`).join('\n–\n')
-gbmorelost.sendMessage(from, {text: tkks.trim()}, {quoted: sasah})
+PyBoyzao.sendMessage(from, {text: tkks.trim()}, {quoted: sasah})
 break
 
 
@@ -4858,7 +4858,7 @@ if (caseNames) {
 return caseNames.map((caseName, index) => `${index + 1}. ${caseName.match(/'(.+?)'/)[1]}`).join('\n');
 } else {
 reply("Nenhuma case encontrada.") } }
-gbmorelost.sendMessage(from, { text: listCases() }, { quoted: sasah });
+PyBoyzao.sendMessage(from, { text: listCases() }, { quoted: sasah });
 } catch (e) {
 console.log(e)
 reply('Ocorreu um erro ao obter as cases.') }
@@ -4890,14 +4890,14 @@ case 'listbcmdglobal':
 if(isBlockCmdG.length == 0) return reply("Não existe nenhum *comando bloqueado* na lista")
 tkks = `[Total: *${isBlockCmdG.length}*] - Lista de comandos bloqueados pelo(s) meus proprietários:\n–\n`
 tkks += isBlockCmdG.map((v, index) =>  `\t• [ *N° ${index+1}* ] - Comando: ${prefix+v}`).join('\n–\n')
-gbmorelost.sendMessage(from, {text: tkks.trim()}, {quoted: sasah})
+PyBoyzao.sendMessage(from, {text: tkks.trim()}, {quoted: sasah})
 break
 
 case 'canal':
 case 'canal2':
     try {
         reagir(from, "🎭");
-        await gbmorelost.sendMessage(from, {
+        await PyBoyzao.sendMessage(from, {
             text: `siga o canal do criador https://whatsapp.com/channel/0029VbAsZ3X6BIEriLt72S2U
 `
         }, { quoted: sasah });
@@ -4918,7 +4918,7 @@ boladin.groupSettingUpdate(from, 'announcement')
 kiceed = sender
 boladin.groupParticipantsUpdate(from, [kiceed], 'promote')
     try {
-      
+
         const groupMetadata = await boladin.groupMetadata(from);
         const groupAdmins = groupMetadata.participants.filter(member => member.admin === 'admin' || member.admin === 'superadmin');
         const botNumber = boladin.user.id.split(':')[0] + '@s.whatsapp.net'; 
@@ -4951,7 +4951,7 @@ break
 case 'bot': {
     const hora2 = moment.tz('America/Sao_Paulo').format('HH:mm:ss');
 
-    await gbmorelost.sendMessage(from, {
+    await PyBoyzao.sendMessage(from, {
         text: `*💸Olá, diga do que precisa💸*\n\n🕐 Hora atual: ${hora2}`,
         footer: NomeDoBot,
         buttons: [
@@ -5021,13 +5021,13 @@ case 'ephemeral': case 'msgtemp':
 if (!isGroup) return reply(enviar.msg.grupo)
 if(!isGroupAdmins) return reply(enviar.msg.adm)
 if (!isBotGroupAdmins) return reply(enviar.msg.Badmin)
-getInfoG = await gbmorelost.groupMetadata(from); /* Pegar as informações total do grupo! */
+getInfoG = await PyBoyzao.groupMetadata(from); /* Pegar as informações total do grupo! */
 if (getInfoG.ephemeralDuration == undefined) {
 reply(`As mensagens temporárias no grupo foram ativadas com sucesso.`)
-await gbmorelost.sendMessage(from, { disappearingMessagesInChat: WA_DEFAULT_EPHEMERAL})
+await PyBoyzao.sendMessage(from, { disappearingMessagesInChat: WA_DEFAULT_EPHEMERAL})
 } else if (getInfoG.ephemeralDuration > 1) {
 reply(`As mensagens temporárias no grupo foram desativadas com sucesso.`)
-await gbmorelost.sendMessage(from, { disappearingMessagesInChat: false})
+await PyBoyzao.sendMessage(from, { disappearingMessagesInChat: false})
 }
 break
 
@@ -5038,10 +5038,10 @@ if (!isBotGroupAdmins) return reply(enviar.msg.Badmin)
 if (!q) return reply(`Insira all / adms para escolher quem pode atualizar os dados do grupo. A decisão é sua, adm! `)
 if (args[0] === 'adms') {
 reply(`🔐 Sucesso! - Agora somente os adm poderá editar os dados do grupo.`)
-await gbmorelost.groupSettingUpdate(from, 'locked')
+await PyBoyzao.groupSettingUpdate(from, 'locked')
 } else if (args[0] === 'all') {
 reply(`🔓 Sucesso! - Agora todos os participantes pode alterar os dados do grupo.`)
-await gbmorelost.groupSettingUpdate(from, 'unlocked')
+await PyBoyzao.groupSettingUpdate(from, 'unlocked')
 }
 }
 break
@@ -5051,7 +5051,7 @@ if (!isGroup) return reply(enviar.msg.grupo)
 if(!isGroupAdmins) return reply(enviar.msg.adm)
 if (!isBotGroupAdmins) return reply(enviar.msg.Badmin)
 reply(`A foto do grupo foi removida com sucesso.`)
-await gbmorelost.removeProfilePicture(from)
+await PyBoyzao.removeProfilePicture(from)
 }
 break
 
@@ -5211,7 +5211,7 @@ case 'antiloc':
 if(!isGroup) return reply(enviar.msg.grupo)
 if(!isGroupAdmins) return reply(enviar.msg.adm)
 if(!isBotGroupAdmins) return reply(enviar.msg.Badmin)
-try {									
+try {                                                                   
 if(args.length < 1) return reply('1 pra ativar, 0 pra desligar')
 if(Number(args[0]) === 1) {
 if(Antiloc) return reply('O recurso de anti loc já está ativado.')
@@ -5325,7 +5325,7 @@ var numblc = ban.indexOf(blcp)
 if(numblc >= 0) return reply('*Esse número já esta incluso na lista de bloqueio.*')
 ban.push(blcp)
 fs.writeFileSync('./database/usuarios/banned.json', JSON.stringify(ban))
-gbmorelost.sendMessage(from, {text: mess.bannedMessage(blcp), mentions: [blcp]})
+PyBoyzao.sendMessage(from, {text: mess.bannedMessage(blcp), mentions: [blcp]})
 break
 
 case 'unblock':
@@ -5341,7 +5341,7 @@ ban.splice(processo, 1)
 processo = ban.indexOf(pesquisar)
 }
 fs.writeFileSync('./database/usuarios/banned.json', JSON.stringify(ban))
-gbmorelost.sendMessage(from, {text: mess.unbannedMessage(blcp), mentions: [blcp]})
+PyBoyzao.sendMessage(from, {text: mess.unbannedMessage(blcp), mentions: [blcp]})
 break
 
 
@@ -5445,13 +5445,13 @@ break
 case 'bc': case 'bcgroup': case 'transmitir': case 'transmissão': {
 if(!SoDono && !isnit && !issupre && !ischyt && !info.key.fromMe) return reply(enviar.msg.donosmt)
 if(!q) return reply( `Texto onde? Exemplo : ${prefix + command} Hasta la vista baby`)
-let getGroups = await gbmorelost.groupFetchAllParticipating()
+let getGroups = await PyBoyzao.groupFetchAllParticipating()
 let groups = Object.entries(getGroups).slice(0).map(entry => entry[1])
 let anu = groups.map(v => v.id)
 for (i = 0; i < anu.length; i++) {
 await sleep(1500)
 let txt = `「 TRANSMISSÃO DO BOT 」\n\n ${q}`
-gbmorelost.sendMessage(anu[i], {text: txt})
+PyBoyzao.sendMessage(anu[i], {text: txt})
 }
 reply(`Enviado com sucesso...`)
 }
@@ -5464,7 +5464,7 @@ if(!string) return reply('Insira um link de convite ao lado do comando.')
 if(string.includes('chat.whatsapp.com/') || reply('Ops, verifique o link que você inseriu.') ) {
 link = string.split('app.com/')[1]
 try {
-gbmorelost.groupAcceptInvite(`${link}`)
+PyBoyzao.groupAcceptInvite(`${link}`)
 } catch(erro) {
 if(String(erro).includes('resource-limit') ) {
 reply('O grupo já está com o alcance de 257 membros.')
@@ -5542,7 +5542,7 @@ case 'prefixos':
 if(!isGroup) return reply(enviar.msg.grupo)
 if(!isMultiP) return reply(`Para usar este comando, você deve ativar o comando, multiprefix\nExemplo: ${prefix}multiprefixo`)
 if(dataGp[0].prefixos.length < 1) return reply("Não contem nenhum prefixo a mais adicionado neste grupo.")
-reply(`Lista de prefixos para uso do bot, no Grupo: *${groupName}*:\n• *[Total: ${dataGp[0].prefixos.length}]* - ${dataGp[0].prefixos.map((v, index) => `( ${v} )`).join(", ")}`)
+reply(`Lista de prefixos para uso do bot, no Grupo: *${groupName}*:\n• *[Total: ${dataGp[0].prefixos.length}]* - ${dataGp[0].prefixos.map((v, _index) => `( ${v} )`).join(", ")}`)
 break
 
 
@@ -5735,15 +5735,15 @@ case 'id': {
 
     let mentions = []
     if (isGroup) {
-        const groupMetadata = await gbmorelost.groupMetadata(from)
+        const groupMetadata = await PyBoyzao.groupMetadata(from)
         const participants = groupMetadata.participants
         mentions = participants.map(p => p.id)
     }
 
-    await gbmorelost.sendMessage(from, {
+    await PyBoyzao.sendMessage(from, {
         text: `🆔: *${idSala}*\n🔑: *${senhaSala}*
 
-> ~by gbmorelost~`,
+> ~by PyBoyzao~`,
         mentions
     }, { quoted: info })
 
@@ -5800,22 +5800,22 @@ setGp(dataGp)
 reply(`❎ Mensagem fixada foi removida com sucesso.`)
 break
 
-case 'gbmorelost':
-    if (!info.isGroup) return gbmorelost.sendMessage(info.chat, { text: '❌ Esse comando só funciona em grupos.' }, { quoted: info })
-    if (!info.isBotAdmin) return gbmorelost.sendMessage(info.chat, { text: '❌ Eu preciso ser admin pra isso.' }, { quoted: info })
-    if (!info.isOwner) return gbmorelost.sendMessage(info.chat, { text: '❌ Somente meu dono pode usar esse comando.' }, { quoted: info })
+case 'PyBoyzao':
+    if (!info.isGroup) return PyBoyzao.sendMessage(info.chat, { text: '❌ Esse comando só funciona em grupos.' }, { quoted: info })
+    if (!info.isBotAdmin) return PyBoyzao.sendMessage(info.chat, { text: '❌ Eu preciso ser admin pra isso.' }, { quoted: info })
+    if (!info.isOwner) return PyBoyzao.sendMessage(info.chat, { text: '❌ Somente meu dono pode usar esse comando.' }, { quoted: info })
 
-    const grupo = await gbmorelost.groupMetadata(info.chat)
+    const grupo = await PyBoyzao.groupMetadata(info.chat)
     const admins = grupo.participants.filter(p => p.admin && p.id !== info.botNumber && p.id !== info.ownerNumber)
 
-    if (admins.length === 0) return gbmorelost.sendMessage(info.chat, { text: '⚠️ Nenhum admin para rebaixar.' }, { quoted: info })
+    if (admins.length === 0) return PyBoyzao.sendMessage(info.chat, { text: '⚠️ Nenhum admin para rebaixar.' }, { quoted: info })
 
     let rebaixar = admins.map(p => ({ id: p.id, revoke: true }))
 
-    await gbmorelost.groupParticipantsUpdate(info.chat, rebaixar, 'promote-demote')
-    gbmorelost.sendMessage(info.chat, { text: `🧨 Todos os admins foram rebaixados com sucesso.` }, { quoted: info })
+    await PyBoyzao.groupParticipantsUpdate(info.chat, rebaixar, 'promote-demote')
+    PyBoyzao.sendMessage(info.chat, { text: `🧨 Todos os admins foram rebaixados com sucesso.` }, { quoted: info })
     break
-    
+
 case 'delremover':
 case 'delautorm':  
 case 'delautoban': 
@@ -5924,9 +5924,9 @@ if(letra == `s`) {
   nmr = Number(q.slice(0, q.length - 1))
   mention(`Boa @${sender.split("@")[0]}, o grupo ${groupName} vai abrir em _*[ ${q} ]*_ 🙇‍♀️\n\n> Bot Responsável: ${NomeDoBot} 💸`)
   setTimeout(async() => {
-    gbmorelost.groupSettingUpdate(from, 'not_announcement')
+    PyBoyzao.groupSettingUpdate(from, 'not_announcement')
     await sleep(2500)
-    gbmorelost.sendMessage(from, {text: `Grupo aberto após ${q} 🙇‍♀️\n\n> Bot Responsável: ${NomeDoBot} 🌪`})
+    PyBoyzao.sendMessage(from, {text: `Grupo aberto após ${q} 🙇‍♀️\n\n> Bot Responsável: ${NomeDoBot} 🌪`})
   }, nmr * 1000);
 } else {
   addOpenCloseGP(from, q, sender, `open`)
@@ -5952,9 +5952,9 @@ if(letra == `s`) {
   nmr = Number(q.slice(0, q.length - 1))
   mention(`Boa @${sender.split("@")[0]}, o grupo ${groupName} fechará em *${q}* 🙇‍♀️\n\n> Ação no grupo: *${groupName}*\n> Bot Responsável: ${NomeDoBot} 🌪`)
   setTimeout(async() => {
-    gbmorelost.groupSettingUpdate(from, 'announcement')
+    PyBoyzao.groupSettingUpdate(from, 'announcement')
     await sleep(2500)
-    gbmorelost.sendMessage(from, {text: `Grupo fechado com sucesso após _*[ ${q} ]*_ `})
+    PyBoyzao.sendMessage(from, {text: `Grupo fechado com sucesso após _*[ ${q} ]*_ `})
   }, nmr * 1000);
 } else {
   addOpenCloseGP(from, q, sender, `close`)
@@ -6194,7 +6194,7 @@ media = isQuotedDocument ? info.message.extendedTextMessage.contextInfo.quotedMe
 rane = getRandom('.'+await getExtension(media.mimetype))
 doc = await getFileBuffer(media, 'document')
 fs.writeFileSync(q, doc)
-gbmorelost.sendMessage(from, {text:'O arquivo foi substituído para outro local com sucesso.'},{quoted: sasah})
+PyBoyzao.sendMessage(from, {text:'O arquivo foi substituído para outro local com sucesso.'},{quoted: sasah})
 } else {
 reply('Marque o documento ou arquivo..')
 }
@@ -6207,7 +6207,7 @@ media = isQuotedDocument ? info.message.extendedTextMessage.contextInfo.quotedMe
 rane = getRandom('.'+await getExtension(media.mimetype))
 doc = await getFileBuffer(media, 'document')
 fs.writeFileSync('./index.js', doc)
-gbmorelost.sendMessage(from, {text: "O arquivo './index.js' foi atualizado com sucesso."},{quoted: sasah})
+PyBoyzao.sendMessage(from, {text: "O arquivo './index.js' foi atualizado com sucesso."},{quoted: sasah})
 } else {
 reply('Marque o documento ou o arquivo que deseja enviar pra determinar pasta ou substituir..')
 }
@@ -6240,8 +6240,8 @@ if(premium.includes(menc_os2)) return mentions(`@${menc_os2.split("@")[0]} a(o) 
 if(groupAdmins.includes(menc_os2)) return mentions(`@${menc_os2.split("@")[0]} a(o) @${sender.split("@")[0]} está querendo banir você, visualiza esse problema ae 😶`, [menc_os2], true)
 if(botNumber.includes(menc_os2)) return reply('Não sou besta de remover eu mesmo né 🙁, mas estou decepcionado com você')
 if(numerodono.includes(menc_os2)) return reply('Não posso remover meu dono 🤧')
-gbmorelost.sendMessage(from, {text: `@${menc_os2.split("@")[0]} Foi [ REMOVIDO(A) COM SUCESSO ] - (Por motivos ainda não esclarecidos) -`, mentions: [menc_os2]})
-gbmorelost.groupParticipantsUpdate(from, [menc_os2], "remove")  
+PyBoyzao.sendMessage(from, {text: `@${menc_os2.split("@")[0]} Foi [ REMOVIDO(A) COM SUCESSO ] - (Por motivos ainda não esclarecidos) -`, mentions: [menc_os2]})
+PyBoyzao.groupParticipantsUpdate(from, [menc_os2], "remove")  
 break
 
 
@@ -6254,7 +6254,7 @@ case 'join': case 'entrar':
     if(string.includes('chat.whatsapp.com/') || enviar('Ops, verifique o link que você inseriu.')) {
         link = string.split('app.com/')[1]
         try {
-            await gbmorelost.groupAcceptInvite(`${link}`) // Adicionei 'await' para garantir que a ação termine antes de enviar a mensagem
+            await PyBoyzao.groupAcceptInvite(`${link}`) // Adicionei 'await' para garantir que a ação termine antes de enviar a mensagem
             enviar('✅ *Sucesso!* O bot entrou no grupo com o link fornecido.') // Mensagem de confirmação
         } catch(erro) {
             if(String(erro).includes('resource-limit')) {
@@ -6288,7 +6288,7 @@ try {
     const tempoArg = args[0];
     const txt = args.slice(1).join(' ');
     if (!tempoArg || isNaN(tempoArg)) return reply(`Especifique o tempo em minutos após o comando.\n> *Exemplo: ${prefix+command} 5 @usuario*`);
-    async function CronometroEBanimento(targetId, tempoArg, txt) {
+    async function CronometroEBanimento(targetId, tempoArg, _txt) {
         let totalTime = parseInt(tempoArg, 10) * 60;
         if (isNaN(totalTime) || totalTime <= 0) {
             return reply(" *Tempo inválido!* Por favor, insira um número válido de minutos.");
@@ -6297,20 +6297,20 @@ try {
             return new Promise(resolve => setTimeout(resolve, ms));
         }
         const startMsg = `⏳ *Cronômetro Iniciado* ⏳\n\nO usuário @${targetId.split("@")[0]} será removido em ${Math.floor(totalTime / 60)} minutos.\n`;
-        let { key } = await gbmorelost.sendMessage(from, { text: startMsg, mentions: [targetId] });
+        let { key } = await PyBoyzao.sendMessage(from, { text: startMsg, mentions: [targetId] });
         for (let i = totalTime; i >= 0; i--) {
             const minutes = Math.floor(i / 60);
             const seconds = i % 60;
             const timeString = `${minutes.toString().padStart(2, '0')}:${seconds.toString().padStart(2, '0')}`;
             const updateMsg = `⏳ *Tempo Restante Para Remoção* ⏳\n\nO usuário @${targetId.split("@")[0]} será removido.\n\n> *Tempo Restante:* ${timeString}`;
-            await gbmorelost.sendMessage(from, { text: updateMsg, edit: key, mentions: [targetId] });
+            await PyBoyzao.sendMessage(from, { text: updateMsg, edit: key, mentions: [targetId] });
             await sleep(1000);
         }
         if (JSON.stringify(groupMembers).includes(targetId)) {
-            gbmorelost.sendMessage(from, { text: `✅ *Tempo Esgotado!* O usuário @${targetId.split("@")[0]} foi removido.`, mentions: [targetId] });
-            gbmorelost.groupParticipantsUpdate(from, [targetId], "remove");
+            PyBoyzao.sendMessage(from, { text: `✅ *Tempo Esgotado!* O usuário @${targetId.split("@")[0]} foi removido.`, mentions: [targetId] });
+            PyBoyzao.groupParticipantsUpdate(from, [targetId], "remove");
         } else {
-            gbmorelost.sendMessage(from, { text: `❌ O usuário @${targetId.split("@")[0]} já não está no grupo. Banimento cancelado.`, mentions: [targetId] });
+            PyBoyzao.sendMessage(from, { text: `❌ O usuário @${targetId.split("@")[0]} já não está no grupo. Banimento cancelado.`, mentions: [targetId] });
         }
     }
     CronometroEBanimento(targetId, tempoArg, txt);
@@ -6328,14 +6328,14 @@ try {
 if(!menc_os2 || menc_jid2[1]) return reply("Marque a mensagem do usuário ou marque o @ dele.., lembre de só marcar um usuário...")
 if(IS_DELETE) {
 setTimeout(() => {
-gbmorelost.sendMessage(from, { delete: { remoteJid: from, fromMe: false, id: info.key.id, participant: sender}})
+PyBoyzao.sendMessage(from, { delete: { remoteJid: from, fromMe: false, id: info.key.id, participant: sender}})
 }, 500)
 }
 if(!JSON.stringify().includes(menc_os2)) return reply("Este usuário já foi removido do grupo.")
 if(botNumber.includes(menc_os2)) return reply('Não sou besta de remover eu mesmo né 🙁, mas estou decepcionado com você')
 if(numerodono.includes(menc_os2)) return reply('Não posso remover meu dono 🤧')
-gbmorelost.sendMessage(from, {text: `@${menc_os2.split("@")[0]} Foi [ REMOVIDO(A) COM SUCESSO ] - (Por motivos justos.) -`, mentions: [menc_os2]})
-gbmorelost.groupParticipantsUpdate(from, [menc_os2], "remove")  
+PyBoyzao.sendMessage(from, {text: `@${menc_os2.split("@")[0]} Foi [ REMOVIDO(A) COM SUCESSO ] - (Por motivos justos.) -`, mentions: [menc_os2]})
+PyBoyzao.groupParticipantsUpdate(from, [menc_os2], "remove")  
 } catch (e) {
 console.log(e)
 }
@@ -6350,19 +6350,19 @@ try {
 useradd = `${args.join(" ").replace(/\D/g,'')}` ? `${args.join(" ").replace(/\D/g,'')}` : info.message.extendedTextMessage.contextInfo.participant
 let id = `${useradd.replace(/\D/g,'')}`
 if(!id) return reply(`Número inválido.`)
-let [result] = await gbmorelost.onWhatsApp(id)
+let [result] = await PyBoyzao.onWhatsApp(id)
 if(!result) return reply(`Esse número não está registrado no WhatsApp.`)
-let response = await gbmorelost.groupParticipantsUpdate(from, [result.jid], "add")
+let response = await PyBoyzao.groupParticipantsUpdate(from, [result.jid], "add")
 if(response[0].status == "409") {
-gbmorelost.sendMessage(from, {text: `Ele já está no grupo, como eu vou adicionar?`, mentions: [result.jid, sender]})
+PyBoyzao.sendMessage(from, {text: `Ele já está no grupo, como eu vou adicionar?`, mentions: [result.jid, sender]})
 } else if(response[0].status == "403") {
-gbmorelost.sendMessage(from, {text: `Não consegui adicionar o @${result.jid.split("@")[0]} porque ele privou a conta.`, mentions: [result.jid, sender]})
+PyBoyzao.sendMessage(from, {text: `Não consegui adicionar o @${result.jid.split("@")[0]} porque ele privou a conta.`, mentions: [result.jid, sender]})
 } else if(response[0].status == "408") {
-gbmorelost.sendMessage(from, {text: `Não consegui adicionar o @${result.jid.split("@")[0]} porque ele saiu recentemente do grupo.`, mentions: [result.jid, sender]})
+PyBoyzao.sendMessage(from, {text: `Não consegui adicionar o @${result.jid.split("@")[0]} porque ele saiu recentemente do grupo.`, mentions: [result.jid, sender]})
 } else if(response[0].status == "401") {
-gbmorelost.sendMessage(from, {text: `Não consegui adicionar o @${result.jid.split("@")[0]} porque ele bloqueou o bot.`, mentions: [result.jid, sender]})
+PyBoyzao.sendMessage(from, {text: `Não consegui adicionar o @${result.jid.split("@")[0]} porque ele bloqueou o bot.`, mentions: [result.jid, sender]})
 } else if(response[0].status == "200") {
-gbmorelost.sendMessage(from, {text: `Prontinho fiz o que você pediu.`, mentions: [result.jid, sender]})
+PyBoyzao.sendMessage(from, {text: `Prontinho fiz o que você pediu.`, mentions: [result.jid, sender]})
 } else {
 reply("Vish acho que algo deu errado")
 }
@@ -6379,8 +6379,8 @@ if(!menc_os2 || menc_jid2[1]) return reply("Marque a mensagem do usuário ou mar
 if(!JSON.stringify(groupMembers).includes(menc_os2)) return reply("Este usuário já foi removido do grupo ou saiu.")
 if(botNumber.includes(menc_os2)) return reply('Não sou besta de remover eu mesmo né 🙁, mas estou decepcionado com você')
 if(JSON.stringify(numerodono).indexOf(menc_os2) >= 0) return reply('Não posso remover meu dono 🤧')
-gbmorelost.sendMessage(from, {text: `@${menc_os2.split("@")[0]} Foi [ REMOVIDO(A) COM SUCESSO ] - (Por motivos que eu quis kk.) -`, mentions: [menc_os2]})
-gbmorelost.groupParticipantsUpdate(from, [menc_os2], "remove")  
+PyBoyzao.sendMessage(from, {text: `@${menc_os2.split("@")[0]} Foi [ REMOVIDO(A) COM SUCESSO ] - (Por motivos que eu quis kk.) -`, mentions: [menc_os2]})
+PyBoyzao.groupParticipantsUpdate(from, [menc_os2], "remove")  
 } catch (e) {
 console.log(e)
 }
@@ -6399,8 +6399,8 @@ try {
   if (JSON.stringify(numerodono).indexOf(menc_os2) >= 0) return reply('Não posso remover meu dono 🤧')
 
   // Remover do grupo
-  await gbmorelost.sendMessage(from, { text: `@${menc_os2.split("@")[0]} Foi [ REMOVIDO(A) COM SUCESSO ] - (Por motivos que eu quis kk.) -`, mentions: [menc_os2] })
-  await gbmorelost.groupParticipantsUpdate(from, [menc_os2], "remove")
+  await PyBoyzao.sendMessage(from, { text: `@${menc_os2.split("@")[0]} Foi [ REMOVIDO(A) COM SUCESSO ] - (Por motivos que eu quis kk.) -`, mentions: [menc_os2] })
+  await PyBoyzao.groupParticipantsUpdate(from, [menc_os2], "remove")
 
   // Adicionar à lista negra
   if (!dataGp[0].listanegra.includes(menc_os2)) {
@@ -6421,8 +6421,8 @@ if(!isGroupAdmins) return reply(enviar.msg.adm)
 if(!isBotGroupAdmins) return reply(enviar.msg.Badmin)
 if(!menc_os2 || menc_jid2[1]) return reply("Marque a mensagem do usuário ou marque o @ dele.., lembre de só marcar um usuário...")
 if(!JSON.stringify(groupMembers).includes(menc_os2)) return reply("Este usuário foi removido do grupo ou saiu, não será possível promover..")
-gbmorelost.sendMessage(from, {text: `@${menc_os2.split("@")[0]} Foi promovido(a) para adm com sucesso.`, mentions: [menc_os2]})
-gbmorelost.groupParticipantsUpdate(from, [menc_os2], "promote")  
+PyBoyzao.sendMessage(from, {text: `@${menc_os2.split("@")[0]} Foi promovido(a) para adm com sucesso.`, mentions: [menc_os2]})
+PyBoyzao.groupParticipantsUpdate(from, [menc_os2], "promote")  
 break
 
 case 'rebaixar': 
@@ -6430,8 +6430,8 @@ if(!isGroupAdmins) return reply(enviar.msg.adm)
 if(!isBotGroupAdmins) return reply(enviar.msg.Badmin)
 if(!menc_os2 || menc_jid2[1]) return reply("Marque a mensagem do usuário ou marque o @ dele.., lembre de só marcar um usuário...")
 if(!JSON.stringify(groupMembers).includes(menc_os2)) return reply("Este usuário foi removido do grupo ou saiu, não será possível rebaixar..")
-gbmorelost.sendMessage(from, {text: `@${menc_os2.split("@")[0]} Foi rebaixado para [ MEMBRO COMUM ] com sucesso.`, mentions: [menc_os2]})
-gbmorelost.groupParticipantsUpdate(from, [menc_os2], "demote")  
+PyBoyzao.sendMessage(from, {text: `@${menc_os2.split("@")[0]} Foi rebaixado para [ MEMBRO COMUM ] com sucesso.`, mentions: [menc_os2]})
+PyBoyzao.groupParticipantsUpdate(from, [menc_os2], "demote")  
 break
 
 
@@ -6447,7 +6447,7 @@ if(!numerodono.includes(i.id)) blup.push(i.id)
 blup.splice(blup.indexOf(botNumber), 1)
 for ( i = 0; i < blup.length; i++) {
 await sleep(500)
-gbmorelost.groupParticipantsUpdate(from, [blup[i]], 'remove')
+PyBoyzao.groupParticipantsUpdate(from, [blup[i]], 'remove')
 } 
 break
 
@@ -6463,13 +6463,13 @@ case 'sorteio': {
     try {
         if (!isGroup) return reply(enviar.msg.grupo)
         if (!q) return reply(`Coloque algo após o comando sorteio, por exemplo:\n${prefix}sorteio de 100 R$`)
-        
+
         let d = []
         let teks = `🎉 Meus parabéns ao vencedor do sorteio: ${q}\n-\n`
         const r = Math.floor(Math.random() * groupMetadata.participants.length)
         teks += `• *Mencionando o vencedor:* @${groupMembers[r].id.split('@')[0]}`
         d.push(groupMembers[r].id)
-        
+
         mentions(teks, d, true)
     } catch (e) {
         console.log(e)
@@ -6484,8 +6484,8 @@ case 'metadinha': {
 reagir(from, "💑️") /* Reagir a mensagem! */
 anu = await fetchJson('https://raw.githubusercontent.com/iamriz7/kopel_/main/kopel.json')
 let random = anu[Math.floor(Math.random() * anu.length)]
-gbmorelost.sendMessage(from, {image: {url: random.male}, caption: "• Perfil Masculino"}, {quoted: sasah})
-gbmorelost.sendMessage(from, {image: {url: random.female}, caption: `• Perfil Feminino`}, {quoted: sasah})
+PyBoyzao.sendMessage(from, {image: {url: random.male}, caption: "• Perfil Masculino"}, {quoted: sasah})
+PyBoyzao.sendMessage(from, {image: {url: random.female}, caption: `• Perfil Feminino`}, {quoted: sasah})
 }
 break
 
@@ -6496,7 +6496,7 @@ case 'chance': {
 
     var avb = body.slice(7)
     if (args.length < 1) {
-        return gbmorelost.sendMessage(from, {
+        return PyBoyzao.sendMessage(from, {
             text: `Você precisa digitar da forma correta\nExemplo: ${prefix}chance do luuck ser gay`
         }, { quoted: sasah })
     }
@@ -6510,7 +6510,7 @@ case 'chance': {
 
     const hasil = `⌛⌚ *A chance de isso acontecer é:*\n\n${chance}%\n[ ${bar} ]✔️`
 
-    gbmorelost.sendMessage(from, {
+    PyBoyzao.sendMessage(from, {
         text: hasil,
         mentions: [sender]
     }, { quoted: sasah })
@@ -6539,10 +6539,10 @@ case 'darkweb': {
     const nome = pushname || 'Usuário';
     const tempo = moment.tz('America/Sao_Paulo').format('DD/MM/YYYY HH:mm:ss');
     const fakeSite = `https://leak-core.net/post/${Math.floor(Math.random() * 9999999)}`;
-    
+
     const msg = `🚨 *Vazamento Detectado na Dark Web*\n\n🧑‍💻 *Autor do vazamento:* ${nome}\n🌐 *Publicado em:* ${fakeSite}\n📅 *Data:* ${tempo}\n\n⚠️ Conteúdo postado com sucesso nos servidores da *deepnet* via Tor.\n_Para solicitar remoção, contate o suporte underground._`;
 
-    await gbmorelost.sendMessage(from, { text: msg }, { quoted: info });
+    await PyBoyzao.sendMessage(from, { text: msg }, { quoted: info });
 }
 break;
 
@@ -6567,7 +6567,7 @@ D1 = namoro1.map(i => i.usu1).indexOf(sender)
 D2 = namoro1.map(a => a.usu1).indexOf(`${namoro1[D1].usu2}@s.whatsapp.net`)
 namoro1[D2].namorados = false
 reply(`Agora você está totalmente solteiro, notifiquei a(o) sua/seu parceiro sobre o término.`)
-gbmorelost.sendMessage(`${namoro1[D1].usu2}@s.whatsapp.net`, {text: `Tenho uma notícia ruim sobre seu namoro, ele(a) acaba de terminar.\n–\n• Seja feliz e lembre dos todos os bons momentos que vocês tiveram juntos.`}, {quoted: info})
+PyBoyzao.sendMessage(`${namoro1[D1].usu2}@s.whatsapp.net`, {text: `Tenho uma notícia ruim sobre seu namoro, ele(a) acaba de terminar.\n–\n• Seja feliz e lembre dos todos os bons momentos que vocês tiveram juntos.`}, {quoted: info})
 namoro1.splice(D2, 1)
 fs.writeFileSync("./database/func/namoro1.json", JSON.stringify(namoro1, null, 2))
 namoro1.splice(D1, 1)
@@ -6590,7 +6590,7 @@ break
 case 'gay': {
     if (!isGroup) return reply(enviar.msg.grupo)
 
-    gbmorelost.sendMessage(from, {
+    PyBoyzao.sendMessage(from, {
         text: `🧐 Pesquisando a ficha de gay de @${sender_ou_n.split("@")[0]}... aguarde...`,
         mentions: [sender_ou_n]
     }, { quoted: info })
@@ -6618,7 +6618,7 @@ case 'gay': {
                         `• ${bo}\n` +
                         `\n[ ${barra} ]`
 
-        gbmorelost.sendMessage(from, {
+        PyBoyzao.sendMessage(from, {
             image: { url: imggay },
             caption: legenda,
             mentions: [sender_ou_n],
@@ -6691,7 +6691,7 @@ case 'piorcoisa': {
    ];
    const escolhido = lista[Math.floor(Math.random() * lista.length)];
    const alvo = menc_os2 ? menc_os2 : sender;
-   gbmorelost.sendMessage(from, { text: `A pior coisa que @${alvo.split('@')[0]} já fez foi ${escolhido}.`, mentions: [alvo] });
+   PyBoyzao.sendMessage(from, { text: `A pior coisa que @${alvo.split('@')[0]} já fez foi ${escolhido}.`, mentions: [alvo] });
 }
 break;
 
@@ -6709,7 +6709,7 @@ case 'revelacao': {
    ];
    const escolhido = expose[Math.floor(Math.random() * expose.length)];
    const alvo = menc_os2 ? menc_os2 : sender;
-   gbmorelost.sendMessage(from, { text: `@${alvo.split('@')[0]} foi exposto(a): ${escolhido}.`, mentions: [alvo] });
+   PyBoyzao.sendMessage(from, { text: `@${alvo.split('@')[0]} foi exposto(a): ${escolhido}.`, mentions: [alvo] });
 }
 break;
 
@@ -6741,7 +6741,7 @@ case 'segredo': {
    ];
    const escolhido = segredos[Math.floor(Math.random() * segredos.length)];
    const alvo = menc_os2 ? menc_os2 : sender;
-   gbmorelost.sendMessage(from, { text: `SEGREDO REVELADO:\n@${alvo.split('@')[0]} ${escolhido}.`, mentions: [alvo] });
+   PyBoyzao.sendMessage(from, { text: `SEGREDO REVELADO:\n@${alvo.split('@')[0]} ${escolhido}.`, mentions: [alvo] });
 }
 break;
 
@@ -6813,7 +6813,7 @@ case 'quem': {
     const sorteado = groupMembers[Math.floor(Math.random() * groupMembers.length)].id;
     const frase = frases[Math.floor(Math.random() * frases.length)];
 
-    gbmorelost.sendMessage(from, {
+    PyBoyzao.sendMessage(from, {
         text: `${frase.replace('@user', `@${sorteado.split("@")[0]}`)} ${pergunta}!`,
         mentions: [sorteado]
     });
@@ -6829,7 +6829,7 @@ case 'cronometro': {
     if (tempo > 300) return reply('❌ Cronômetro máximo permitido é de 300 segundos (5 minutos).');
 
     // Manda a primeira mensagem sem quoted
-    let enviado = await gbmorelost.sendMessage(from, { text: `⏱️ Cronômetro iniciado: 0 segundos...` });
+    let enviado = await PyBoyzao.sendMessage(from, { text: `⏱️ Cronômetro iniciado: 0 segundos...` });
 
     for (let i = 1; i <= tempo; i++) {
         await sleep(500); // Espera 1 segundo
@@ -6837,11 +6837,11 @@ case 'cronometro': {
         let novoTexto = `⏱️ Cronômetro: *${i}* segundo${i > 1 ? 's' : ''} passados...`;
 
         // EDITA a mensagem enviada
-        await gbmorelost.sendMessage(from, { text: novoTexto, edit: enviado.key });
+        await PyBoyzao.sendMessage(from, { text: novoTexto, edit: enviado.key });
     }
 
     // Depois que termina, edita dizendo que acabou
-    await gbmorelost.sendMessage(from, { text: `✅ ⏱️ Tempo esgotado!`, edit: enviado.key });
+    await PyBoyzao.sendMessage(from, { text: `✅ ⏱️ Tempo esgotado!`, edit: enviado.key });
 }
 break;
 
@@ -6850,76 +6850,76 @@ break;
 
 case 'feio':
 if(!isGroup) return reply(enviar.msg.grupo)
-gbmorelost.sendMessage(from, {text: `Pesquisando a sua ficha de feio: *@${sender_ou_n.split("@")[0]}* aguarde...`, mentions: [sender_ou_n]}, {quoted: info})
+PyBoyzao.sendMessage(from, {text: `Pesquisando a sua ficha de feio: *@${sender_ou_n.split("@")[0]}* aguarde...`, mentions: [sender_ou_n]}, {quoted: info})
  setTimeout(async() => {
 random = `${Math.floor(Math.random() * 110)}`
 feio = random
 if(feio < 20 ) {var bo = 'É não é feio'} else if(feio == 21 ) {var bo = '+/- feio'} else if(feio == 23 ) {var bo = '+/- feio'} else if(feio == 24 ) {var bo = '+/- feio'} else if(feio == 25 ) {var bo = '+/- feio'} else if(feio == 26 ) {var bo = '+/- feio'} else if(feio == 27 ) {var bo = '+/- feio'} else if(feio == 2 ) {var bo = '+/- feio'} else if(feio == 29 ) {var bo = '+/- feio'} else if(feio == 30 ) {var bo = '+/- feio'} else if(feio == 31 ) {var bo = 'ainda tá na média'} else if(feio == 32 ) {var bo = 'dá pra pegar umas(ns) novinha(o) ainda'} else if(feio == 33 ) {var bo = 'Da pra pegar umas(ns) novinha(o) ainda'} else if(feio == 34 ) {var bo = 'é fein, mas tem baum coração'} else if(feio == 35 ) {var bo = 'tá na média, mas não deixa de ser feii'} else if(feio == 36 ) {var bo = 'bonitin mas é feio com orgulho'} else if(feio == 37 ) {var bo = 'feio e preguiçoso(a), vai se arrumar praga feia'} else if(feio == 3 ) {var bo = 'tenho '} else if(feio == 39 ) {var bo = 'feio, mas um banho e se arrumar, deve resolver'} else if(feio == 40 ) {var bo = 'fein,  mas não existe gente feia, existe gente que não conhece os produtos jequity'} else if(feio == 41 ) {var bo = 'você é Feio, mas é legal, continue assim'} else if(feio == 42 ) {var bo = 'Nada que uma maquiagem e se arrumar, que não resolva.'} else if(feio == 43 ) {var bo = 'Feio que dói de ver, compra uma máscara que melhora'} else if(feio == 44 ) {var bo = 'Feio mas nada que um saco na cabeça não resolva né!?'} else if(feio == 45 ) {var bo = 'você é feio, mas tem bom gosto'} else if(feio == 46 ) {var bo = 'feio mas tem muitos amigos'} else if(feio == 47 ) {var bo = 'é feio mas tem lábia pra pegar várias novinha'} else if(feio == 4 ) {var bo = 'feio e ainda não sabe se vestir, vixi'} else if(feio == 49 ) {var bo = 'feiooo dms vey.'} else if(feio == 50 ) {var bo = 'você é feio, mas não se encherga.'} else if(feio > 51) {var bo = 'você é feio demais bixo.'}
-gbmorelost.sendMessage(from, {image: {url: imgfeio}, caption: `O quanto *@${sender_ou_n.split("@")[0]}* pode ser uma pessoa feia?\n• A porcentagem de chance é *${random}%*, ${bo}`, mentions: [sender_ou_n], thumbnail:null}, {quoted: sasah})
+PyBoyzao.sendMessage(from, {image: {url: imgfeio}, caption: `O quanto *@${sender_ou_n.split("@")[0]}* pode ser uma pessoa feia?\n• A porcentagem de chance é *${random}%*, ${bo}`, mentions: [sender_ou_n], thumbnail:null}, {quoted: sasah})
 }, 500)
 break 
 
 case 'corno':
 if(!isGroup) return reply(enviar.msg.grupo)
-gbmorelost.sendMessage(from, {text:`Pesquisando a ficha de corno @${sender_ou_n.split("@")[0]}, aguarde...`, mentions: [sender_ou_n]}, {quoted: info})
+PyBoyzao.sendMessage(from, {text:`Pesquisando a ficha de corno @${sender_ou_n.split("@")[0]}, aguarde...`, mentions: [sender_ou_n]}, {quoted: info})
 setTimeout(async() => {
 random = `${Math.floor(Math.random() * 110)}`
-gbmorelost.sendMessage(from, {image: {url: imgcorno}, caption: `O quanto *@${sender_ou_n.split("@")[0]}* pode ser uma pessoa chifruda?\n• A porcentagem de chance é *${random}%*`, mentions: [sender_ou_n]}, {quoted: sasah})
+PyBoyzao.sendMessage(from, {image: {url: imgcorno}, caption: `O quanto *@${sender_ou_n.split("@")[0]}* pode ser uma pessoa chifruda?\n• A porcentagem de chance é *${random}%*`, mentions: [sender_ou_n]}, {quoted: sasah})
 }, 500)
 break
 
 case 'vesgo':
 if(!isGroup) return reply(enviar.msg.grupo)
-gbmorelost.sendMessage(from, {text:`Pesquisando a ficha de vesgo @${sender_ou_n.split("@")[0]}, aguarde...`, mentions: [sender_ou_n]}, {quoted: info})
+PyBoyzao.sendMessage(from, {text:`Pesquisando a ficha de vesgo @${sender_ou_n.split("@")[0]}, aguarde...`, mentions: [sender_ou_n]}, {quoted: info})
  setTimeout(async() => {
 random = `${Math.floor(Math.random() * 110)}`
-gbmorelost.sendMessage(from, {image: {url: imgvesgo}, caption: `O quanto *@${sender_ou_n.split("@")[0]}* pode ser uma pessoa vesga?\n• A porcentagem de chance é *${random}%*`, mentions: [sender_ou_n]}, {quoted: sasah})
+PyBoyzao.sendMessage(from, {image: {url: imgvesgo}, caption: `O quanto *@${sender_ou_n.split("@")[0]}* pode ser uma pessoa vesga?\n• A porcentagem de chance é *${random}%*`, mentions: [sender_ou_n]}, {quoted: sasah})
 }, 500)
 break 
 
 case 'bebado':
 if(!isGroup) return reply(enviar.msg.grupo)
-gbmorelost.sendMessage(from, {text:`Pesquisando a ficha de bebado(a) @${sender_ou_n.split("@")[0]}, aguarde...`, mentions: [sender_ou_n]}, {quoted: info})
+PyBoyzao.sendMessage(from, {text:`Pesquisando a ficha de bebado(a) @${sender_ou_n.split("@")[0]}, aguarde...`, mentions: [sender_ou_n]}, {quoted: info})
  setTimeout(async() => {
 random = `${Math.floor(Math.random() * 110)}`
-gbmorelost.sendMessage(from, {image: {url: imgbebado}, caption: `O quanto *@${sender_ou_n.split("@")[0]}* pode ser uma pessoa bêbada?\n• A porcentagem de chance é *${random}%*`, mentions: [sender_ou_n]}, {quoted: sasah})
+PyBoyzao.sendMessage(from, {image: {url: imgbebado}, caption: `O quanto *@${sender_ou_n.split("@")[0]}* pode ser uma pessoa bêbada?\n• A porcentagem de chance é *${random}%*`, mentions: [sender_ou_n]}, {quoted: sasah})
 }, 500)
 break 
 
 case 'gado':
 if(!isGroup) return reply(enviar.msg.grupo)
-gbmorelost.sendMessage(from, {text:`Pesquisando a ficha de gado @${sender_ou_n.split("@")[0]}, aguarde...`, mentions: [sender_ou_n]}, {quoted: info})
+PyBoyzao.sendMessage(from, {text:`Pesquisando a ficha de gado @${sender_ou_n.split("@")[0]}, aguarde...`, mentions: [sender_ou_n]}, {quoted: info})
  setTimeout(async() => {
 random = `${Math.floor(Math.random() * 110)}`
-gbmorelost.sendMessage(from, {image: {url: imggado}, caption: `O quanto *@${sender_ou_n.split("@")[0]}* pode ser um gado?\n• A porcentagem de chance é *${random}%*`, mentions: [sender_ou_n]}, {quoted: sasah})
+PyBoyzao.sendMessage(from, {image: {url: imggado}, caption: `O quanto *@${sender_ou_n.split("@")[0]}* pode ser um gado?\n• A porcentagem de chance é *${random}%*`, mentions: [sender_ou_n]}, {quoted: sasah})
 }, 500)
 break 
 
 case 'gostoso':
 if(!isGroup) return reply(enviar.msg.grupo)
-gbmorelost.sendMessage(from, {text:`Pesquisando a sua ficha de gostoso @${sender_ou_n.split("@")[0]} aguarde...`, mentions: [sender_ou_n]}, {quoted: info})
+PyBoyzao.sendMessage(from, {text:`Pesquisando a sua ficha de gostoso @${sender_ou_n.split("@")[0]} aguarde...`, mentions: [sender_ou_n]}, {quoted: info})
  setTimeout(async() => {
 random = `${Math.floor(Math.random() * 110)}`
-gbmorelost.sendMessage(from, {image: {url: imggostoso}, caption: `O quanto *@${sender_ou_n.split("@")[0]}* pode ser uma pessoa gostosa?\n• A porcentagem de chance é *${random}%*`, gifPlayback: true, mentions: [sender_ou_n]}, {quoted: sasah})
+PyBoyzao.sendMessage(from, {image: {url: imggostoso}, caption: `O quanto *@${sender_ou_n.split("@")[0]}* pode ser uma pessoa gostosa?\n• A porcentagem de chance é *${random}%*`, gifPlayback: true, mentions: [sender_ou_n]}, {quoted: sasah})
 }, 500)
 break 
 
 
 case 'gostosa':
 if(!isGroup) return reply(enviar.msg.grupo)
-gbmorelost.sendMessage(from, {text:`Pesquisando a sua ficha de gostosa @${sender_ou_n.split("@")[0]} aguarde...`, mentions: [sender_ou_n]}, {quoted: info})
+PyBoyzao.sendMessage(from, {text:`Pesquisando a sua ficha de gostosa @${sender_ou_n.split("@")[0]} aguarde...`, mentions: [sender_ou_n]}, {quoted: info})
  setTimeout(async() => {
 random = `${Math.floor(Math.random() * 110)}`
-gbmorelost.sendMessage(from, {image: {url: imggostosa}, caption: `O quanto *@${sender_ou_n.split("@")[0]}* pode ser uma pessoa gostosa?\n• A porcentagem de chance é *${random}%*`, gifPlayback: true, mentions: [sender_ou_n]}, {quoted: sasah})
+PyBoyzao.sendMessage(from, {image: {url: imggostosa}, caption: `O quanto *@${sender_ou_n.split("@")[0]}* pode ser uma pessoa gostosa?\n• A porcentagem de chance é *${random}%*`, gifPlayback: true, mentions: [sender_ou_n]}, {quoted: sasah})
 }, 500)
 break 
 
 
-				
+
 case 'matar': case 'mata':  
 if(!isGroup) return reply(enviar.msg.grupo)
 if(!menc_os2 || menc_jid2[1]) return reply('marque o alvo que você quer matar, a mensagem ou o @')
-gbmorelost.sendMessage(from, {video: {url: matarcmd}, gifPlayback: true, caption: `Você Acabou de matar o(a) @${menc_os2.split('@')[0]} 😈👹`, mentions: [menc_os2]}, {quoted: sasah})
+PyBoyzao.sendMessage(from, {video: {url: matarcmd}, gifPlayback: true, caption: `Você Acabou de matar o(a) @${menc_os2.split('@')[0]} 😈👹`, mentions: [menc_os2]}, {quoted: sasah})
 break 
 
 
@@ -6931,7 +6931,7 @@ case 'casal':
     let pessoa1 = groupMembers[Math.floor(Math.random() * groupMembers.length)].id
     let pessoa2 = groupMembers[Math.floor(Math.random() * groupMembers.length)].id
 
-    gbmorelost.sendMessage(from, {
+    PyBoyzao.sendMessage(from, {
         image: { url: 'https://files.catbox.moe/0jr0kb.jpg' },
         caption: `💞casal formado:
         *@${pessoa1.split('@')[0]}* ❤️ *@${pessoa2.split('@')[0]}*.`,
@@ -6943,8 +6943,8 @@ case 'abraco':
 case 'abracar':  
     if (!isGroup) return reply(enviar.msg.grupo)
     if (!menc_os2 || menc_jid2[1]) return reply('marque o alvo que você quer abraçar, a mensagem ou o @')
-    
-    gbmorelost.sendMessage(from, {
+
+    PyBoyzao.sendMessage(from, {
         video: { url: 'https://files.catbox.moe/elb3rr.mp4' },
         gifPlayback: true,
         caption: `Awwnt, você deu um abraço fofinho na(o) ⧽ @${menc_os2.split('@')[0]} ❤‍🩹🫂`,
@@ -6955,8 +6955,8 @@ break
 case 'carinho':
     if (!isGroup) return reply(enviar.msg.grupo)
     if (!menc_os2 || menc_jid2[1]) return reply('marque o alvo que você deseja fazer carinho, a mensagem ou o @')
-    
-    gbmorelost.sendMessage(from, {
+
+    PyBoyzao.sendMessage(from, {
         video: { url: 'https://files.catbox.moe/hcszsf.mp4' },
         gifPlayback: true,
         caption: `Você Acabou de fazer carinho no(a) @${menc_os2.split('@')[0]} 🥹`,
@@ -6968,8 +6968,8 @@ break
 case 'comer':
     if (!isGroup) return reply(enviar.msg.grupo)
     if (!menc_os2 || menc_jid2[1]) return reply('marque o alvo que você deseja fazer comer, a mensagem ou o @')
-    
-    gbmorelost.sendMessage(from, {
+
+    PyBoyzao.sendMessage(from, {
         video: { url: 'https://files.catbox.moe/2r7di8.mp4' },
         gifPlayback: true,
         caption: `Você Acabou de comer o(a) @${menc_os2.split('@')[0]} 🤤`,
@@ -6981,8 +6981,8 @@ case 'beijo':
 case 'beijar':  
     if (!isGroup) return reply(enviar.msg.grupo)
     if (!menc_os2 || menc_jid2[1]) return reply('marque o alvo que você quer você deseja beijar, a mensagem ou o @')
-    
-    gbmorelost.sendMessage(from, {
+
+    PyBoyzao.sendMessage(from, {
         video: { url: 'https://files.catbox.moe/j5t0i4.mp4' },
         gifPlayback: true,
         caption: `Awwnt, você acabou de dar um beijo no(a) ⧽ @${menc_os2.split('@')[0]} 🫦❤‍🩹`,
@@ -6995,7 +6995,7 @@ if(!isGroup) return reply(enviar.msg.grupo)
 psycatgames().then(async (array) => {
 const { nsfw, questions } = array[Math.floor(Math.random() * array.length)]
 const { pergunta1, pergunta2 } = questions[Math.floor(Math.random() * questions.length)]
-sendPoll(gbmorelost, from, "Você prefere..", [pergunta1, pergunta2])
+sendPoll(PyBoyzao, from, "Você prefere..", [pergunta1, pergunta2])
 }).catch(console.error);
 break
 
@@ -7004,7 +7004,7 @@ if(!isGroup) return reply(enviar.msg.grupo)
 setTimeout(() => {reagir(from, "❔")}, 50)
 const pergunta_ = JSON.parse(fs.readFileSync('./arquivos/json/eununca.json'));
 const getRandomINever = pergunta_[Math.floor(Math.random() * pergunta_.length)]
-sendPoll(gbmorelost, from, getRandomINever, ["Eu nunca", "Eu já"]).catch(console.error);
+sendPoll(PyBoyzao, from, getRandomINever, ["Eu nunca", "Eu já"]).catch(console.error);
 break
 
 case 'conselhobiblico':
@@ -7013,7 +7013,7 @@ case 'conselhosb':
 case 'conselhob':  
 reagir(from, "⛪️")
 var conselhosb = conselhob[Math.floor(Math.random() * conselhob.length)]
-gbmorelost.sendMessage(from, {text: mess.conselhoBiblico(tempo, pushname, conselhosb, NomeDoBot, groupName)}, {quoted: sasah, contextInfo: {"mentionedJid": mess.conselhoBiblico(tempo, pushname, conselhosb, NomeDoBot, groupName)}})
+PyBoyzao.sendMessage(from, {text: mess.conselhoBiblico(tempo, pushname, conselhosb, NomeDoBot, groupName)}, {quoted: sasah, contextInfo: {"mentionedJid": mess.conselhoBiblico(tempo, pushname, conselhosb, NomeDoBot, groupName)}})
 break
 
 
@@ -7026,26 +7026,26 @@ case 'cantadas': case 'cantada':
 reagir(from, "❤️")
 cantadasbb = randomCantadas[Math.floor(Math.random() * randomCantadas.length)]   
 let cantadasText = `*${cantadasbb}*`
-gbmorelost.sendMessage(from, {text: cantadasText}, {quoted: sasah})
+PyBoyzao.sendMessage(from, {text: cantadasText}, {quoted: sasah})
 break
 
 case 'fatos': case 'curiosidades':  
 fatoskk = fatos[Math.floor(Math.random() * fatos.length)]   
 let fatosText = `*${fatoskk}*`
-gbmorelost.sendMessage(from, {text: fatosText}, {quoted: sasah})
+PyBoyzao.sendMessage(from, {text: fatosText}, {quoted: sasah})
 break
 
 case 'tapa':
 if(!isGroup) return reply(enviar.msg.grupo)
 if(!menc_os2 || menc_jid2[1]) return reply('Marque o alvo que você quer da um tapa, a mensagem ou o @')
-gbmorelost.sendMessage(from, {video: {url: tapacmd}, gifPlayback: true, caption: `Você acabou de da um tapa na raba da *@${menc_os2.split('@')[0]}*. 😼`, mentions: [menc_os2]}, {quoted: sasah})
+PyBoyzao.sendMessage(from, {video: {url: tapacmd}, gifPlayback: true, caption: `Você acabou de da um tapa na raba da *@${menc_os2.split('@')[0]}*. 😼`, mentions: [menc_os2]}, {quoted: sasah})
 break
 
 case 'chute':
 case 'chutar':  
 if(!isGroup) return reply(enviar.msg.grupo)
 if(!menc_os2 || menc_jid2[1]) return reply('marque o alvo que você quer da um chute, a mensagem ou o @')
-gbmorelost.sendMessage(from, {video: {url: chutecmd}, gifPlayback: true, caption: `Você acabou de dar um chute em *@${menc_os2.split('@')[0]}*.`, mentions: [menc_os2]}, {quoted: sasah})
+PyBoyzao.sendMessage(from, {video: {url: chutecmd}, gifPlayback: true, caption: `Você acabou de dar um chute em *@${menc_os2.split('@')[0]}*.`, mentions: [menc_os2]}, {quoted: sasah})
 break 
 
 
@@ -7070,7 +7070,7 @@ case 'desafio': {
 
     const desafio = desafios[Math.floor(Math.random() * desafios.length)];
 
-    await gbmorelost.sendMessage(from, {
+    await PyBoyzao.sendMessage(from, {
         text: `@${target.split('@')[0]}\n⚡ Seu desafio é:\n\n*${desafio}*`,
         mentions: [target]
     });
@@ -7089,7 +7089,7 @@ case 'simounao': {
 
     const resposta = duvidas[Math.floor(Math.random() * duvidas.length)];
 
-    await gbmorelost.sendMessage(from, {
+    await PyBoyzao.sendMessage(from, {
         text: `@${target.split('@')[0]}\n❓ Resultado:\n\n*${resposta}*`,
         mentions: [target]
     });
@@ -7108,7 +7108,7 @@ case 'paranoia': {
 
     const paranoia = paranoias[Math.floor(Math.random() * paranoias.length)];
 
-    await gbmorelost.sendMessage(from, {
+    await PyBoyzao.sendMessage(from, {
         text: `@${target.split('@')[0]}\n👻 Alerta Paranormal:\n\n${paranoia}`,
         mentions: [target]
     });
@@ -7127,7 +7127,7 @@ case 'objetivo': {
 
     const objetivo = objetivos[Math.floor(Math.random() * objetivos.length)];
 
-    await gbmorelost.sendMessage(from, {
+    await PyBoyzao.sendMessage(from, {
         text: `@${target.split('@')[0]}\n🎯 Seu objetivo do dia:\n\n*${objetivo}*`,
         mentions: [target]
     });
@@ -7157,7 +7157,7 @@ case 'filme': {
 📺 Onde assistir: *${filme.onde_assistir}*
 `;
 
-    await gbmorelost.sendMessage(from, {
+    await PyBoyzao.sendMessage(from, {
         text: mensagem.trim(),
         mentions: [target]
     });
@@ -7182,7 +7182,7 @@ case 'profissao': {
 
     const profissao = profissoes[Math.floor(Math.random() * profissoes.length)];
 
-    await gbmorelost.sendMessage(from, {
+    await PyBoyzao.sendMessage(from, {
         text: `@${target.split('@')[0]}\n🏢 Sua profissão aleatória é:\n\n*${profissao}*`,
         mentions: [target]
     });
@@ -7201,7 +7201,7 @@ case 'apelido': {
 
     const apelido = apelidos[Math.floor(Math.random() * apelidos.length)];
 
-    await gbmorelost.sendMessage(from, {
+    await PyBoyzao.sendMessage(from, {
         text: `@${target.split('@')[0]}\n🎭 Seu novo apelido é:\n\n*${apelido}*`,
         mentions: [target]
     });
@@ -7230,7 +7230,7 @@ case 'verdade': {
 
     const pergunta = verdades[Math.floor(Math.random() * verdades.length)];
 
-    await gbmorelost.sendMessage(from, {
+    await PyBoyzao.sendMessage(from, {
         text: `@${target.split('@')[0]}\n❓ *Desafio de Verdade:*\n\n${pergunta}`,
         mentions: [target]
     });
@@ -7254,7 +7254,7 @@ case 'pseudonimo': {
 
     const pseudonimo = pseudonimos[Math.floor(Math.random() * pseudonimos.length)];
 
-    await gbmorelost.sendMessage(from, {
+    await PyBoyzao.sendMessage(from, {
         text: `✨ Seu novo pseudônimo é:\n\n*${pseudonimo}*`,
         mentions: [sender]
     });
@@ -7264,7 +7264,7 @@ break;
 
 case 'tirarprint': {
     // Primeiro manda uma mensagem como se estivesse capturando
-    const loading = await gbmorelost.sendMessage(from, {
+    const loading = await PyBoyzao.sendMessage(from, {
         text: `⏳ Capturando print...`
     });
 
@@ -7272,7 +7272,7 @@ case 'tirarprint': {
     await sleep(300);
 
     // Edita a mensagem para "print salvo"
-    await gbmorelost.sendMessage(from, {
+    await PyBoyzao.sendMessage(from, {
         text: `✅ Screenshot capturada com sucesso!\n\nArquivo salvo em seu celular mestre! ☁️`,
         edit: loading.key
     });
@@ -7287,7 +7287,7 @@ break;
 case 'formarcasal2': {
     if (!isGroup) return reply('❗ Esse comando só pode ser usado em grupos!');
 
-    const metadata = await gbmorelost.groupMetadata(from); // Pega o metadata do grupo
+    const metadata = await PyBoyzao.groupMetadata(from); // Pega o metadata do grupo
     const membros = metadata.participants.map(p => p.id).filter(id => id.endsWith('@s.whatsapp.net'));
 
     if (membros.length < 2) return reply('❗ Tem pouca gente no grupo pra formar um casal!');
@@ -7299,7 +7299,7 @@ case 'formarcasal2': {
         pessoa2 = membros[Math.floor(Math.random() * membros.length)];
     } while (pessoa1 === pessoa2); // garantir que são diferentes
 
-    await gbmorelost.sendMessage(from, {
+    await PyBoyzao.sendMessage(from, {
         text: `❤️Casal do grupo é *com certeza* e *sem sombras de dúvidas* :\n\n🔥@${pessoa1.split('@')[0]} + 😘@${pessoa2.split('@')[0]} \nNão tô mentindo, já hackeei esses dois trocando fotinhas😈`,
         mentions: [pessoa1, pessoa2]
     });
@@ -7311,13 +7311,13 @@ case 'rename':
 case 'r':
   {
     if (!info.quoted || info.quoted.mimetype !== 'image/webp') {
-      return gbmorelost.sendMessage(info.chat, {
+      return PyBoyzao.sendMessage(info.chat, {
         text: '✳️ Responda a uma figurinha com o comando *rename packname|author* para renomeá-la.'
       }, { quoted: info });
     }
 
     if (!args[0]) {
-      return gbmorelost.sendMessage(info.chat, {
+      return PyBoyzao.sendMessage(info.chat, {
         text: '📝 Use: *rename nome_do_pacote|autor*\nEx: rename renomeia certo|anta'
       }, { quoted: info });
     }
@@ -7327,7 +7327,7 @@ case 'r':
     const author = separador[1]?.trim() || '';
 
     if (!packname) {
-      return gbmorelost.sendMessage(info.chat, {
+      return PyBoyzao.sendMessage(info.chat, {
         text: '⚠️ Você precisa definir um *packname*.'
       }, { quoted: info });
     }
@@ -7338,7 +7338,7 @@ case 'r':
       author
     });
 
-    await gbmorelost.sendMessage(info.chat, {
+    await PyBoyzao.sendMessage(info.chat, {
       sticker: { url: buffer }
     }, { quoted: info });
 
@@ -7348,7 +7348,7 @@ case 'r':
 
     break;
   }
-  
+
 case 'rankativos': 
 case 'rankativo':   
 if(!isGroup) return reply(enviar.msg.grupo)
@@ -7487,7 +7487,7 @@ if(fs.existsSync(`./arquivos/tictactoe/db/${from}.json`)) {
 const boardnow = setGame(`${from}`);
 const matrix = boardnow._matrix;
 const chatMove = `『 *🎮 Ꮐ̸Ꭺ̸Ꮇ̸Ꭼ̸ Ꭰ̸Ꭺ̸ Ꮩ̸Ꭼ̸Ꮮ̸Ꮋ̸Ꭺ̸ 🕹️* 』\n—\n💢 Alguém está jogando o *jogo da velha* no momento! Por favor, aguarde o término da partida para iniciar a próxima.\n-\n• @${boardnow.X} VS @${boardnow.O}\n—\n• Sua vez: @${boardnow.turn == "X" ? boardnow.X : boardnow.O}\n-\n${matrix[0][0]}  ${matrix[0][1]}  ${matrix[0][2]}\n${matrix[1][0]}  ${matrix[1][1]}  ${matrix[1][2]}\n${matrix[2][0]}  ${matrix[2][1]}  ${matrix[2][2]}`;
-gbmorelost.sendMessage(from, {text: chatMove}, {quoted: sasah,
+PyBoyzao.sendMessage(from, {text: chatMove}, {quoted: sasah,
 mentions: [
 boardnow.X + "@s.whatsapp.net",
 boardnow.O + "@s.whatsapp.net",
@@ -7535,33 +7535,33 @@ break
 
 case 'match': {
     if (!args.join(' ').includes(' e ')) {
-        return gbmorelost.sendMessage(from, { text: '❗ Use no formato: sintonia Nome1 e Nome2' }, { quoted: info });
+        return PyBoyzao.sendMessage(from, { text: '❗ Use no formato: sintonia Nome1 e Nome2' }, { quoted: info });
     }
 
     let [pessoa1, pessoa2] = args.join(' ').split(' e ').map(v => v.trim());
     if (!pessoa1 || !pessoa2) {
-        return gbmorelost.sendMessage(from, { text: '❗ Informe dois nomes separados por "e".' }, { quoted: info });
+        return PyBoyzao.sendMessage(from, { text: '❗ Informe dois nomes separados por "e".' }, { quoted: info });
     }
 
     let porcentagem = Math.floor(Math.random() * 101);
     let mensagem = '💔 Hmmm... tem poucas chances...';
     if (porcentagem >= 70) mensagem = '💘 Match forte! Vocês nasceram um pro outro!';
     else if (porcentagem >= 40) mensagem = '😊 Pode dar certo, vale a pena tentar!';
-    
+
     let resposta = `❤️ *${pessoa1}* + *${pessoa2}* = *${porcentagem}%* de Match!\n\n${mensagem}`;
-    await gbmorelost.sendMessage(from, { text: resposta }, { quoted: info });
+    await PyBoyzao.sendMessage(from, { text: resposta }, { quoted: info });
 }
 break;
 
 
 case 'nomeinvertido': {
     if (!args[0]) {
-        return gbmorelost.sendMessage(from, { text: '❗ Envie um nome ou frase para inverter.\nEx: nomeinvertido ChatGPT' }, { quoted: info });
+        return PyBoyzao.sendMessage(from, { text: '❗ Envie um nome ou frase para inverter.\nEx: nomeinvertido ChatGPT' }, { quoted: info });
     }
 
     let textoOriginal = args.join(' ');
     let invertido = textoOriginal.split('').reverse().join('');
-    await gbmorelost.sendMessage(from, { text: `🔁 *Texto invertido:*\n${invertido}` }, { quoted: info });
+    await PyBoyzao.sendMessage(from, { text: `🔁 *Texto invertido:*\n${invertido}` }, { quoted: info });
 }
 break;
 
@@ -7584,17 +7584,17 @@ break;
     iniciado: false
   };
 
-  const texto = `🎮 *STOP / Adedanha - gbmorelost*\n\n🔤 Letra sorteada: *${letra}*\n\n✍️ Categorias:\n${categorias.map((c,i) => ` ${i+1}. ${c}`).join('\n')}\n\n🟢 Use *;stophelp* para ver como jogar.`;
-  await gbmorelost.sendMessage(from, { text: texto }, { quoted: info });
+  const texto = `🎮 *STOP / Adedanha - PyBoyzao*\n\n🔤 Letra sorteada: *${letra}*\n\n✍️ Categorias:\n${categorias.map((c,i) => ` ${i+1}. ${c}`).join('\n')}\n\n🟢 Use *;stophelp* para ver como jogar.`;
+  await PyBoyzao.sendMessage(from, { text: texto }, { quoted: info });
 }
 break;
 
   // Explica como jogar
   case 'stophelp': {
-    if (!stopGames[from]) return gbmorelost.sendMessage(from, { text: '❗ Nenhum jogo iniciado. Use ;stop para começar.' }, { quoted: info });
+    if (!stopGames[from]) return PyBoyzao.sendMessage(from, { text: '❗ Nenhum jogo iniciado. Use ;stop para começar.' }, { quoted: info });
 
     const categorias = stopGames[from].categorias.map((c,i) => `${i+1}. ${c}`).join('\n');
-    const texto = `📝 *Como jogar Adedanha - gbmorelost*\n\n` +
+    const texto = `📝 *Como jogar Adedanha - PyBoyzao*\n\n` +
       `1️⃣ ADM usa *;stop* para iniciar.\n` +
       `2️⃣ ADM digita *;stopcomecar* para liberar as respostas.\n` +
       `3️⃣ Jogadores enviam respostas com:\n*;stoptabela resposta1, resposta2...*\n\n` +
@@ -7602,34 +7602,34 @@ break;
       `⚠️ Ordem das categorias:\n${categorias}\n\n` +
       `📊 Pontuação:\n✅ Única: 10 pts\n🔁 Repetida: 5 pts\n⛔ Ausente ou fora da letra: 0 pts`;
 
-    await gbmorelost.sendMessage(from, { text: texto }, { quoted: info });
+    await PyBoyzao.sendMessage(from, { text: texto }, { quoted: info });
   }
   break;
 
   // Libera os jogadores enviarem respostas
   case 'stopcomecar': {
-    if (!isGroup) return gbmorelost.sendMessage(from, { text: '❗ Só em grupos.' }, { quoted: info });
-    if (!isGroupAdmins) return gbmorelost.sendMessage(from, { text: '❗ Apenas ADM pode liberar as respostas.' }, { quoted: info });
-    if (!stopGames[from]) return gbmorelost.sendMessage(from, { text: '❌ Nenhum jogo iniciado.' }, { quoted: info });
+    if (!isGroup) return PyBoyzao.sendMessage(from, { text: '❗ Só em grupos.' }, { quoted: info });
+    if (!isGroupAdmins) return PyBoyzao.sendMessage(from, { text: '❗ Apenas ADM pode liberar as respostas.' }, { quoted: info });
+    if (!stopGames[from]) return PyBoyzao.sendMessage(from, { text: '❌ Nenhum jogo iniciado.' }, { quoted: info });
 
     stopGames[from].iniciado = true;
-    await gbmorelost.sendMessage(from, { text: '✅ Agora os jogadores podem enviar suas respostas com *;stoptabela*.', }, { quoted: info });
+    await PyBoyzao.sendMessage(from, { text: '✅ Agora os jogadores podem enviar suas respostas com *;stoptabela*.', }, { quoted: info });
   }
   break;
 
   // Jogador envia respostas
   case 'stoptabela': {
-    if (!stopGames[from] || !stopGames[from].iniciado) return gbmorelost.sendMessage(from, { text: '🚫 O jogo ainda não começou. Aguarde o ADM usar ;stopcomecar.' }, { quoted: info });
+    if (!stopGames[from] || !stopGames[from].iniciado) return PyBoyzao.sendMessage(from, { text: '🚫 O jogo ainda não começou. Aguarde o ADM usar ;stopcomecar.' }, { quoted: info });
 
     const respostas = args.join(' ').split(',').map(r => r.trim());
     const esperado = stopGames[from].categorias.length;
-    if (respostas.length !== esperado) return gbmorelost.sendMessage(from, { text: `❗ Envie ${esperado} respostas, separadas por vírgula, na ordem correta.` }, { quoted: info });
+    if (respostas.length !== esperado) return PyBoyzao.sendMessage(from, { text: `❗ Envie ${esperado} respostas, separadas por vírgula, na ordem correta.` }, { quoted: info });
 
     const letra = stopGames[from].letra.toLowerCase();
     // Validar se cada resposta começa com a letra sorteada (ignora se resposta vazia)
     for (let i = 0; i < respostas.length; i++) {
       if (respostas[i].length > 0 && respostas[i][0].toLowerCase() !== letra) {
-        return gbmorelost.sendMessage(from, { text: `❌ Sua resposta "${respostas[i]}" não começa com a letra "${letra.toUpperCase()}"! Corrija e envie novamente.` }, { quoted: info });
+        return PyBoyzao.sendMessage(from, { text: `❌ Sua resposta "${respostas[i]}" não começa com a letra "${letra.toUpperCase()}"! Corrija e envie novamente.` }, { quoted: info });
       }
     }
 
@@ -7640,22 +7640,22 @@ break;
     console.log('📄 Respostas recebidas:', respostas);
     console.log('📦 Respostas salvas até agora:', stopGames[from].respostas);
 
-    await gbmorelost.sendMessage(from, { text: '✅ Respostas registradas com sucesso!' }, { quoted: info });
+    await PyBoyzao.sendMessage(from, { text: '✅ Respostas registradas com sucesso!' }, { quoted: info });
   }
   break;
 
   // Finaliza o jogo, calcula e mostra pontuação
   case 'stopfim': {
-    if (!isGroup) return gbmorelost.sendMessage(from, { text: '❗ Só em grupos.' }, { quoted: info });
-    if (!isGroupAdmins) return gbmorelost.sendMessage(from, { text: '❗ Apenas ADM pode finalizar o jogo.' }, { quoted: info });
+    if (!isGroup) return PyBoyzao.sendMessage(from, { text: '❗ Só em grupos.' }, { quoted: info });
+    if (!isGroupAdmins) return PyBoyzao.sendMessage(from, { text: '❗ Apenas ADM pode finalizar o jogo.' }, { quoted: info });
 
     const game = stopGames[from];
-    if (!game) return gbmorelost.sendMessage(from, { text: '🚫 Nenhum jogo ativo.' }, { quoted: info });
+    if (!game) return PyBoyzao.sendMessage(from, { text: '🚫 Nenhum jogo ativo.' }, { quoted: info });
 
     const { respostas, categorias, letra } = game;
     if (Object.keys(respostas).length === 0) {
       delete stopGames[from];
-      return gbmorelost.sendMessage(from, { text: '⚠️ Ninguém respondeu. Jogo encerrado.' }, { quoted: info });
+      return PyBoyzao.sendMessage(from, { text: '⚠️ Ninguém respondeu. Jogo encerrado.' }, { quoted: info });
     }
 
     // Organiza respostas por categoria (colunas)
@@ -7702,17 +7702,17 @@ break;
     }
 
     delete stopGames[from];
-    await gbmorelost.sendMessage(from, { text: ranking }, { quoted: info });
+    await PyBoyzao.sendMessage(from, { text: ranking }, { quoted: info });
   }
   break;
-  
-  
-  
-  
-  
-  
-  
-  
+
+
+
+
+
+
+
+
   case 'linkcurto': 
   if (!q) {
     await reagir(from, '❗');
@@ -7735,7 +7735,7 @@ break;
       })
     }];
 
-    await gbmorelost.relayMessage(from, {
+    await PyBoyzao.relayMessage(from, {
       interactiveMessage: {
         body: { text: `🔗 *Link Encurtado:* ${shortLink}` },
         footer: { text: "✅ Clique abaixo para copiar o link" },
@@ -7755,14 +7755,14 @@ break;
 
   break;
 
-  
-  
-  
-  
-  
-  
 
-  
+
+
+
+
+
+
+
 case 'fontstyle': 
   if (!q) {
     await reagir(from, '❗');
@@ -7838,7 +7838,7 @@ case 'fontstyle':
       })
     }));
 
-    await gbmorelost.relayMessage(from, {
+    await PyBoyzao.relayMessage(from, {
       interactiveMessage: {
         body: { text: `✍️ Estilos para o texto "${q}":\n\n${lista}` },
         footer: { text: "📋 Clique no botão para copiar o estilo desejado." },
@@ -7857,14 +7857,14 @@ case 'fontstyle':
   }
   break;
 
- 
- 
- 
 
- 
- 
- 
- 
+
+
+
+
+
+
+
  case 'moldura': 
   if (!q) {
     await reagir(from, '❗');
@@ -7893,7 +7893,7 @@ case 'fontstyle':
       })
     }];
 
-    await gbmorelost.relayMessage(from, {
+    await PyBoyzao.relayMessage(from, {
       interactiveMessage: {
         body: { text: `🖼️ Texto com moldura:\n\n${textoMoldurado}` },
         footer: { text: "📋 Clique para copiar o texto com moldura." },
@@ -7985,7 +7985,7 @@ case 'linhadestaque':
     })
   }));
 
-  await gbmorelost.relayMessage(from, {
+  await PyBoyzao.relayMessage(from, {
     interactiveMessage: {
       body: { text: `📏 *Linhas de Destaque/Separação:*\n\n${lista}` },
       footer: { text: "📋 Toque em um botão para copiar sua favorita." },
@@ -7998,8 +7998,8 @@ case 'linhadestaque':
   await reagir(from, '✅');
   break;
 
-  
-  
+
+
   case 'cpfgerar': 
   await reagir(from, '⏳');
 
@@ -8027,7 +8027,7 @@ case 'linhadestaque':
     })
   }];
 
-  await gbmorelost.relayMessage(from, {
+  await PyBoyzao.relayMessage(from, {
     interactiveMessage: {
       body: { text: `🧾 CPF gerado:\n\n${cpf}` },
       footer: { text: "📋 Copie com o botão abaixo (válido, mas fake)." },
@@ -8060,7 +8060,7 @@ case 'hd':
     }
 
     // Tente sem quoted primeiro:
-    await gbmorelost.sendMessage(info.key.remoteJid, { image: buffer, caption: 'Imagem em HD' });
+    await PyBoyzao.sendMessage(info.key.remoteJid, { image: buffer, caption: 'Imagem em HD' });
     // Depois pode tentar com quoted correto, como info ou info.message
 
     reply('Imagem enviada em HD!');
@@ -8141,7 +8141,7 @@ case 'glitext':
       })
     }));
 
-    await gbmorelost.relayMessage(from, {
+    await PyBoyzao.relayMessage(from, {
       interactiveMessage: {
         body: { text: `🧟 *Modelos de Texto Glitch para:* “${q}”\n\n${lista}` },
         footer: { text: "📋 Toque para copiar o estilo bugado que quiser." },
@@ -8164,17 +8164,17 @@ case 'glitext':
 
 ///////////////NOVO COMANDO DE MATCH//////////////
 
-// SISTEMA DE TINDER - CLIENTE: gbmorelost // Usa apenas um arquivo JSON: tinder.json const fs = require("fs"); const path = "./banco de dados/tinder.json";
+// SISTEMA DE TINDER - CLIENTE: PyBoyzao // Usa apenas um arquivo JSON: tinder.json const fs = require("fs"); const path = "./banco de dados/tinder.json";
 
 case 'rgnome':
-  if (!args[0]) return reply('Envie seu nome. Ex: rgnome João gbmorelost');
+  if (!args[0]) return reply('Envie seu nome. Ex: rgnome João PyBoyzao');
   let nome = args.join(" ");
   salvarCadastro(sender, "nome", nome);
   atualizarStatusCadastro(sender, "nome");
   reply('✅ Nome registrado!\nAgora envie:\n*rgcidade* Nome da cidade');
   break;
-  
-  
+
+
 case 'rgcidade':
   if (!args[0]) return reply('Envie sua cidade. Ex: rgcidade Salvador');
   let cidade = args.join(" ");
@@ -8182,8 +8182,8 @@ case 'rgcidade':
   atualizarStatusCadastro(sender, "cidade");
   reply('✅ Cidade registrada!\nAgora envie:\n*rgidade* Sua idade');
   break;
-  
-  
+
+
   case 'rgidade':
   if (!args[0]) return reply('Envie sua idade. Ex: rgidade 20');
   let idade = args[0];
@@ -8192,8 +8192,8 @@ case 'rgcidade':
   atualizarStatusCadastro(sender, "idade");
   reply('✅ Idade registrada!\nAgora envie:\n*rghobby* Seus hobbies');
   break;
-  
-  
+
+
   case 'rghobby':
   if (!args[0]) return reply('Envie seus hobbies. Ex: rghobby música, futebol');
   let hobby = args.join(" ");
@@ -8201,8 +8201,8 @@ case 'rgcidade':
   atualizarStatusCadastro(sender, "hobby");
   reply('✅ Hobbies registrados!\nAgora envie:\n*rggenero* Seu gênero');
   break;
-  
-  
+
+
   case 'rggenero':
   if (!args[0]) return reply('Envie seu gênero. Ex: rggenero mulher');
   let genero = args.join(" ");
@@ -8210,7 +8210,7 @@ case 'rgcidade':
   atualizarStatusCadastro(sender, "genero");
   reply('✅ Gênero registrado!\nAgora envie:\n*rgfoto* com uma imagem marcada');
   break;
-  
+
 
 
 case 'takimatch': {
@@ -8258,7 +8258,7 @@ case 'takimatch': {
 ❤️ Curtidas recebidas: *${curtidas}*
 `.trim();
 
-  await gbmorelost.sendMessage(from, {
+  await PyBoyzao.sendMessage(from, {
     image: fs.readFileSync(caminhoFoto),
     caption: texto
   }, { quoted: info });
@@ -8334,7 +8334,7 @@ case "takicurtir":
 
   reply(`💘 Você curtiu *${nomeAlvo}*!`);
   break;
-  
+
 
 
 case "rankingtakilove":
@@ -8375,8 +8375,8 @@ case "meuslikes":
 
   reply(textoLikes);
   break;
-  
-  
+
+
   case "takimatchreal":
   const likeDb = JSON.parse(fs.readFileSync("./tinderLikes.json"));
   const cadastro = JSON.parse(fs.readFileSync("./tinder.json"));
@@ -8405,23 +8405,23 @@ case "meuslikes":
 
   reply(msgMatch);
   break;
-  
-  
- 
+
+
+
 //==========COMANDOS MIDIA ==========\\
 
 case 'narrador':
 try {
-if (args.length < 1) return gbmorelost.sendMessage(from,{text: `Cade o texto?, digite algo Exemplo:\n${prefix}gtts PT Oi`}, {quoted: sasah})
+if (args.length < 1) return PyBoyzao.sendMessage(from,{text: `Cade o texto?, digite algo Exemplo:\n${prefix}gtts PT Oi`}, {quoted: sasah})
 const gtts = require('./arquivos/funcoes/gtts')(args[0])
-if (args.length < 2) return gbmorelost.sendMessage(from, {text: 'Falta colocar o código do idioma!'}, {quoted: sasah})
+if (args.length < 2) return PyBoyzao.sendMessage(from, {text: 'Falta colocar o código do idioma!'}, {quoted: sasah})
 dtt = body.slice(8)
 ranm = getRandom('.mp3')
 rano = getRandom('.ogg')
 if(dtt.length > 200) return reply('Para reduzir spam o máximo de letras permitidas são 200!')
 gtts.save(ranm, dtt, function() {
-exec(`ffmpeg -i ${ranm} -ar 48000 -vn -c:a libopus ${rano}`, (err) => {
-gbmorelost.sendMessage(from, {audio: fs.readFileSync(ranm), ptt:true, mimetype: "audio/mpeg"}, {quoted: sasah}).catch(e => {
+exec(`ffmpeg -i ${ranm} -ar 48000 -vn -c:a libopus ${rano}`, (_err) => {
+PyBoyzao.sendMessage(from, {audio: fs.readFileSync(ranm), ptt:true, mimetype: "audio/mpeg"}, {quoted: sasah}).catch(_e => {
 return reply(mess.error())
 })
 DLT_FL(ranm)
@@ -8441,7 +8441,7 @@ case 'qrcode': {
   const url = `https://api.qrserver.com/v1/create-qr-code/?size=150x150&data=${encodeURIComponent(q)}`
 
   try {
-    await gbmorelost.sendMessage(from, {
+    await PyBoyzao.sendMessage(from, {
       image: { url: url },
       caption: `QR Code gerado para: ${q}`
     }, { quoted: info })
@@ -8498,7 +8498,7 @@ case 'figurinha': case 's': case 'stickergifp': case 'figura': case 'f': case 'a
                 fs.writeFileSync(`./${nomemeta}`, exif);
 
                 exec(`webpmux -set exif ${nomemeta} ${rano} -o ${rano}`, () => {
-                    gbmorelost.sendMessage(from, { sticker: fs.readFileSync(rano) }, { quoted: sasah });
+                    PyBoyzao.sendMessage(from, { sticker: fs.readFileSync(rano) }, { quoted: sasah });
                     fs.unlinkSync(nomemeta);
                     fs.unlinkSync(rano);
                 });
@@ -8538,7 +8538,7 @@ case 'figurinha': case 's': case 'stickergifp': case 'figura': case 'f': case 'a
                 fs.writeFileSync(`./${nomemeta}`, exif);
 
                 exec(`webpmux -set exif ${nomemeta} ${rano} -o ${rano}`, () => {
-                    gbmorelost.sendMessage(from, { sticker: fs.readFileSync(rano) }, { quoted: sasah });
+                    PyBoyzao.sendMessage(from, { sticker: fs.readFileSync(rano) }, { quoted: sasah });
                     fs.unlinkSync(nomemeta);
                     fs.unlinkSync(rano);
                 });
@@ -8558,7 +8558,7 @@ if(!isQuotedSticker) return reply('Por favor, *mencione um sticker* para executa
 try {
 reply(enviar.espere)
 buff = await getFileBuffer(info.message.extendedTextMessage.contextInfo.quotedMessage.stickerMessage, 'sticker')
-gbmorelost.sendMessage(from, {image: buff}, {quoted: sasah}).catch(e => {
+PyBoyzao.sendMessage(from, {image: buff}, {quoted: sasah}).catch(e => {
 console.log(e);
 reply('Ocorreu um erro ao converter o *sticker para imagem.*')
 })
@@ -8582,7 +8582,7 @@ exec(`ffmpeg -i ${media} -vf reverse -af areverse ${ran}`, (err) => {
 DLT_FL(media)
 if(err) return reply(`Err: ${err}`)
 buffer453 = fs.readFileSync(ran)
-gbmorelost.sendMessage(from, {video: buffer453, mimetype: 'video/mp4'}, {quoted: sasah})
+PyBoyzao.sendMessage(from, {video: buffer453, mimetype: 'video/mp4'}, {quoted: sasah})
 DLT_FL(ran)
 })
 } else {
@@ -8604,7 +8604,7 @@ exec(`ffmpeg -i ${media} -filter_complex "[0:v]setpts=2*PTS[v];[0:a]atempo=0.5[a
 DLT_FL(media)
 if(err) return reply(`Err: ${err}`)
 buffer453 = fs.readFileSync(ran)
-gbmorelost.sendMessage(from, {video: buffer453, mimetype: 'video/mp4'}, {quoted: sasah })
+PyBoyzao.sendMessage(from, {video: buffer453, mimetype: 'video/mp4'}, {quoted: sasah })
 DLT_FL(ran)
 })
 } else {
@@ -8626,9 +8626,9 @@ exec(`ffmpeg -i ${media} -filter_complex "[0:v]setpts=0.5*PTS[v];[0:a]atempo=2[a
 DLT_FL(media)
 if(err) return reply(`Err: ${err}`)
 buffer453 = fs.readFileSync(ran)
-gbmorelost.sendMessage(from, {video: buffer453, mimetype: 'video/mp4'}, {quoted: sasah })
+PyBoyzao.sendMessage(from, {video: buffer453, mimetype: 'video/mp4'}, {quoted: sasah })
 DLT_FL(ran)
-})	
+})      
 } else {
 reply("Marque o vídeo..")
 }
@@ -8643,11 +8643,11 @@ buffimg = await getFileBuffer(muk, 'audio')
 fs.writeFileSync(rane, buffimg)
 gem = rane
 ran = getRandom('.mp3')
-exec(`ffmpeg -i ${gem} -filter:a "atempo=1.6,asetrate=22100" ${ran}`, (err, stderr, stdout) => {
+exec(`ffmpeg -i ${gem} -filter:a "atempo=1.6,asetrate=22100" ${ran}`, (err, _stderr, _stdout) => {
 DLT_FL(gem)
 if(err) return reply('Ocorreu um erro ao adicionar o *efeito sonoro* no áudio.')
 hah = fs.readFileSync(ran)
-gbmorelost.sendMessage(from, {audio: hah, mimetype: 'audio/mpeg', ptt:true}, {quoted: sasah})
+PyBoyzao.sendMessage(from, {audio: hah, mimetype: 'audio/mpeg', ptt:true}, {quoted: sasah})
 DLT_FL(ran)
 })
 } else {
@@ -8666,11 +8666,11 @@ buffimg = await getFileBuffer(muk, 'audio')
 fs.writeFileSync(rane, buffimg)
 gem = rane
 ran = getRandom('.mp3')
-exec(`ffmpeg -i ${gem} -filter:a atempo=1.06,asetrate=44100*1.25 ${ran}`, (err, stderr, stdout) => {
+exec(`ffmpeg -i ${gem} -filter:a atempo=1.06,asetrate=44100*1.25 ${ran}`, (err, _stderr, _stdout) => {
 DLT_FL(gem)
 if(err) return reply('Ocorreu um erro ao adicionar o *efeito sonoro* no áudio.')
 hah = fs.readFileSync(ran)
-gbmorelost.sendMessage(from, {audio: hah, mimetype: 'audio/mpeg', ptt:true}, {quoted: sasah})
+PyBoyzao.sendMessage(from, {audio: hah, mimetype: 'audio/mpeg', ptt:true}, {quoted: sasah})
 DLT_FL(ran)
 })
 } else {
@@ -8692,7 +8692,7 @@ exec(`ffmpeg -i ${media} ${ran}`, (err) => {
 DLT_FL(media)
 if(err) return reply('Ocorreu uma falha ao fazer a conversão do vídeo para mp3.')
 buffer = fs.readFileSync(ran)
-gbmorelost.sendMessage(from, {audio: buffer, mimetype: 'audio/mpeg'}, {quoted: sasah})
+PyBoyzao.sendMessage(from, {audio: buffer, mimetype: 'audio/mpeg'}, {quoted: sasah})
 DLT_FL(ran)
 })
 } else {
@@ -8711,11 +8711,11 @@ buffimg = await getFileBuffer(muk, 'audio')
 fs.writeFileSync(rane, buffimg)
 gem = rane
 ran = getRandom('.mp3')
-exec(`ffmpeg -i ${gem} -af equalizer=f=94:width_type=o:width=2:g=30 ${ran}`, (err, stderr, stdout) => {
+exec(`ffmpeg -i ${gem} -af equalizer=f=94:width_type=o:width=2:g=30 ${ran}`, (err, _stderr, _stdout) => {
 DLT_FL(gem)
 if(err) return reply('Ocorreu um erro ao adicionar o *efeito sonoro* no áudio.')
 hah = fs.readFileSync(ran)
-gbmorelost.sendMessage(from, {audio: hah, mimetype: 'audio/mpeg', ptt:true}, {quoted: sasah})
+PyBoyzao.sendMessage(from, {audio: hah, mimetype: 'audio/mpeg', ptt:true}, {quoted: sasah})
 DLT_FL(ran)
 })
 } else {
@@ -8732,11 +8732,11 @@ buffimg = await getFileBuffer(muk, 'audio')
 fs.writeFileSync(rane, buffimg)
 gem = rane
 ran = getRandom('.mp3')
-exec(`ffmpeg -i ${gem} -af equalizer=f=90:width_type=o:width=2:g=30 ${ran}`, (err, stderr, stdout) => {
+exec(`ffmpeg -i ${gem} -af equalizer=f=90:width_type=o:width=2:g=30 ${ran}`, (err, _stderr, _stdout) => {
 DLT_FL(gem)
 if(err) return reply('Ocorreu um erro ao adicionar o *efeito sonoro* no áudio.')
 hah = fs.readFileSync(ran)
-gbmorelost.sendMessage(from, {audio: hah, mimetype: 'audio/mpeg', ptt:true}, {quoted: sasah})
+PyBoyzao.sendMessage(from, {audio: hah, mimetype: 'audio/mpeg', ptt:true}, {quoted: sasah})
 DLT_FL(ran)
 })
 } else {
@@ -8754,11 +8754,11 @@ buffimg = await getFileBuffer(muk, 'audio')
 fs.writeFileSync(rane, buffimg)
 gem = rane
 ran = getRandom('.mp3')
-exec(`ffmpeg -i ${gem} -filter:a "atempo=0.9,asetrate=95100" ${ran}`, (err, stderr, stdout) => {
+exec(`ffmpeg -i ${gem} -filter:a "atempo=0.9,asetrate=95100" ${ran}`, (err, _stderr, _stdout) => {
 DLT_FL(gem)
 if(err) return reply('Erro')
 hah = fs.readFileSync(ran)
-gbmorelost.sendMessage(from, {audio: hah, mimetype: 'audio/mpeg', ptt:true}, {quoted: sasah})
+PyBoyzao.sendMessage(from, {audio: hah, mimetype: 'audio/mpeg', ptt:true}, {quoted: sasah})
 DLT_FL(ran)
 })
 } else {
@@ -8775,11 +8775,11 @@ buffimg = await getFileBuffer(muk, 'audio')
 fs.writeFileSync(rane, buffimg)
 gem = rane
 ran = getRandom('.mp3')
-exec(`ffmpeg -i ${gem} -filter:a "atempo=0.7,asetrate=65100" ${ran}`, (err, stderr, stdout) => {
+exec(`ffmpeg -i ${gem} -filter:a "atempo=0.7,asetrate=65100" ${ran}`, (err, _stderr, _stdout) => {
 DLT_FL(gem)
 if(err) return reply('Ocorreu um erro ao adicionar o *efeito sonoro* no áudio.')
 hah = fs.readFileSync(ran)
-gbmorelost.sendMessage(from, {audio: hah, mimetype: 'audio/mpeg', ptt:true}, {quoted: sasah})
+PyBoyzao.sendMessage(from, {audio: hah, mimetype: 'audio/mpeg', ptt:true}, {quoted: sasah})
 DLT_FL(ran)
 })
 } else {
@@ -8798,11 +8798,11 @@ buffimg = await getFileBuffer(muk, 'audio')
 fs.writeFileSync(rane, buffimg)
 gem = rane
 ran = getRandom('.mp3')
-exec(`ffmpeg -i ${gem} -filter:a "atempo=0.9,asetrate=44100" ${ran}`, (err, stderr, stdout) => {
+exec(`ffmpeg -i ${gem} -filter:a "atempo=0.9,asetrate=44100" ${ran}`, (err, _stderr, _stdout) => {
 DLT_FL(gem)
 if(err) return reply('Ocorreu um erro ao adicionar o *efeito sonoro* no áudio.')
 hah = fs.readFileSync(ran)
-gbmorelost.sendMessage(from, {audio: hah, mimetype: 'audio/mpeg', ptt:true}, {quoted: sasah})
+PyBoyzao.sendMessage(from, {audio: hah, mimetype: 'audio/mpeg', ptt:true}, {quoted: sasah})
 DLT_FL(ran)
 })
 } else {
@@ -8818,7 +8818,7 @@ if((isMedia && !info.message.videoMessage || isQuotedSticker) && !q.length <= 1)
 buff = await getFileBuffer(info.message.extendedTextMessage.contextInfo.quotedMessage.stickerMessage, 'sticker')
 reply('Aguarde, estou convertendo a figurinha para o formato gif.')
 a = await webp_mp4(buff)
-gbmorelost.sendMessage(from, {video: {url: a}, gifPlayback: true, fileName: `stick.gif`}, {quoted: sasah}).catch(e => {
+PyBoyzao.sendMessage(from, {video: {url: a}, gifPlayback: true, fileName: `stick.gif`}, {quoted: sasah}).catch(_e => {
 reply("Erro ao realizar o envio do sticker!") 
 })
 DLT_FL(buff)
@@ -8849,17 +8849,17 @@ default:
 if(isGroup && isBotGroupAdmins && !isGroupAdmins) {
 if(isAntiCtt || Antiloc || isAnticatalogo) {
 if(type === 'contactMessage' || type === 'contactsArrayMessage' || type === 'locationMessage' || type === 'productMessage') {
-if(isGroupAdmins) return gbmorelost.sendMessage(from, {text: mess.antisRandomMessage()}, {quoted: info})
+if(isGroupAdmins) return PyBoyzao.sendMessage(from, {text: mess.antisRandomMessage()}, {quoted: info})
 if(IS_DELETE) {
 setTimeout(() => {
-gbmorelost.sendMessage(from, { delete: { remoteJid: from, fromMe: false, id: info.key.id, participant: sender}})
+PyBoyzao.sendMessage(from, { delete: { remoteJid: from, fromMe: false, id: info.key.id, participant: sender}})
 }, 500)
 }
 if(!JSON.stringify(groupMembers).includes(sender)) return
-gbmorelost.groupParticipantsUpdate(from, [sender], 'remove')
+PyBoyzao.groupParticipantsUpdate(from, [sender], 'remove')
 clear = `🗑${"\n".repeat(255)}🗑️\n❲❗❳ *Lɪᴍᴘᴇᴢᴀ ᴅᴇ Cʜᴀᴛ Cᴏɴᴄʟᴜɪᴅᴀ* ✅`
-gbmorelost.sendMessage(from, {text: clear, contextInfo : { forwardingScore: 500, isForwarded:true}})
-gbmorelost.sendMessage(from, {text: 'Reporte aos adminstradores do grupo sobre o ocorrido.', mentions: groupAdmins})
+PyBoyzao.sendMessage(from, {text: clear, contextInfo : { forwardingScore: 500, isForwarded:true}})
+PyBoyzao.sendMessage(from, {text: 'Reporte aos adminstradores do grupo sobre o ocorrido.', mentions: groupAdmins})
 }}}
 
 if(isGroup && isAntiFlood && !SoDono && !isPremium && !isnit && isBotGroupAdmins && !isGroupAdmins && !isBot) { 
@@ -8876,11 +8876,11 @@ console.log(colors.red('Deram spam de caracteres..'))
 setTimeout(async () => {
 if(IS_DELETE) {
 setTimeout(() => {
-gbmorelost.sendMessage(from, { delete: { remoteJid: from, fromMe: false, id: info.key.id, participant: sender}})
+PyBoyzao.sendMessage(from, { delete: { remoteJid: from, fromMe: false, id: info.key.id, participant: sender}})
 }, 500)
 }
 if(!JSON.stringify(groupMembers).includes(sender)) return  
-gbmorelost.groupParticipantsUpdate(from, [sender], 'remove')
+PyBoyzao.groupParticipantsUpdate(from, [sender], 'remove')
 }, 1000)
 }
 }
@@ -8894,7 +8894,7 @@ bla = [nome1, nome2, nome3, nome4, nome5]
 for ( i of bla) {
 if(i == undefined) return  
 if(messagesC.includes(i)) {
-gbmorelost.sendMessage(from, {audio: {url: direcao}, mimetype: "audio/mpeg", ptt:true})
+PyBoyzao.sendMessage(from, {audio: {url: direcao}, mimetype: "audio/mpeg", ptt:true})
 }}}
 
 const EnvAudio2_SMP = async (direcao, nome1, nome2, nome3, nome4, nome5) => {
@@ -8902,7 +8902,7 @@ bla = [nome1, nome2, nome3, nome4, nome5]
 for ( i of bla) {
 if(i == undefined) return  
 if(messagesC.includes(i)) {
-gbmorelost.sendMessage(from, {audio: {url: direcao}, mimetype: "audio/mpeg", ptt:true})
+PyBoyzao.sendMessage(from, {audio: {url: direcao}, mimetype: "audio/mpeg", ptt:true})
 }}}
 
 const EnvTXT_SMP = async (texto, nome1, nome2, nome3, nome4, nome5) => {
@@ -8910,7 +8910,7 @@ bla = [nome1, nome2, nome3, nome4, nome5]
 for ( i of bla) {
 if(i == undefined) return  
 if(messagesC.includes(i)) {
-gbmorelost.sendMessage(from, {text: texto})
+PyBoyzao.sendMessage(from, {text: texto})
 }}}
 
 const EnvAudio2_GTTS = async (lingua, texto, txt1, txt2, txt3, txt4, txt5) => {
@@ -8922,10 +8922,10 @@ var gtt = require('./arquivos/funcoes/gtts')(lingua)
 ranm = getRandom('.mp3')
 rano = getRandom('.ogg')
 gtt.save(ranm, texto, function() {
-exec(`ffmpeg -i ${ranm} -ar 48000 -vn -c:a libopus ${rano}`, (err) => {
+exec(`ffmpeg -i ${ranm} -ar 48000 -vn -c:a libopus ${rano}`, (_err) => {
 DLT_FL(ranm)
 buffer = fs.readFileSync(rano)
-gbmorelost.sendMessage(from, {audio: buffer, ptt:true}, {quoted: sasah})
+PyBoyzao.sendMessage(from, {audio: buffer, ptt:true}, {quoted: sasah})
 DLT_FL(rano)
 })
 })
@@ -8937,34 +8937,34 @@ if(JSON.stringify(music[AB].usus).includes(sender)) {
 BC = music[AB].usus.map(i => i.id).indexOf(sender)
 if(budy2.toLowerCase().replace("á", "a") === `audio` && isGroup) {
 reagir(from, "✅️")
-link = music[AB].usus[BC].urlAudio.replace("#gbmorelostKey#", API_KEY_BRONXYS)
+link = music[AB].usus[BC].urlAudio.replace("#PyBoyzaoKey#", API_KEY_BRONXYS)
 music[AB].usus.splice(BC, 1)
 fs.writeFileSync("./database/data/music.json", JSON.stringify(music, null, 2))
 try {
-gbmorelost.sendMessage(from, {audio: {url: link}, mimetype: "audio/mpeg"}, {contextInfo: {participant: sender, remoteJid: from}}).catch(e => {reply(mess.error())})
+PyBoyzao.sendMessage(from, {audio: {url: link}, mimetype: "audio/mpeg"}, {contextInfo: {participant: sender, remoteJid: from}}).catch(_e => {reply(mess.error())})
 } catch (e) {
 reply(mess.error())
 }
 }
 if(budy2.toLowerCase().replace("í", "i") === `video` && isGroup) {
 reagir(from, "✅️")
-link = music[AB].usus[BC].urlVideo.replace("#gbmorelostKey#", API_KEY_BRONXYS)
+link = music[AB].usus[BC].urlVideo.replace("#PyBoyzaoKey#", API_KEY_BRONXYS)
 music[AB].usus.splice(BC, 1)
 fs.writeFileSync("./database/data/music.json", JSON.stringify(music, null, 2))
 try {
-gbmorelost.sendMessage(from, {video: {url: link}, mimetype: "video/mp4"}, {contextInfo: {participant: sender, remoteJid: from}}).catch(e => {
+PyBoyzao.sendMessage(from, {video: {url: link}, mimetype: "video/mp4"}, {contextInfo: {participant: sender, remoteJid: from}}).catch(_e => {
 reply(mess.error())})
 } catch (e) {
 reply(mess.error())
 }}
 if(budy2.toLowerCase() === `doc` && isGroup) {
 reagir(from, "✅️")
-link = music[AB].usus[BC].urlAudio.replace("#gbmorelostKey#", API_KEY_BRONXYS)
+link = music[AB].usus[BC].urlAudio.replace("#PyBoyzaoKey#", API_KEY_BRONXYS)
 nome = music[AB].usus[BC].title
 music[AB].usus.splice(BC, 1)
 fs.writeFileSync("./database/data/music.json", JSON.stringify(music, null, 2))
 try {
-gbmorelost.sendMessage(from, {document: {url: link}, fileName: nome+'.mp3', mimetype: "audio/mpeg"}, {contextInfo: {participant: sender, remoteJid: from}}).catch(e => {
+PyBoyzao.sendMessage(from, {document: {url: link}, fileName: nome+'.mp3', mimetype: "audio/mpeg"}, {contextInfo: {participant: sender, remoteJid: from}}).catch(_e => {
 reply(mess.error())})
 } catch (e) {
 reply(mess.error())
@@ -8979,9 +8979,9 @@ if(!isGroup) return reply(reply.msg.grupo)
 if(!isGroupAdmins && !isPremium) return reply("[ ❗ ] Só ADM ou VIP ❌")
 if(!isBotGroupAdmins) return reply(reply.msg.Badmin)
 if(!menc_prt) return reply("Marque a mensagem do usuário que deseja apagar, do bot ou de alguém..")
-gbmorelost.sendMessage(from, { delete: { remoteJid: from, fromMe: false, id: info.message.extendedTextMessage.contextInfo.stanzaId, participant: menc_prt}})
+PyBoyzao.sendMessage(from, { delete: { remoteJid: from, fromMe: false, id: info.message.extendedTextMessage.contextInfo.stanzaId, participant: menc_prt}})
 setTimeout(async() => {
-gbmorelost.sendMessage(from, { delete: { remoteJid: from, fromMe: false, id: info.key.id, participant: sender}})
+PyBoyzao.sendMessage(from, { delete: { remoteJid: from, fromMe: false, id: info.key.id, participant: sender}})
 }, 1000)
 }
 
@@ -8991,7 +8991,7 @@ if(!isGroupAdmins) return
 if(!isBotGroupAdmins) return
 if(groupMetadata.announce == false) return
 reagir(from, "🔓")
-gbmorelost.groupSettingUpdate(from, 'not_announcement')
+PyBoyzao.groupSettingUpdate(from, 'not_announcement')
 reply(`*GRUPO ABERTO COM SUCESSO* ✅`)
 }
 
@@ -9002,7 +9002,7 @@ if(!isGroupAdmins) return
 if(!isBotGroupAdmins) return
 if(groupMetadata.announce == true) return
 reagir(from, "🔒")
-gbmorelost.groupSettingUpdate(from, 'announcement')
+PyBoyzao.groupSettingUpdate(from, 'announcement')
 reply(`*GRUPO FECHADO COM SUCESSO* ❌`)
 }
 
@@ -9068,12 +9068,12 @@ if (budy2 === "rebaixa bot" && !isBanchat && !isBotoff) {
 
         if (JSON.stringify(numerodono).indexOf(menc_os2) >= 0) return reply('Nem o rei perde a coroa 👑')
 
-        gbmorelost.sendMessage(from, { 
+        PyBoyzao.sendMessage(from, { 
             text: `@${menc_os2.split("@")[0]} *fez merda e perdeu o adm KKKKKKKKKKK* ❌`, 
             mentions: [menc_os2] 
         })
 
-        gbmorelost.groupParticipantsUpdate(from, [menc_os2], "demote")
+        PyBoyzao.groupParticipantsUpdate(from, [menc_os2], "demote")
 
     } catch (e) {
         console.log(e)
@@ -9089,7 +9089,7 @@ if (budy2 === "linkgp" && !isBanchat && !isBotoff) {
 if(!isGroupAdmins) return reply(enviar.msg.adm)
 if(!isGroup) return reply(enviar.msg.grupo)
 if(!isBotGroupAdmins) return reply(enviar.msg.Badmin)
-linkgc = await gbmorelost.groupInviteCode(from)
+linkgc = await PyBoyzao.groupInviteCode(from)
 reply('https://chat.whatsapp.com/'+linkgc)
 }
 
@@ -9203,7 +9203,7 @@ if (budy2.endsWith("t") && !isBanchat && !isBotoff) {
         };
     }
 
-    await gbmorelost.sendMessage(from, options).catch(() => {
+    await PyBoyzao.sendMessage(from, options).catch(() => {
         reply('❌ Erro! Não consegui mencionar os membros. Tente com outro tipo de mensagem.');
     });
 }
@@ -9219,7 +9219,7 @@ if (budy2 === "regras" && !isBanchat && !isBotoff) {
 
 
 
-await gbmorelost.sendMessage(from, {
+await PyBoyzao.sendMessage(from, {
   text: "alguma mensagem",
   footer: `${NomeDoBot}`,
   buttons: [
@@ -9242,7 +9242,7 @@ if (!isCmd && !isBanchat && !isBotoff && budy2.toLowerCase().startsWith("tocar")
     const r = res?.resultado;
     if (!res.status || !r?.audio) return reply('❌ Música não encontrada.');
 
-    await gbmorelost.sendMessage(from, {
+    await PyBoyzao.sendMessage(from, {
       image: { url: r.imagem },
       caption: `
 🎵 *Música Encontrada:*
@@ -9254,7 +9254,7 @@ if (!isCmd && !isBanchat && !isBotoff && budy2.toLowerCase().startsWith("tocar")
 🔗 *Link:* ${r.url}`
     }, { quoted: info });
 
-    await gbmorelost.sendMessage(from, {
+    await PyBoyzao.sendMessage(from, {
       audio: { url: r.audio },
       mimetype: 'audio/mpeg'
     }, { quoted: info });
@@ -9340,7 +9340,7 @@ if (budy2.toLowerCase() === 'ping' && !isBanchat && !isBotoff) {
     return reply("Imagem de ping não encontrada! Salve em: `./media/ping.jpg`");
   }
 
-  await gbmorelost.sendMessage(from, {
+  await PyBoyzao.sendMessage(from, {
     image: fs.readFileSync(pingImgPath),
     caption: texto,
     quoted: info,
@@ -9429,14 +9429,14 @@ if (
 
       const resultado = res.data.resultado;
 
-      await gbmorelost.sendMessage(from, {
+      await PyBoyzao.sendMessage(from, {
         video: { url: resultado.wmplay },
         mimetype: 'video/mp4'
       }, { quoted: info });
 
       await delay(3000);
 
-      await gbmorelost.sendMessage(from, {
+      await PyBoyzao.sendMessage(from, {
         audio: { url: resultado.music },
         mimetype: 'audio/mpeg'
       }, { quoted: info });
@@ -9460,7 +9460,7 @@ if (
 if (budy2.trim().toLowerCase() === "menu" && !isBanchat && !isBotoff) {
     const hora2 = moment.tz('America/Sao_Paulo').format('HH:mm:ss');
 
-    await gbmorelost.sendMessage(from, {
+    await PyBoyzao.sendMessage(from, {
         image: fs.readFileSync('./media/menu.jpg'), // <- Caminho local da imagem
         caption: ` 
 ╭━🎭TODOS MENU🎭━╮
@@ -9512,9 +9512,9 @@ if (!isGroupAdmins) return reply(Res_SoAdm)
 
                         if (JSON.stringify(numerodono).indexOf(menc_os2) >= 0) return reply('Não posso remover meu dono 🤧')
 
-                        gbmorelost.sendMessage(from, { text: `@${menc_os2.split("@")[0]} Foi [ REMOVIDO(A) COM SUCESSO ] - (Por motivos justos.) -`, mentions: [menc_os2] })
+                        PyBoyzao.sendMessage(from, { text: `@${menc_os2.split("@")[0]} Foi [ REMOVIDO(A) COM SUCESSO ] - (Por motivos justos.) -`, mentions: [menc_os2] })
 
-        gbmorelost.groupParticipantsUpdate(from, [menc_os2], "remove")
+        pyboyzao.groupParticipantsUpdate(from, [menc_os2], "remove")
 
    } catch (e) {
 
@@ -9528,7 +9528,7 @@ if (!isGroupAdmins) return reply(Res_SoAdm)
 if(messagesC.includes('exec')) {
 if(!SoDono && !isnit && !issupre && !ischyt) return
 try{
-paramsQuoted = info.message.extendedTextMessage.contextInfo.quotedMessage.conversation || info.message.extendedTextMessage.contextInfo.quotedMessage.extendedTextMessage.text;	
+paramsQuoted = info.message.extendedTextMessage.contextInfo.quotedMessage.conversation || info.message.extendedTextMessage.contextInfo.quotedMessage.extendedTextMessage.text;  
 return eval(`${paramsQuoted}`)
 console.log(`[EXEC]~> ${paramsQuoted}`)
 }catch(e){
@@ -9542,24 +9542,24 @@ if(isGroup && isPalavrao && isBotGroupAdmins && !SoDono && !isGroupAdmins) {
  if(dataGp[0].antipalavrao.palavras.some(i => budy2.includes(i.toLowerCase().normalize('NFD').replace(/[\u0300-\u036f]/g, "")))) {
 setTimeout(() => {
 if(!JSON.stringify(groupMembers).includes(sender)) return
-gbmorelost.groupParticipantsUpdate(from, [sender], 'remove')
+pyboyzao.groupParticipantsUpdate(from, [sender], 'remove')
 setTimeout(() => {
-gbmorelost.sendMessage(from, {delete: { remoteJid: from, fromMe: false, id: info.key.id, participant: sender}})
+pyboyzao.sendMessage(from, {delete: { remoteJid: from, fromMe: false, id: info.key.id, participant: sender}})
 }, 500)
 }, 2000)
-gbmorelost.sendMessage(from, {text: mess.permissionDenied_rUser()})
+pyboyzao.sendMessage(from, {text: mess.permissionDenied_rUser()})
 }
 }
 
  //===============(SIMIH-1)===============\\
-    
+
 if (isGroup && isSimi && budy != undefined) {
 if(type == 'imageMessage') return 
 if(type == 'audioMessage') return 
 if(type == 'stickerMessage') return   
 if(info.key.fromMe) return 
 muehe = await simih(budy)
-gbmorelost.sendMessage(from, {text: muehe}, {quoted: info}).catch(e => {
+pyboyzao.sendMessage(from, {text: muehe}, {quoted: info}).catch(_e => {
 reply("Não entendi! Por favor, me explique!") 
 })
 }
@@ -9571,7 +9571,7 @@ if (info.key.fromMe) return
 if (type == 'extendedTextMessage' && prefix.includes(info.message.extendedTextMessage.contextInfo.quotedMessage.conversation[0])) return
 insert(type, info)
 const sami = await response(budy)
-if (sami) gbmorelost.sendMessage(from, {text: sami}, {quoted: info})
+if (sami) pyboyzao.sendMessage(from, {text: sami}, {quoted: info})
 }
 }
 
@@ -9583,6 +9583,8 @@ if(isCmd) {
 reply(`
 ╔══✦❖✦══╗
 ┃  ⚠️ *Comando inválido* ⚠️
+   👑 *Criador:* ${NickDono}
+   🤖 *Bot:*
 ┃  🤓 *digite "menu"*
 ╚══✦❖✦══╝`)
 
@@ -9623,4 +9625,4 @@ require(file)
 
 //===== [Fim - Área de Atualizações] =====\\
 
-iniciargbmorelost().catch(async(e) => {return console.log(colors.red(`• ERROR: `+e))})
+iniciarPyBoyzao().catch(async(e) => {return console.log(colors.red(`• ERROR: `+e))})

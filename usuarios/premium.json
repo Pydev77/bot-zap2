@@ -1,0 +1,7 @@
+{
+    "usuarios_premium": [],
+    "configuracoes": {
+        "preco_mensal": 10.0,
+        "beneficios": ["Comandos extras", "Sem limite de uso", "Suporte prioritário"]
+    }
+}

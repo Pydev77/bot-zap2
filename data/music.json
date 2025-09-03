@@ -1,0 +1,16 @@
+{
+    "tracks": [
+        {
+            "id": "1",
+            "title": "Example Song 1",
+            "artist": "Example Artist 1",
+            "url": "https://example.com/song1.mp3"
+        },
+        {
+            "id": "2", 
+            "title": "Example Song 2",
+            "artist": "Example Artist 2",
+            "url": "https://example.com/song2.mp3"
+        }
+    ]
+}

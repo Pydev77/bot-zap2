@@ -1,6 +1,6 @@
 # Overview
 
-This is a WhatsApp bot called "Takira Bot" (bot-zap2) built using Node.js and the Baileys library. The bot provides various interactive features including games, entertainment commands, administrative functions, and social features like a Tinder-like matching system. It's designed to operate in WhatsApp groups and private chats with extensive customization options and multiple API integrations.
+This is a WhatsApp bot called "Pecinha - Bot" (bot-zap2) built using Node.js and the Baileys library. The bot provides various interactive features including games, entertainment commands, administrative functions, and social features like a Tinder-like matching system. It's designed to operate in WhatsApp groups and private chats with extensive customization options and multiple API integrations.
 
 # User Preferences
 

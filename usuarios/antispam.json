@@ -1,0 +1,7 @@
+{
+    "usuarios_spam": [],
+    "configuracoes": {
+        "limite_mensagens": 5,
+        "tempo_limite": 60000
+    }
+}
